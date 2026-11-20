@@ -29,9 +29,11 @@ tar -xzf annual_lim_full.tar.gz --strip-components=1 annual_lim/weights
 For a CPU-only Linux installation, you can first run `python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu` in the new virtual environment. The notebook requirements include both modeling stacks. The checkout supplies the calibrated FaIR scenario inputs, TC solver, thermodynamic tables, geography and historical track subset. After dependency and weight installation the demonstrations run offline. Set `ANNUAL_LIM_WEIGHTS` to reuse a different fitted-weight directory in the notebooks. Set `TC_DEMO_WORKERS` to control the number of benchmark processes (default 2). [Input versions and provenance](notebooks/data/README.md)
 
 ~~~bash
-python -m pip install -r requirements-notebook.txt
+python -m pip install -r requirements-notebook.txt -c constraints-benchmark.txt
 python -m jupyterlab notebooks/
 ~~~
+
+The optional constraints file selects the numerical versions used for the published benchmark. A separate clean run with NumPy 2.5.5 and SciPy 1.18.1 reproduced the TC formation and landfall decisions for all 4,096 seed attempts. Some individual trajectories and termination times shifted across numerical environments.
 
 The training data are MPI-ESM1-2-LR. The catalogue identifies the original CMIP6 files by member, experiment, variable and release. Data citations and the paper behind the warming-conditioned EOF approach are available from the original sources. [Historical experiment](https://doi.org/10.22033/ESGF/CMIP6.6595) · [SSP5-8.5 experiment](https://doi.org/10.22033/ESGF/CMIP6.6705) · [Geogdzhayev et al.](https://doi.org/10.5194/esd-17-235-2026)
 

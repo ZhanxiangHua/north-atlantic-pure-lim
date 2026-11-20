@@ -1,0 +1,6 @@
+# Reference numerical versions used for the published benchmark on Linux and Python 3.12.
+numpy==2.4.3
+scipy==1.17.1
+pandas==3.0.2
+xarray==2026.2.0
+torch==2.8.0

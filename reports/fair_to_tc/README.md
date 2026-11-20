@@ -31,3 +31,5 @@ The last two columns give the one-dimensional Wasserstein distance, which integr
 - [Solver timings](solver_timing.csv), [timings for each event](event_timings.csv) and [run settings and software versions](run.json)
 
 On four CPU workers with one BLAS thread each, the paired experiment took **17.4 seconds** wall time. Summed across workers, the track calls processed 94.8 seed attempts per second for LIM and 64.8 for Fourier. These rates include screening, integration and recording. They exclude generation of the shared environment and Fourier provider setup. They depend on the machine and on how many seeds reach integration.
+
+A second run in a clean CPU environment (NumPy 2.5.5, SciPy 1.18.1) reproduced all TC classifications and landfall indicators. The largest difference in an individual integrated disturbance’s peak wind was 0.97 m/s, and some last integration times shifted by up to 3 hours. Use the reference numerical versions for comparisons of individual hourly trajectories. [Reference constraints](../../constraints-benchmark.txt)
