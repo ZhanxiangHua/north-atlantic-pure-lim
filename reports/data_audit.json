@@ -1,0 +1,193 @@
+{
+  "calendar": "proleptic_gregorian",
+  "catalog_sha256": "b47ccbcbcc9f88a2b27cb74048b8aa573de1a3308b083f74366b2d2efdb232a3",
+  "design_sha256": "1339595a80757930cadf6e26deb16df528e3739a8d43fb78c57bda71cca74ee0",
+  "forcing_sha256": "a2b16795326e1c4ed632ed685958a390966b4de3a19093271a68cefe16ed4b3e",
+  "leap_februaries": {
+    "test": 32,
+    "train": 245,
+    "val": 0
+  },
+  "matched_septembers": [
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r1i1p1f1",
+      "year": 1855
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r44i1p1f1",
+      "year": 1880
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r31i1p1f1",
+      "year": 1905
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r18i1p1f1",
+      "year": 1955
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r42i1p1f1",
+      "year": 1980
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r49i1p1f1",
+      "year": 2000
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r25i1p1f1",
+      "year": 2020
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r50i1p1f1",
+      "year": 2030
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r13i1p1f1",
+      "year": 2040
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r4i1p1f1",
+      "year": 2060
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r7i1p1f1",
+      "year": 2070
+    },
+    {
+      "max_absolute": {
+        "gamma": 0.0,
+        "hus": 0.0,
+        "mld": 0.0,
+        "psl": 0.0,
+        "sst": 0.0,
+        "ta": 0.0,
+        "wind": 0.0
+      },
+      "member": "r16i1p1f1",
+      "year": 2080
+    }
+  ],
+  "member_months": {
+    "test": 1440,
+    "train": 6300,
+    "val": 504
+  },
+  "member_years": {
+    "test": 120,
+    "train": 525,
+    "val": 42
+  },
+  "model": "MPI-ESM1-2-LR",
+  "source_transfer_bytes": 210176647814,
+  "split_sha256": "532ac46f6b195bddd000a620869d167eb3252044ae216b72d9046797b9f1691e",
+  "temperature_max_difference_K": 9.518857204682263e-07,
+  "wind_days": {
+    "test": 43832,
+    "train": 191870,
+    "val": 15330
+  },
+  "within_month_VAR2_triples": {
+    "test": 40952,
+    "train": 179270,
+    "val": 14322
+  }
+}

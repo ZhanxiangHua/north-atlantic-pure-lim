@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#PBS -N tc_annual_prep
+#PBS -q casper
+#PBS -J 0-95%56
+#PBS -l select=1:ncpus=2:mem=5GB
+#PBS -l walltime=03:00:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+py="${ANNUAL_PYTHON:-python}"
+work="${ANNUAL_WORK:-work}"
+export OPENBLAS_NUM_THREADS=1
+export OMP_NUM_THREADS="$OPENBLAS_NUM_THREADS"
+export MKL_NUM_THREADS="$OPENBLAS_NUM_THREADS"
+exec "$py" -u run.py --work "$work" prepare --shard "${PBS_ARRAY_INDEX:?}" --shards 96 --workers 2

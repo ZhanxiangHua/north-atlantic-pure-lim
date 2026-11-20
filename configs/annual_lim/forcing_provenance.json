@@ -1,0 +1,1822 @@
+{
+  "r12i1p1f1": {
+    "hashes": {
+      "indices.npz": "24544ad499c65786735c2bfde81c4d9e956aef0ab90031987f0879c81f85264e",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "53f6a2b956f6bc5b12985df4ced28f7ebddb472969516acbf9bf7ffe5854f974",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r12i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r12i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "1a1850d3cfb3c5dccc61582d62bd0751f212d208da5cf92fc62328c6fe38571b",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r12i1p1f1"
+        },
+        "resolved_member": "r12i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r12i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r13i1p1f1": {
+    "hashes": {
+      "indices.npz": "e126fa65d33e8a25d7f6d9e5e0916991a950beed7ca0cf342b3f6cb0f1583a9b",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "9695171c234e267650664f0b51b6eb08d6b144657c97d8db2e55bc31b6aefe43",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r13i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r13i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "01b32d154bd039f3d4a5a5ad1cfe713d3573a7db86d39d720aaaac0c0e3617e0",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r13i1p1f1"
+        },
+        "resolved_member": "r13i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r13i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r14i1p1f1": {
+    "hashes": {
+      "indices.npz": "1edf8718d0fba3f3310c902dce6a513ce6e4ff7a2ec32748bd706d6cfaa6f63e",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "7b8fad126a7c4133eaec9db6c474559a309cb0d3a942a44e7482e31ab9e15dcd",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r14i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r14i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "aae86ce05edc409220e1d07306ac2507d803a95f60b05c826ae470bdf3bb3a10",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r14i1p1f1"
+        },
+        "resolved_member": "r14i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r14i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r15i1p1f1": {
+    "hashes": {
+      "indices.npz": "a17ff366eb7d5958a0176bd773f1920ff914750a9b4ece44878a685dbf155b21",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "4b75e3f3220851b356a2aa220757ae9dfc1a46dd093897238d28f19a5b0e0130",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r15i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r15i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "c82add98d1b404c5c168969cf2f766931a5dc1c663a59b3f690f600b2a34b63b",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r15i1p1f1"
+        },
+        "resolved_member": "r15i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r15i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r16i1p1f1": {
+    "hashes": {
+      "indices.npz": "852b9cec1e4f30e1a4eeabc038a43779a889232242cc8b48700ae9676dfcd487",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "ad2eb8d9cb099bbdddc5d191d2abd5eb883f0eec27d9a2b9e7cc0dabb7efb8fe",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r16i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r16i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "a37ac50f44ada408bb75b5860232c57f38fd3c541d3c17d162030327ab3ee87b",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r16i1p1f1"
+        },
+        "resolved_member": "r16i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r16i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r17i1p1f1": {
+    "hashes": {
+      "indices.npz": "ab75d3abf54902dba0415091d8ba076165d6ca50ee7a8f0eaee4c8414b7f1b17",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "518933358739c12cd557ec7e94c3a3702f141d5b311bddb05436288f8a98a460",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r17i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r17i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "cf396a8f277224f2259f26e6137f8737652550e2e5aee3caec2d86e8b4889c16",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r17i1p1f1"
+        },
+        "resolved_member": "r17i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r17i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r18i1p1f1": {
+    "hashes": {
+      "indices.npz": "db951a9198b6354024cd183144761752af8bded7a44a846a579471db5b964f91",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "5450b3ffa1cef95720b449facff20fca8520ddef5b7224c04d2eac7d68ded776",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r18i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r18i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "92f14fc432650d956e4826223b17aedd8142f463ca2397d77d7edbe035e15074",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r18i1p1f1"
+        },
+        "resolved_member": "r18i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r18i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r19i1p1f1": {
+    "hashes": {
+      "indices.npz": "0ad2cdba4756f5d67d7b3dcbaf58cc3ea343bd4ee444bca1cc45f09a942eb547",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "9053d636da1ceb060120289e987e98e6589dbba7ca5198647faa94a3e8c2a12f",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r19i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r19i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "6698669cbc00403bb086e07446e29b7b49499cbabf5b688954221e269e631c45",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r19i1p1f1"
+        },
+        "resolved_member": "r19i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r19i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r1i1p1f1": {
+    "hashes": {
+      "indices.npz": "5bcedf2ac0db0d1d606e1d8e60332680d1478d9304c7c9828554f99e497b2e4c",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "a50cc497de5d517b3abc1bb2cc0d5fc9663c181f9fc91e574cebe94ea67e5cb6",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r1i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r1i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "5c287097f113b527f24c180adac6e84670229fb0c13ca2d27f5e038316c83f99",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r1i1p1f1",
+        "time_reordered": true,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp585/r1i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r20i1p1f1": {
+    "hashes": {
+      "indices.npz": "cd97a7ed6575665b206ead8e95664df6b9cf2939a0b64c53b840297f8b4a5693",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "36e6d6ac3b72f54ef8de8e93e92b4af590e478563c62d7b663694d18c5f523a6",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r20i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r20i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "53ec1d126cedbffae42aa1c4807b896aa9f28e348ee591ed5d57f05d22471ea3",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r20i1p1f1"
+        },
+        "resolved_member": "r20i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r20i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r22i1p1f1": {
+    "hashes": {
+      "indices.npz": "ee4b56410db48f4d52737db4ce8521b697ec5c5e4272f8286aa99c794a5ae747",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "8bc449e71375610c2463f448d97f1dd230408515a7a71e860d3ec07298560ec4",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r22i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r22i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "b9f432e8378064b6df96a90c7d3de2105a115b3bf698654051af441e7fcf6a6c",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r22i1p1f1"
+        },
+        "resolved_member": "r22i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r22i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r24i1p1f1": {
+    "hashes": {
+      "indices.npz": "851baea594a3d31b013a52f2e175c8490cc2d8470f4d80424c1c205fb33857a0",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "d63b16156a33f6a70c6022f64e22d336c12531570926013c50efc228d41d01d7",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r24i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r24i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "3f5a801970ba2ebe68d9cf485cf3c365a7bcb587ce6441eb797a1c36c0dea83d",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r24i1p1f1"
+        },
+        "resolved_member": "r24i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r24i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r25i1p1f1": {
+    "hashes": {
+      "indices.npz": "17d639dfafefecdb610a2adbb64099e4fa7f652c91fe6858f48c15ce86b263b6",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "93e7b7eff816455b71c8219611b8bdb58a91754b57643dd8d6a5e204bf2252ea",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r25i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r25i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "ec70d5a01cd130535c27825ca2cda32ab9a2a0573142813fe23ef5c2564f1e03",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r25i1p1f1"
+        },
+        "resolved_member": "r25i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r25i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r26i1p1f1": {
+    "hashes": {
+      "indices.npz": "d091d58877e725b1528157bdf9526505b19a02cafb47bdc010a8ad795f4eabfd",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "16e55cb563fd2ae500f7416dd1edf1860b1925abcadc92063c5b9f21c3218255",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r26i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r26i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "c5a6b71c29541ea79156789633623a00e398401b4dd7d7c0bf14be66a884c166",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r26i1p1f1"
+        },
+        "resolved_member": "r26i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r26i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r27i1p1f1": {
+    "hashes": {
+      "indices.npz": "8b085eff0030019fbaf43a76f005557a98241a54cb9e5b75ce850375d94a1677",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "aa8c277938cd2eff94fd649f02cdecedfd0099f6f53f3ecbb4865fb180ad12df",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r27i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r27i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "f0c97716c96936aa26f70fbd42e6f81e0f95b5e37a0738ae324823fd16623986",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r27i1p1f1"
+        },
+        "resolved_member": "r27i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r27i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r28i1p1f1": {
+    "hashes": {
+      "indices.npz": "2d7a12cfc9853e796e892ed96a89418b8a44d37087167b52a4aeccd9759606f7",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "650ba8b83f66e61f427bbe111f5645de3f242dd2929f8d8d4f6fe063f0abcfc7",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r28i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r28i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "88fdbc2c8ac031d643c5379bb4210327a4fbd05d73e519b06123771734dc621d",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r28i1p1f1"
+        },
+        "resolved_member": "r28i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r28i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r29i1p1f1": {
+    "hashes": {
+      "indices.npz": "00f6e4ea6999df815d89fef7fa097f588f101179045a04f8b571d32fb2bf19ed",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "ace8c61e6e282800e62f8ae460abd49c90e62d3416c9cec23d990d4af7b24b63",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r29i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r29i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "388fe93be537a9d8bbfeded079e92c39fb8b404972b506ff3d6fd33d4b172140",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r29i1p1f1"
+        },
+        "resolved_member": "r29i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r29i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r2i1p1f1": {
+    "hashes": {
+      "indices.npz": "a2460778040361d93fa94b2eb1987f9f89a1845f5a311448136561d52c7bc408",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "a1702dc026c6a43dc19bec76977ff512e6135a1c81c89a0e3f6a9704d3d2877b",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 18262.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r2i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r2i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "4a34229d055f0fff5dd0af353d0815b92a73bb3db831a0d6778a1ff72c5f0912",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r2i1p1f1"
+        },
+        "resolved_member": "r2i1p1f1",
+        "time_reordered": true,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp585/r2i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r30i1p1f1": {
+    "hashes": {
+      "indices.npz": "5447462dedd1da7f3959cc9ee38d82f7fd039473ab73858c4d07fd2af0546394",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "16f182c474499b23f4f0434819c8faebb402af3d1ab24358d53d7a67f42d3d87",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 0.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r30i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r30i1p1f1.Amon.tas.gn.v20210901|esgf.ceda.ac.uk",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "db070fceff4aebc328f594f1f348174cb824a6e7a732bc8abae5d7e7de69c2c3",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r30i1p1f1"
+        },
+        "resolved_member": "r30i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r30i1p1f1.Amon.tas.gn.v20210901|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r31i1p1f1": {
+    "hashes": {
+      "indices.npz": "4049c00a9bec04871e2378a99043e9cf597005cb2126513923617d08f9c55b00",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "dfeedc23616cb5f82c79fac67a68c553244c7d05492ac3ccd308aae1a2db7b43",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 191752.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r31i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r31i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "fabddc168613eaba6f7047f95c1b0c4b830787d3b505eed5b7d7e6a2a7df714d",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r31i1p1f1"
+        },
+        "resolved_member": "r31i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r31i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r33i1p1f1": {
+    "hashes": {
+      "indices.npz": "6212f7b4e35aed2108070baf90ad2966e212738561191b9bfb82f3a7f71fe275",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "f49803bf9deefffc50e22cf7f93211ac619154028d4239c42e387bba5d1a433c",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 228277.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r33i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r33i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "a3352919f84f9d76028c1086924b83edc5e4405488404c1198e1aac9d17985db",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r33i1p1f1"
+        },
+        "resolved_member": "r33i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r33i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r34i1p1f1": {
+    "hashes": {
+      "indices.npz": "9097f4f5b7e73ac214cce83d7aeb676716c2a3ac82e8d31574940810e7a93f9e",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "f1befb12f4a003e9bc4702845498f0fd0f4cac2fd0c63f79693980884fad90d6",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 246539.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r34i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r34i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "ae9f8767e10f685519c847585a7b8eaa2b9a6327b9cb4858a953731aaa9da0cf",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r34i1p1f1"
+        },
+        "resolved_member": "r34i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r34i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r36i1p1f1": {
+    "hashes": {
+      "indices.npz": "5ba3f244b77ccee5b896421fe4fc84947494d5de7b77c4b7347e5d030c803b24",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "a382e8ba8187dace87ae3e3cb5596c8f2234a638aaa54ffa6f78a3ea9ddb96a3",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 283063.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r36i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r36i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "02e03c800681e16c639b5916f0774a33083ba7189ed47ec4a2ade8c713f9ae74",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r36i1p1f1"
+        },
+        "resolved_member": "r36i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r36i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r3i1p1f1": {
+    "hashes": {
+      "indices.npz": "b18a3fcd0cc54ebf2238a107215d16e87fdf7180e292aba8b30d0b211e2f4a40",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "b5b7d22c54c4f71dcd898a59144ddccf712301d463350a07329487207d443d99",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 36524.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r3i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r3i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "3140c0794e4b69b0b533b1602cc80c8ef810e21623951395d90d0b12047130a1",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r3i1p1f1"
+        },
+        "resolved_member": "r3i1p1f1",
+        "time_reordered": true,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp585/r3i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r41i1p1f1": {
+    "hashes": {
+      "indices.npz": "db78ae93f127634d9db30943ba43794bf4ccbf11cece98e2b563df5c327e44f7",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "f54a77c3e212a5b4892a9450b9e418381400d0f81d287b3d26d5bf730a8445b7",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 23010.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r41i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r41i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "7a48f7ac7e3e812a9273b23abff7eb01f5edd2843fc4326a19f8fd1adc86e448",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r41i1p1f1"
+        },
+        "resolved_member": "r41i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r41i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r42i1p1f1": {
+    "hashes": {
+      "indices.npz": "25b1c57a7c72e7a2d11ba61cf7bf396aa4cba0829369913b5b6180fa5d9feb11",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "669b06fde070b68cf034faf2844c144474cdcdbc741332987b050585011e9cdf",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 41272.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r42i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r42i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "97b00ff27b4decc75bcb4392bcc1603916d37b4adcf1721f6cc45dc739f064a8",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r42i1p1f1"
+        },
+        "resolved_member": "r42i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r42i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r44i1p1f1": {
+    "hashes": {
+      "indices.npz": "8a623f54a447c7a7e7203c1f4bc7a9521e16c4495ed61f224977adc591b9a4a7",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "81d1fec56c2104513d6b4fe7ecae35ab5583e406fde65b2b3bfc986a5f3f920b",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 77797.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r44i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r44i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "1352a1bdb5f38af23845897dc6d717d0d2c15c1045d898f21ef3010f68c242ca",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r44i1p1f1"
+        },
+        "resolved_member": "r44i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r44i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r46i1p1f1": {
+    "hashes": {
+      "indices.npz": "1f804347f82924cb25014dd6091351978d500b1e34e03bccbfe3f1cb0fa62fc9",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "5ef0323e2512d0f2a763cd0a0e0c486e1df514a71e0913644507f18e116c3a47",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 114321.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r46i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r46i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "98e24ceb54e322224d7212dfb0e72fdf132fa0fd8d50ef26c142ae889ef45bd6",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r46i1p1f1"
+        },
+        "resolved_member": "r46i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r46i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r47i1p1f1": {
+    "hashes": {
+      "indices.npz": "4cea728befe0781c4b28ffeef4a3dfbdd3e22a9462bb1fe9eb04b68636ffd4b5",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "284569847a94fbd7f35af582a0602074b0dc34d269c634946b681cdbdc3d04fd",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 132583.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r47i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r47i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "218fb4a11634292a3e2ea5b3c1857ca56eb2bbbbbef7c0ab5b1283830a4f1abb",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r47i1p1f1"
+        },
+        "resolved_member": "r47i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r47i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r49i1p1f1": {
+    "hashes": {
+      "indices.npz": "01be627813816d7192a1c6afb318f25415fc65bb50e6b1b1d55bef87aa903c5c",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "c16113ae1db9eeeacbd85be551d108bd5cd1d9934bc7b164b3805cf84de1a84e",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 169107.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r49i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r49i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "17894c9c6cea09ceabceb2ad89df021d249bc272eacd2df6aa0ad585c3b004e9",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r49i1p1f1"
+        },
+        "resolved_member": "r49i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r49i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r4i1p1f1": {
+    "hashes": {
+      "indices.npz": "e9e32ef6f65c3aea52a02617bec34968040dd74648dee727c924d73ae73d6839",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "1626a4eaf4d10d8668b23b0676af01a6f6e793a0d3a76e8e1c15059a2da86015",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 54786.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r4i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r4i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "f91d0a268de12da9223c98ef65b616e30e96f3d839aff38f7a41fdc09612edd6",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r4i1p1f1"
+        },
+        "resolved_member": "r4i1p1f1",
+        "time_reordered": true,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp585/r4i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r50i1p1f1": {
+    "hashes": {
+      "indices.npz": "34ef2ac50861cf6875dc9a8ea789192cc20bdd18e7dfb5465f2a975317afd81f",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "775b277ce8b37a5dafeeb1c405058299fb45c44fdca615152c5ef4589b53ecb1",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 187369.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r50i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.CMIP.MPI-M.MPI-ESM1-2-LR.historical.r50i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "d2bfe8e10ba1d1976693b41059aac29c2afcedb3f99bb3189cc049a45108b0ff",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r50i1p1f1"
+        },
+        "resolved_member": "r50i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "CMIP6.ScenarioMIP.MPI-M.MPI-ESM1-2-LR.ssp585.r50i1p1f1.Amon.tas.gn.v20190815|esgf3.dkrz.de",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r5i1p1f1": {
+    "hashes": {
+      "indices.npz": "3426925935233b9a9ae947471a958d3e498c96561d302043d708167e209d3ac4",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "293ae1fe8ad4935026b8b4c1e3791b243f87d75bc767abfc5a843b49daebb39e",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 73049.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r5i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r5i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "40a0442fac8428fac9fc84d92b5fdb8dff4230106464e9b803aa77aedb6e5258",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r5i1p1f1"
+        },
+        "resolved_member": "r5i1p1f1",
+        "time_reordered": true,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp585/r5i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r7i1p1f1": {
+    "hashes": {
+      "indices.npz": "80fea0329c0a2821b00543337a8adf2d2bb33121b20b9cb1411e317801d92985",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "fdda3996c196df9b2a9d14b988d2117b638a6a00b3c5d4619504b78e1462516b",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 109573.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r7i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r7i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "0e1233975c2f3ab272a68081ecae61d2ccce4e7c4e733b2f6feb8d8cbe41e2bf",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r7i1p1f1"
+        },
+        "resolved_member": "r7i1p1f1",
+        "time_reordered": true,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp585/r7i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      }
+    ]
+  },
+  "r8i1p1f1": {
+    "hashes": {
+      "indices.npz": "ee7f1c949ef6582f84187085cec7ec8d43b2095dc6a7e9cfdd30148ecab7f7eb",
+      "time.npz": "aeb7637a29515c5bb62166c6bb1fc64c10e5d43b4f44d016e7688a64a1716e76"
+    },
+    "tas": [
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "historical",
+        "metadata_sha256": "f596274821060bca5f9ef358ff65ce1e472ef77c33df864ce0e009f3e503d5e3",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 0.0,
+          "branch_time_in_parent": 127835.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "piControl",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r1i1p1f1"
+        },
+        "resolved_member": "r8i1p1f1",
+        "time_reordered": false,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/CMIP/MPI-M/MPI-ESM1-2-LR/historical/r8i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      },
+      {
+        "area_method": "CF latitude bounds; time-repeated bounds verified invariant",
+        "experiment": "ssp585",
+        "metadata_sha256": "f83b1701ace66e6d4c4141e53ff7db7768efa6a0edd74ecf04a11e7c794643fb",
+        "original_calendar": "proleptic_gregorian",
+        "parents": {
+          "branch_method": "standard",
+          "branch_time_in_child": 60265.0,
+          "branch_time_in_parent": 60265.0,
+          "parent_activity_id": "CMIP",
+          "parent_experiment_id": "historical",
+          "parent_mip_era": "CMIP6",
+          "parent_source_id": "MPI-ESM1-2-LR",
+          "parent_time_units": "days since 1850-1-1 00:00:00",
+          "parent_variant_label": "r8i1p1f1"
+        },
+        "resolved_member": "r8i1p1f1",
+        "time_reordered": true,
+        "trimmed_outside_experiment_months": 0,
+        "uri": "https://storage.googleapis.com/cmip6/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp585/r8i1p1f1/Amon/tas/gn/v20190710/",
+        "variable": "tas"
+      }
+    ]
+  }
+}

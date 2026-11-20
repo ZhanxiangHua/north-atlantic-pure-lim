@@ -1,0 +1,11 @@
+{
+  "domain": [260,360,0,60], "halo_degrees": 4, "depth_m": 100,
+  "train_years": [1855,1880,1905,1930,1955,1980,2000,2010,2020,2030,2040,2050,2060,2070,2080],
+  "validation_years": [1886,1941,2006,2045,2074,2090],
+  "test_years": [1862,1868,1884,1891,1903,2042,2044,2046,2051,2054,2083,2085,2091,2096,2099],
+  "seed": 9152026, "ranks": {"sst":18,"ocean":18,"psl":14,"profiles":28,"wind":120},
+  "log_mld": true, "mean_ridge": 0.1, "lim_ridge_candidates": [0.0,0.001,0.01,0.1],
+  "memory_lags": [5,20], "covariance_energy": 0.80, "tail_extension_K": 1.25,
+  "window_days": [1,5,10,15], "temperature_groups": ["cold","inside","warm"],
+  "design": "One seasonal parameter set for each calendar month. Independent member-month events with a stable VAR(2), warming-dependent joint background and a causal 5–20 day output filter. Refit spatial bases and numerical coefficients for all 12 months. Training uses 35 members only. Validation and test member identities are disjoint. Use validation to assess development accuracy, and score frozen weights on test members at different years. Month-end variance uses actual CF month length. Preserve the established September release as a separate comparison."
+}

@@ -1,0 +1,23 @@
+{
+  "machine": "x86_64",
+  "packages": {
+    "cftime": "1.6.5",
+    "h5py": "3.16.0",
+    "ipykernel": "7.2.0",
+    "matplotlib": "3.10.8",
+    "matplotlib-inline": "0.2.1",
+    "nbclient": "0.11.0",
+    "nbformat": "5.11.1",
+    "netCDF4": "1.7.4",
+    "numpy": "2.4.3",
+    "pandas": "3.0.2",
+    "pyarrow": "24.0.0",
+    "requests": "2.33.0",
+    "scipy": "1.17.1",
+    "torch": "2.8.0",
+    "xarray": "2026.2.0"
+  },
+  "python": "3.12.13",
+  "training_blas_threads": 4,
+  "validation_blas_threads": 3
+}

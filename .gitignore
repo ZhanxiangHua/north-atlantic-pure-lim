@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+/weights/
+/runs/
+/work/
+*.nc
+*.tar.gz
+*.o[0-9]*

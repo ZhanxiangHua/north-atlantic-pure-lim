@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#PBS -N tc_annual_val
+#PBS -q casper
+#PBS -J 1-12
+#PBS -l select=1:ncpus=4:mem=12GB
+#PBS -l walltime=01:00:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+py="${ANNUAL_PYTHON:-python}"
+work="${ANNUAL_WORK:-work}"
+export OPENBLAS_NUM_THREADS=3
+export OMP_NUM_THREADS="$OPENBLAS_NUM_THREADS"
+export MKL_NUM_THREADS="$OPENBLAS_NUM_THREADS"
+"$py" -u run.py --work "$work" validate --month "${PBS_ARRAY_INDEX:?}" --role val
+exec "$py" -u run.py --work "$work" validate --month "${PBS_ARRAY_INDEX:?}" --role test
