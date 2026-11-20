@@ -1,0 +1,13 @@
+{
+  "start_utc": "2026-11-20T07:12:15Z",
+  "end_utc": "2026-11-20T14:12:15Z",
+  "baseline_commit": "b00e61c0929b63c64b7e31a14dd5a8be7ccb54b1",
+  "extra_train_years": [1852, 1870, 1897, 1915, 1949, 1970, 1991, 2004, 2016, 2025, 2035, 2048, 2056, 2065, 2075],
+  "fresh_test_years": [1863, 1885, 1904, 2041, 2047, 2053, 2087, 2093, 2097],
+  "ocean_variables": ["sst", "mld", "gamma"],
+  "ocean_evaluation": "Compare physical reconstruction RMSE over the basin and 10–30 N / 280–340 E over a common wet-cell mask. Report MLD in m, SST in K and gradient in K per 100 m, coverage, and upper-tail errors. Also validate stochastic background means and between-member spread separately from projection.",
+  "lim_evaluation": "Compare absolute log errors of steering variance at 5,10,15 and full-month windows per calendar month and temperature group. Report daily wind, shear quantile, weak shear and lag covariance errors as guardrails. Reuse the published pass bands. Compare matched validation records across all months.",
+  "selection": "Train only on designated training members and years. Rank candidates with validation members. Compare apples-to-apples ranks and input cohorts. Prefer a simpler or smaller candidate when validation scores are statistically indistinguishable. Freeze one primary candidate and training recipe before scoring test members, including a newly designated nine-year test panel. Respect the published scenario replay as an external benchmark. Include failed experiments and null results.",
+  "temperature_bins": "Use the original training limits [-0.0115220616351514,3.419637285227324] K for all comparisons. Added training years stay inside these limits.",
+  "sampling": "Pure LIM deployment from portable weights. No access to historical member-months at inference."
+}

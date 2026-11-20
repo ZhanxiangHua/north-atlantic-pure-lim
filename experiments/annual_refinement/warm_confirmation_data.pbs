@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#PBS -N lim_new_warm_data
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=9GB
+#PBS -l walltime=01:15:00
+#PBS -J 0-19%10
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u -m annual_lim --config "$TC_REFINEMENT_WORK/configs/warm_confirmation" --work "$TC_REFINEMENT_WORK/warm_confirmation/input" prepare --shard "$PBS_ARRAY_INDEX" --shards 20 --workers 2 > "$TC_REFINEMENT_WORK/logs/new-warm-data-$PBS_ARRAY_INDEX.log" 2>&1

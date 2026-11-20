@@ -1,0 +1,24 @@
+{
+  "calendar_year": 2050,
+  "days": 365,
+  "matching_output_variables": [
+    "chi",
+    "chi_fast",
+    "gamma",
+    "hus",
+    "mld",
+    "model_id",
+    "pi",
+    "psl",
+    "rh_mid",
+    "sst",
+    "ta",
+    "vpot",
+    "wind"
+  ],
+  "max_absolute_wind_difference": 0.0,
+  "physical_wind_values": 3048480,
+  "seed": 417,
+  "selected_weights": 12,
+  "source": "Full package extracted without a training-data directory. Same warming and seed as the independently restored checkout."
+}

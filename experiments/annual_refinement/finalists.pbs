@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#PBS -N lim_finalist_table
+#PBS -q casper
+#PBS -l select=1:ncpus=2:mem=6GB
+#PBS -l walltime=00:30:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/finalists.py --tag "$MODEL_TAG" --account "${PBS_ACCOUNT:-UWAS0120}" --schedule

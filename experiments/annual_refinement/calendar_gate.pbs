@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#PBS -N lim_ocean_gate
+#PBS -q casper
+#PBS -l select=1:ncpus=2:mem=5GB
+#PBS -l walltime=00:30:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/calendar_gate.py --cohort "${COHORT:?}" --account "${PBS_ACCOUNT:-UWAS0120}" > "$TC_REFINEMENT_WORK/logs/calendar-gate-$COHORT.log" 2>&1

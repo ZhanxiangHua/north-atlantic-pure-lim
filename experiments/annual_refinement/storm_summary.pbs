@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#PBS -N lim_track_scores
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=4GB
+#PBS -l walltime=00:40:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/score_storms.py --candidate "$MODEL_TAG" --panel "${EVAL_ROLE:-val}"

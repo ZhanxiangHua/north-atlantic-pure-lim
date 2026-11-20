@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#PBS -N lim_between_wind
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=9GB
+#PBS -l walltime=02:30:00
+#PBS -J 1-12%3
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+cohort="${COHORT:-original}"
+month="${PBS_ARRAY_INDEX:?}"
+args=()
+if [[ "${FIT_STAGE:-basic}" == "rich" ]]; then args+=(--rich); fi
+if [[ -n "${EXPORT_MODEL:-}" ]]; then args+=(--export "$EXPORT_MODEL" --filter "$EXPORT_FILTER"); fi
+exec "$TC_PYTHON" -u experiments/annual_refinement/between.py --cohort "$cohort" --month "$month" "${args[@]}" > "$rd/logs/between-${cohort}-${EXPORT_MODEL:-${FIT_STAGE:-screen}}-${month}.log" 2>&1

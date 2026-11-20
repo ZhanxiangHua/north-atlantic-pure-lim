@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#PBS -N lim_modal_weather
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=6GB
+#PBS -l walltime=01:00:00
+#PBS -J 1-12%3
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+args=()
+if [[ -n "${MODAL_EXPORT:-}" ]]; then args+=(--export "$MODAL_EXPORT"); fi
+exec "$TC_PYTHON" -u experiments/annual_refinement/modal_weather.py --tag "${MODEL_TAG:?}" --weights "${MODEL_WEIGHTS:-$PWD/runs/annual_lim/weights}" --cohort "${COHORT:-original}" --month "$PBS_ARRAY_INDEX" "${args[@]}" > "$rd/logs/modal-$MODEL_TAG-${MODAL_EXPORT:-screen}-$PBS_ARRAY_INDEX.log" 2>&1

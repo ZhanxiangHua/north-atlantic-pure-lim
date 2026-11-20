@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#PBS -N lim_refit_table
+#PBS -q casper
+#PBS -l select=1:ncpus=1:mem=3GB
+#PBS -l walltime=00:30:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/fold_report.py

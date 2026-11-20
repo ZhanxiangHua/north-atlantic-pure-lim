@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#PBS -N lim_robust_refits
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=8GB
+#PBS -l walltime=07:10:00
+#PBS -J 0-2
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=2
+source experiments/annual_refinement/env.sh
+run_dir="$TC_REFINEMENT_WORK"
+lane="${PBS_ARRAY_INDEX:?}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/crossfit.py --lane "$lane" >> "$run_dir/logs/paired-${lane}.log" 2>&1

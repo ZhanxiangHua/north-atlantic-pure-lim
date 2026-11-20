@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#PBS -N lim_ssp245_year
+#PBS -q casper
+#PBS -l select=1:ncpus=1:mem=6GB
+#PBS -l walltime=01:50:00
+#PBS -J 0-7%8
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+index="${PBS_ARRAY_INDEX:?}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/annual_scenario.py --index "$index" \
+    --mirror "${CMIP6_MIRROR:-/glade/collections/cmip/CMIP6}" \
+    --september-reference "$PWD/runs/mpi2050/reference" > "$TC_REFINEMENT_WORK/logs/annual-ssp245-$index.log" 2>&1

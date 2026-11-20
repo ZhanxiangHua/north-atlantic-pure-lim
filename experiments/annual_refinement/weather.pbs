@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#PBS -N lim_memory_sweep
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=6GB
+#PBS -l walltime=01:30:00
+#PBS -J 1-12%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=2
+source experiments/annual_refinement/env.sh
+run_dir="$TC_REFINEMENT_WORK"
+tag="${MODEL_TAG:-published_backbone}"
+cohort="${COHORT:-original}"
+weights="${MODEL_WEIGHTS:-$PWD/runs/annual_lim/weights}"
+month="${PBS_ARRAY_INDEX:?}"
+exec > "$run_dir/logs/cal-${tag}-${month}.log" 2>&1
+"$TC_PYTHON" -u experiments/annual_refinement/weather.py --month "$month" --cohort "$cohort" --tag "$tag" --weights "$weights"
+"$TC_PYTHON" -u experiments/annual_refinement/weather.py --month "$month" --cohort "$cohort" --tag "$tag" --weights "$weights" --deep

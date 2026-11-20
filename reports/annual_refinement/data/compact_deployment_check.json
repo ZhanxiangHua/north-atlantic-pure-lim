@@ -1,0 +1,23 @@
+{
+  "all_non_mld_fields_bit_identical_after_bottom_cap": true,
+  "annual_mld_cells_bounded": 3,
+  "generated_calendar_days": 365,
+  "monthly_model_ids": [
+    "d7336511b1c3273b54013fb6b429e21d681499acad711c81748371470271bd1a",
+    "624875092936a367e7e19dc4f2db3d575cb396551d2948788c1aa3eb33e34190",
+    "8d4ad247d1953550eac9223270a572586b2101df59b6ede02b018e73666896d0",
+    "9f6d087a7b200010b9ffa6cc9de01a2fd83e1d322d57caacea8ed9e122ae3420",
+    "c277439e0122a8dd7af060bdb9375b37fafdf2634dc2b37fca5cde65e1a33bb3",
+    "55ebe005ed8711506777c035db5cbb1e26e44c1e9a584b27286cb8365c7085ff",
+    "8cecfd721da6024e68ba73cc05d84da4d740a6553cea71050f0c8db7ec8cd087",
+    "cae0a2b1b4407b04cc69fd03194d21ae47518973d64bca6225e2206067c07f74",
+    "713f929661332ccd86112581273ea00690fc5a322dfb2422329cf211b997edb1",
+    "af572f8c6de32de729b9ad710fe8b55cfe957aa533a4dac4a5ced25caf88427a",
+    "6d261cdc27083ecc498bc5f4f19b1a1bb160864780bcd20972d5a1806859e3fe",
+    "b4e26fe0f4eb1939eaa963abdd8f817f41ae34771b806fc151a25fe39aed4493"
+  ],
+  "numpy_torch_cpu_max_abs_difference_ms": 0.0,
+  "observable_wind_modes": 120,
+  "state_dimension": 192,
+  "wind_values": 3048480
+}

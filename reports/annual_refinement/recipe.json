@@ -1,0 +1,14 @@
+{
+  "active_base": "extended_prediction",
+  "active_recipe": "f55_w16_raw",
+  "cohort": "extended",
+  "combined": true,
+  "filter": "month_weighted",
+  "label": "extended_prediction_active_refined",
+  "name": "medium_ocean",
+  "parent": "extended_prediction_active",
+  "spread": "spatial_first",
+  "stage": "coupled",
+  "weather": "month_weighted",
+  "weather_family": "parent"
+}

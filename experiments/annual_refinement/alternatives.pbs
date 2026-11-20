@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#PBS -N lim_ocean_local
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=8GB
+#PBS -l walltime=02:00:00
+#PBS -J 1-12%3
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=2
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+cohort="${COHORT:-original}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/ocean_alternatives.py --month "${PBS_ARRAY_INDEX:?}" --cohort "$cohort" > "$rd/logs/ocean-alt-${cohort}-${PBS_ARRAY_INDEX}.log" 2>&1

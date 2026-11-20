@@ -1,0 +1,20 @@
+{
+  "ssp245_year": {
+    "attempts": 129024,
+    "sha256": {
+      "annual_mpi2050_attempts.parquet": "a58ee4010074b865f14b18b89755b63c8e875d9cb4eb7066ca387cd81ba70ae0",
+      "annual_mpi2050_tracks_6h.parquet": "69156c4a8f2438c593d1f586f4da262dc5eb2b41fb18f726ae23878b790dba3c"
+    },
+    "six_hour_fixes": 24838,
+    "tracks": 706
+  },
+  "val": {
+    "attempts": 145152,
+    "sha256": {
+      "seasonal_validation_attempts.parquet": "ac97bbc9ebbc656ceaf627dc81108207e31e7530f895f71371b00a3dfd046078",
+      "seasonal_validation_tracks_6h.parquet": "7a149f6b86c8edbbdf137767dc8a03dacb2d50dc8b0beaafaed066d124e0cee9"
+    },
+    "six_hour_fixes": 53903,
+    "tracks": 1444
+  }
+}

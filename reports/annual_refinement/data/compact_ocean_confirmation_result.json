@@ -1,0 +1,17 @@
+{
+  "compact_prespecified_criteria_met": true,
+  "day_one_increase_ms": 0.009434012772194134,
+  "day_one_upper95_ms": 0.009989439451978731,
+  "independent_member_months": 528,
+  "plan_sha256": "71c45bd3df31f465f0da7bd1a68abdd4215ba080772bb6c61c89c6306cffb6ab",
+  "total_15day_error_increase": 6.179313831820854e-05,
+  "within_15day_error_increase": 0.00012885985540052325,
+  "years": {
+    "1864": -0.0355937095327814,
+    "1887": -0.078639826030427,
+    "2005": 0.8848037025534303,
+    "2061": 2.574635778220617,
+    "2086": 3.757160133092903,
+    "2094": 4.168413976766686
+  }
+}

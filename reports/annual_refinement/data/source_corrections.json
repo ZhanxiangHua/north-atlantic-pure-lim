@@ -1,0 +1,8 @@
+{
+  "external_comparison.py": {
+    "change": "The September plotting function reads lat_n, the latitude column stored in both track archives. Numerical scores and frozen weights use the sealed computation. Replacing the single line g.lat_n, with g.lat, reproduces the frozen source hash.",
+    "frozen_sha256": "042ccca564bba6c7f549c4fa253b820861e0016529199d76a38bd2521c09f6ef",
+    "published_sha256": "283cde88da67af24a499dd841ff3ef8dbe2b6f399e38828dc59464e693472863",
+    "utc": "2026-11-20T12:18:01+00:00"
+  }
+}

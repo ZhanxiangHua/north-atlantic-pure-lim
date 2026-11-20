@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#PBS -N lim_warming_memory
+#PBS -q casper
+#PBS -l select=1:ncpus=2:mem=5GB
+#PBS -l walltime=01:00:00
+#PBS -J 1-12%3
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+cohort="${COHORT:-original}"
+tag="${MODEL_TAG:-published_backbone}"
+weights="${MODEL_WEIGHTS:-$PWD/runs/annual_lim/weights}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/thermal_memory.py --month "${PBS_ARRAY_INDEX:?}" --cohort "$cohort" --tag "$tag" --weights "$weights" > "$rd/logs/thermal-${tag}-${PBS_ARRAY_INDEX}.log" 2>&1

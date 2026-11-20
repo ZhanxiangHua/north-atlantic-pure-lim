@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N lim_seasonal_grams
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=4GB
+#PBS -l walltime=00:35:00
+#PBS -J 1-12%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=2
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/seasonal_covariance_cv.py gram --month "$PBS_ARRAY_INDEX" > "$TC_REFINEMENT_WORK/logs/seasonal-covariance-gram-$PBS_ARRAY_INDEX.log" 2>&1

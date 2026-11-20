@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N lim_matched_tracks
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=8GB
+#PBS -l walltime=03:00:00
+#PBS -J 0-7%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+exec "$TC_PYTHON" -u experiments/annual_refinement/storms.py --tag "${MODEL_TAG:?}" --weights "${MODEL_WEIGHTS:-$PWD/runs/annual_lim/weights}" --method "${WIND_DRIVER:-LIM}" --lane "$PBS_ARRAY_INDEX" --lanes 8 --workers 3 --panel "${EVAL_ROLE:-val}" > "$rd/logs/storms-$MODEL_TAG-${EVAL_ROLE:-val}-$PBS_ARRAY_INDEX.log" 2>&1

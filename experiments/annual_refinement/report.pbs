@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#PBS -N lim_verified_report
+#PBS -q casper
+#PBS -l select=1:ncpus=5:mem=12GB
+#PBS -l walltime=01:20:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+out="$PWD/reports/annual_refinement"
+tag="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["stage"])' "$rd/FROZEN.json")"
+weights="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["weights"])' "$rd/FROZEN.json")"
+exec > "$rd/logs/report-$tag.log" 2>&1
+"$TC_PYTHON" -u experiments/annual_refinement/fold_report.py
+"$TC_PYTHON" -u experiments/annual_refinement/report_tables.py --output "$out"
+"$TC_PYTHON" -u experiments/annual_refinement/figures.py --tag "$tag" --weights "$weights" --role fresh --output "$out/figures"
+"$TC_PYTHON" -u experiments/annual_refinement/evidence_figures.py --tag "$tag" --report "$out"

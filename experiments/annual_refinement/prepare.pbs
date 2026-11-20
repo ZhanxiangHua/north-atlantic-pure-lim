@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N lim_refine_data
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=9GB
+#PBS -l walltime=04:00:00
+#PBS -J 0-11%8
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+run_dir="$TC_REFINEMENT_WORK"
+exec "$TC_PYTHON" -u -m annual_lim --config "$run_dir/configs/additions" --work "$run_dir/data" prepare --shard "${PBS_ARRAY_INDEX:?}" --shards 12 --workers 2 > "$run_dir/logs/data-${PBS_ARRAY_INDEX}.log" 2>&1

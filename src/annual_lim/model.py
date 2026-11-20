@@ -15,7 +15,7 @@ class MonthlyModel:
     def __init__(self, weights, month):
         folder = Path(weights) / f"{month:02}"
         self.meta = read(folder / "model.json")
-        if self.meta["month"] != month or self.meta["format"] != 1:
+        if self.meta["month"] != month or self.meta["format"] not in (1, 2):
             raise ValueError("Model does not match requested calendar month or file format")
         for name, val in self.meta["files"].items():
             if sha(folder / name) != val:
@@ -37,6 +37,18 @@ class MonthlyModel:
             self.mean = Circulation(a["regression"], a["z_scale"])
             self.directions = a["directions"]
             self.bg_amp, self.bg_slope = map(float, a["background_response"])
+            self.block_slope = None
+            if self.meta["format"] == 2:
+                self.block_slope = a["block_slope"]
+                self.block_scale = a["block_scale"]
+                if (
+                    self.block_slope.shape != (len(L),)
+                    or self.block_scale.shape != self.block_slope.shape
+                    or not np.isfinite(self.block_slope).all()
+                    or not np.isfinite(self.block_scale).all()
+                    or np.any(self.block_scale <= 0)
+                ):
+                    raise ValueError("Invalid warming-dependent background scales")
             self.base = Dynamics(
                 a["transition"], a["innovation"], a["stationary"], 2, a["regression"].shape[1]
             )
@@ -48,7 +60,11 @@ class MonthlyModel:
         g_clip = self.cal.temperature(g)
         amp = np.sqrt(self.bg_amp * np.exp(self.bg_slope * (g_clip - self.bg.center)))
         L, U = self.bg.lower0, self.directions
-        return L + (amp - 1) * (L @ U) @ U.T
+        factor = L + (amp - 1) * (L @ U) @ U.T
+        if self.block_slope is not None:
+            scale = np.sqrt(self.block_scale * np.exp(self.block_slope * (g_clip - self.bg.center)))
+            factor = scale[:, None] * factor
+        return factor
 
     def background(self, g, rng):
         """Generate z = m(g) + F(g)e, with independent standard normal entries in e."""

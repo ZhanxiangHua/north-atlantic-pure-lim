@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#PBS -N lim_coupled_fit
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=9GB
+#PBS -l walltime=02:00:00
+#PBS -J 1-12%3
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+run_dir="$TC_REFINEMENT_WORK"
+cohort="${COHORT:-original}"
+month="${PBS_ARRAY_INDEX:?}"
+stage="${FIT_STAGE:-basic}"
+args=()
+if [[ -n "${EXPORT_MODEL:-}" ]]; then args+=(--export "$EXPORT_MODEL" --filter "$EXPORT_FILTER"); fi
+exec "$TC_PYTHON" -u experiments/annual_refinement/fullfit.py --cohort "$cohort" --month "$month" --stage "$stage" "${args[@]}" > "$run_dir/logs/coupled-${cohort}-${EXPORT_MODEL:-$stage}-${month}.log" 2>&1

@@ -1,0 +1,161 @@
+panel,year,members,warming_K,regime,experiment
+15 paired training years,1855,35,0.028087322963632,inside,historical
+15 paired training years,1880,35,-0.0115220616351514,inside,historical
+15 paired training years,1905,35,0.0055937870041109,inside,historical
+15 paired training years,1930,35,0.2287357060796857,inside,historical
+15 paired training years,1955,35,0.306756416659784,inside,historical
+15 paired training years,1980,35,0.4632808172204647,inside,historical
+15 paired training years,2000,35,0.8279847514441787,inside,historical
+15 paired training years,2010,35,1.016766718795214,inside,historical
+15 paired training years,2020,35,1.1453263823145274,inside,ssp585
+15 paired training years,2030,35,1.4159032153725093,inside,ssp585
+15 paired training years,2040,35,1.6971954284269746,inside,ssp585
+15 paired training years,2050,35,2.0881344959452424,inside,ssp585
+15 paired training years,2060,35,2.5125722296401385,inside,ssp585
+15 paired training years,2070,35,2.9779790039862637,inside,ssp585
+15 paired training years,2080,35,3.419637285227324,inside,ssp585
+30 paired training years,1852,35,-0.009206344460507,inside,historical
+30 paired training years,1855,35,0.028087322963632,inside,historical
+30 paired training years,1870,35,0.0260330123683534,inside,historical
+30 paired training years,1880,35,-0.0115220616351514,inside,historical
+30 paired training years,1897,35,0.0953414288334606,inside,historical
+30 paired training years,1905,35,0.0055937870041109,inside,historical
+30 paired training years,1915,35,0.057960022170457,inside,historical
+30 paired training years,1930,35,0.2287357060796857,inside,historical
+30 paired training years,1949,35,0.3168542915019543,inside,historical
+30 paired training years,1955,35,0.306756416659784,inside,historical
+30 paired training years,1970,35,0.3340337452895028,inside,historical
+30 paired training years,1980,35,0.4632808172204647,inside,historical
+30 paired training years,1991,35,0.6669438797574774,inside,historical
+30 paired training years,2000,35,0.8279847514441787,inside,historical
+30 paired training years,2004,35,0.8818038868707561,inside,historical
+30 paired training years,2010,35,1.016766718795214,inside,historical
+30 paired training years,2016,35,1.1172090624028996,inside,ssp585
+30 paired training years,2020,35,1.1453263823145274,inside,ssp585
+30 paired training years,2025,35,1.2959734725385417,inside,ssp585
+30 paired training years,2030,35,1.4159032153725093,inside,ssp585
+30 paired training years,2035,35,1.5195215195557328,inside,ssp585
+30 paired training years,2040,35,1.6971954284269746,inside,ssp585
+30 paired training years,2048,35,2.007975809969201,inside,ssp585
+30 paired training years,2050,35,2.0881344959452424,inside,ssp585
+30 paired training years,2056,35,2.351492593233658,inside,ssp585
+30 paired training years,2060,35,2.5125722296401385,inside,ssp585
+30 paired training years,2065,35,2.725480026009514,inside,ssp585
+30 paired training years,2070,35,2.9779790039862637,inside,ssp585
+30 paired training years,2075,35,3.2471855256820774,inside,ssp585
+30 paired training years,2080,35,3.419637285227324,inside,ssp585
+57 paired training years,1852,35,-0.009206344460507,inside,historical
+57 paired training years,1855,35,0.028087322963632,inside,historical
+57 paired training years,1856,35,0.0036212971965117,inside,historical
+57 paired training years,1865,35,0.0101923326936219,inside,historical
+57 paired training years,1870,35,0.0260330123683534,inside,historical
+57 paired training years,1878,35,0.0125421220597345,inside,historical
+57 paired training years,1880,35,-0.0115220616351514,inside,historical
+57 paired training years,1894,35,0.0333089341466319,inside,historical
+57 paired training years,1897,35,0.0953414288334606,inside,historical
+57 paired training years,1905,35,0.0055937870041109,inside,historical
+57 paired training years,1909,35,0.0640131298430493,inside,historical
+57 paired training years,1915,35,0.057960022170457,inside,historical
+57 paired training years,1919,35,0.1638225977677745,inside,historical
+57 paired training years,1925,35,0.1891232234604807,inside,historical
+57 paired training years,1930,35,0.2287357060796857,inside,historical
+57 paired training years,1937,35,0.2616001647013384,inside,historical
+57 paired training years,1946,35,0.2655398950140206,inside,historical
+57 paired training years,1949,35,0.3168542915019543,inside,historical
+57 paired training years,1955,35,0.306756416659784,inside,historical
+57 paired training years,1964,35,0.155598824170509,inside,historical
+57 paired training years,1970,35,0.3340337452895028,inside,historical
+57 paired training years,1975,35,0.3085508809622386,inside,historical
+57 paired training years,1980,35,0.4632808172204647,inside,historical
+57 paired training years,1988,35,0.5619582120283173,inside,historical
+57 paired training years,1991,35,0.6669438797574774,inside,historical
+57 paired training years,1996,35,0.684411514198727,inside,historical
+57 paired training years,2000,35,0.8279847514441787,inside,historical
+57 paired training years,2002,35,0.9334525810002264,inside,historical
+57 paired training years,2004,35,0.8818038868707561,inside,historical
+57 paired training years,2008,35,0.9503027025201654,inside,historical
+57 paired training years,2010,35,1.016766718795214,inside,historical
+57 paired training years,2013,35,1.0559641619333515,inside,historical
+57 paired training years,2016,35,1.1172090624028996,inside,ssp585
+57 paired training years,2018,35,1.1463246226090629,inside,ssp585
+57 paired training years,2020,35,1.1453263823145274,inside,ssp585
+57 paired training years,2023,35,1.265730452736424,inside,ssp585
+57 paired training years,2025,35,1.2959734725385417,inside,ssp585
+57 paired training years,2028,35,1.3372678190134497,inside,ssp585
+57 paired training years,2030,35,1.4159032153725093,inside,ssp585
+57 paired training years,2033,35,1.518345608601317,inside,ssp585
+57 paired training years,2035,35,1.5195215195557328,inside,ssp585
+57 paired training years,2038,35,1.633725909866703,inside,ssp585
+57 paired training years,2040,35,1.6971954284269746,inside,ssp585
+57 paired training years,2043,35,1.8352181128280696,inside,ssp585
+57 paired training years,2048,35,2.007975809969201,inside,ssp585
+57 paired training years,2050,35,2.0881344959452424,inside,ssp585
+57 paired training years,2056,35,2.351492593233658,inside,ssp585
+57 paired training years,2058,35,2.421374516107326,inside,ssp585
+57 paired training years,2060,35,2.5125722296401385,inside,ssp585
+57 paired training years,2062,35,2.62215493998648,inside,ssp585
+57 paired training years,2065,35,2.725480026009514,inside,ssp585
+57 paired training years,2068,35,2.8839501297814145,inside,ssp585
+57 paired training years,2070,35,2.9779790039862637,inside,ssp585
+57 paired training years,2072,35,3.0298540214937155,inside,ssp585
+57 paired training years,2075,35,3.2471855256820774,inside,ssp585
+57 paired training years,2078,35,3.328653425931972,inside,ssp585
+57 paired training years,2080,35,3.419637285227324,inside,ssp585
+27 added ocean years,1856,35,0.0036212971965117,inside,historical
+27 added ocean years,1865,35,0.0101923326936219,inside,historical
+27 added ocean years,1878,35,0.0125421220597345,inside,historical
+27 added ocean years,1894,35,0.0333089341466319,inside,historical
+27 added ocean years,1909,35,0.0640131298430493,inside,historical
+27 added ocean years,1919,35,0.1638225977677745,inside,historical
+27 added ocean years,1925,35,0.1891232234604807,inside,historical
+27 added ocean years,1937,35,0.2616001647013384,inside,historical
+27 added ocean years,1946,35,0.2655398950140206,inside,historical
+27 added ocean years,1964,35,0.155598824170509,inside,historical
+27 added ocean years,1975,35,0.3085508809622386,inside,historical
+27 added ocean years,1988,35,0.5619582120283173,inside,historical
+27 added ocean years,1996,35,0.684411514198727,inside,historical
+27 added ocean years,2002,35,0.9334525810002264,inside,historical
+27 added ocean years,2008,35,0.9503027025201654,inside,historical
+27 added ocean years,2013,35,1.0559641619333515,inside,historical
+27 added ocean years,2018,35,1.1463246226090629,inside,ssp585
+27 added ocean years,2023,35,1.265730452736424,inside,ssp585
+27 added ocean years,2028,35,1.3372678190134497,inside,ssp585
+27 added ocean years,2033,35,1.518345608601317,inside,ssp585
+27 added ocean years,2038,35,1.633725909866703,inside,ssp585
+27 added ocean years,2043,35,1.8352181128280696,inside,ssp585
+27 added ocean years,2058,35,2.421374516107326,inside,ssp585
+27 added ocean years,2062,35,2.62215493998648,inside,ssp585
+27 added ocean years,2068,35,2.8839501297814145,inside,ssp585
+27 added ocean years,2072,35,3.0298540214937155,inside,ssp585
+27 added ocean years,2078,35,3.328653425931972,inside,ssp585
+validation,1886,7,-0.1201708318255434,cold,historical
+validation,1941,7,0.2703234247665413,inside,historical
+validation,2006,7,0.9137238462367616,inside,historical
+validation,2045,7,1.869579369663244,inside,ssp585
+validation,2074,7,3.180369444619295,inside,ssp585
+validation,2090,7,3.994501371320816,warm,ssp585
+original holdout,1862,8,-0.0886074949497448,cold,historical
+original holdout,1868,8,-0.0199358892578302,cold,historical
+original holdout,1884,8,-0.2913181822632822,cold,historical
+original holdout,1891,8,-0.0443267281553492,cold,historical
+original holdout,1903,8,-0.0829177100498643,cold,historical
+original holdout,2042,8,1.7679663477243892,inside,ssp585
+original holdout,2044,8,1.849913480228764,inside,ssp585
+original holdout,2046,8,1.927299985989693,inside,ssp585
+original holdout,2051,8,2.116882599095357,inside,ssp585
+original holdout,2054,8,2.247235528856628,inside,ssp585
+original holdout,2083,8,3.6337987349131113,warm,ssp585
+original holdout,2085,8,3.72200651130893,warm,ssp585
+original holdout,2091,8,4.058817678166992,warm,ssp585
+original holdout,2096,8,4.326703023692151,warm,ssp585
+original holdout,2099,8,4.423778987339745,warm,ssp585
+new annual holdout,1863,8,-0.0750559537304695,cold,historical
+new annual holdout,1885,8,-0.1840362709025669,cold,historical
+new annual holdout,1904,8,-0.0473027219091424,cold,historical
+new annual holdout,2041,8,1.7210431314132393,inside,ssp585
+new annual holdout,2047,8,1.9814411844198965,inside,ssp585
+new annual holdout,2053,8,2.235608867869974,inside,ssp585
+new annual holdout,2087,8,3.799661515069193,warm,ssp585
+new annual holdout,2093,8,4.082203956205813,warm,ssp585
+new annual holdout,2097,8,4.33828548528512,warm,ssp585
+SSP2-4.5 annual replay,2050,8,1.7990502465475604,inside,ssp245

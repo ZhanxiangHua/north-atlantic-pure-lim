@@ -1,0 +1,521 @@
+month,protocol,metric,driver,reference,value,error,ci_low,ci_high,valid_draws,unit,attempts,tc,ref_tc
+all,MPI background,tc,published_v1,0.6510416666666667,0.6510416666666666,1.1102230246251565e-16,1.1102230246251565e-16,0.20073784722222213,1500,per 100 attempted seeds,18432.0,120.0,120.0
+all,MPI background,tc,native_fourier,0.6510416666666667,0.45572916666666663,0.1953125000000001,0.1030815972222221,0.29839409722222227,1500,per 100 attempted seeds,18432.0,84.0,120.0
+all,MPI background,tc,selected_fourier,0.6510416666666667,0.509982638888889,0.1410590277777778,0.04340277777777768,0.2441406250000001,1500,per 100 attempted seeds,18432.0,94.0,120.0
+all,MPI background,tc,extended_prediction_active_refined,0.6510416666666667,0.5316840277777778,0.11935763888888895,0.01085069444444453,0.24414062500000008,1500,per 100 attempted seeds,18432.0,98.0,120.0
+all,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,-0.11935763888888884,-0.18988715277777785,0.09765625,1500,per 100 attempted seeds,,,
+all,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.07595486111111116,-0.027126736111111105,0.16276041666666669,1500,per 100 attempted seeds,,,
+all,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.02170138888888884,-0.07052951388888884,0.10308159722222224,1500,per 100 attempted seeds,,,
+all,MPI background,landfall,published_v1,0.5045572916666666,0.5316840277777778,0.02712673611111116,0.005425347222222125,0.17361111111111116,1500,per 100 attempted seeds,18432.0,120.0,120.0
+all,MPI background,landfall,native_fourier,0.5045572916666666,0.3689236111111111,0.13563368055555552,0.03797743055555558,0.22243923611111108,1500,per 100 attempted seeds,18432.0,84.0,120.0
+all,MPI background,landfall,selected_fourier,0.5045572916666666,0.3797743055555555,0.1247829861111111,0.01627604166666674,0.23071289062499922,1500,per 100 attempted seeds,18432.0,94.0,120.0
+all,MPI background,landfall,extended_prediction_active_refined,0.5045572916666666,0.461154513888889,0.043402777777777624,0.005425347222222099,0.18446180555555555,1500,per 100 attempted seeds,18432.0,98.0,120.0
+all,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.016276041666666463,-0.1410590277777777,0.12478298611111122,1500,per 100 attempted seeds,,,
+all,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0922309027777779,-0.043402777777777735,0.1681857638888889,1500,per 100 attempted seeds,,,
+all,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.08138020833333348,-0.040825737847222224,0.15733506944444442,1500,per 100 attempted seeds,,,
+all,MPI background,lmi,published_v1,,,4.869822761986074,2.571737787860404,7.748753479372037,1500,m/s,18432.0,120.0,120.0
+all,MPI background,lmi,native_fourier,,,2.0252681560858075,1.3727657229738222,5.966989387345885,1500,m/s,18432.0,84.0,120.0
+all,MPI background,lmi,selected_fourier,,,2.216739788398452,1.788407075534445,5.539461410269533,1500,m/s,18432.0,94.0,120.0
+all,MPI background,lmi,extended_prediction_active_refined,,,1.5247625405171328,1.3609068603998786,4.026539085317389,1500,m/s,18432.0,98.0,120.0
+all,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,3.3450602214689416,-0.17894248295587034,5.338522706907375,1500,m/s,,,
+all,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,0.5005056155686747,-1.2360443487634363,3.522315880879458,1500,m/s,,,
+all,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.6919772478813191,-1.1219853495712833,3.419241417600753,1500,m/s,,,
+all,MPI background,displacement_48h_km,published_v1,,,92.08788235097126,57.64199488656536,222.38904686516446,1500,km,18432.0,120.0,120.0
+all,MPI background,displacement_48h_km,native_fourier,,,221.80475026027753,142.6242025103296,351.8345751670178,1500,km,18432.0,84.0,120.0
+all,MPI background,displacement_48h_km,selected_fourier,,,206.7099015547849,117.31260368181809,331.2441952172971,1500,km,18432.0,94.0,120.0
+all,MPI background,displacement_48h_km,extended_prediction_active_refined,,,95.4639796112536,60.72546688659835,257.7724119583281,1500,km,18432.0,98.0,120.0
+all,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,-3.37609726028235,-96.10057485407513,63.96914878056161,1500,km,,,
+all,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,126.34077064902392,-22.72313826449935,220.7894893211839,1500,km,,,
+all,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,111.24592194353129,-44.228379242686984,186.71671196866737,1500,km,,,
+all,warming only,tc,published_v1,0.6510416666666667,0.558810763888889,0.09223090277777779,0.00542534722222221,0.2007378472222222,1500,per 100 attempted seeds,18432.0,103.0,120.0
+all,warming only,tc,extended_prediction_active_refined,0.6510416666666667,0.47200520833333337,0.17903645833333337,0.07595486111111105,0.2821180555555555,1500,per 100 attempted seeds,18432.0,87.0,120.0
+all,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,-0.08680555555555558,-0.24956597222222227,0.0922309027777777,1500,per 100 attempted seeds,,,
+all,warming only,landfall,published_v1,0.5045572916666666,0.45572916666666663,0.048828125,5.551115123125783e-17,0.146484375,1500,per 100 attempted seeds,18432.0,103.0,120.0
+all,warming only,landfall,extended_prediction_active_refined,0.5045572916666666,0.3743489583333333,0.13020833333333331,0.032552083333333315,0.21158854166666669,1500,per 100 attempted seeds,18432.0,87.0,120.0
+all,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.08138020833333331,-0.17903645833333343,0.048828125,1500,per 100 attempted seeds,,,
+all,warming only,lmi,published_v1,,,2.735692369596334,1.9963891305102757,5.626324629535722,1500,m/s,18432.0,103.0,120.0
+all,warming only,lmi,extended_prediction_active_refined,,,3.1898297847989094,1.3911975043869818,7.940002482585661,1500,m/s,18432.0,87.0,120.0
+all,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,-0.4541374152025752,-3.87677484053484,2.460349931913927,1500,m/s,,,
+all,warming only,displacement_48h_km,published_v1,,,95.22902366695796,55.00670677366264,220.49395760305964,1500,km,18432.0,103.0,120.0
+all,warming only,displacement_48h_km,extended_prediction_active_refined,,,124.86281189604199,67.77513218338869,263.8878693852908,1500,km,18432.0,87.0,120.0
+all,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,-29.633788229084033,-139.2612914897777,84.98218107538621,1500,km,,,
+1,MPI background,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,tc,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,tc,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,MPI background,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,landfall,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,landfall,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+1,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+1,MPI background,lmi,selected_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+1,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+1,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+1,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+1,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+1,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+1,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,0.0
+1,MPI background,displacement_48h_km,selected_fourier,,,,,,0,km,1536.0,0.0,0.0
+1,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+1,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+1,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+1,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+1,warming only,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,warming only,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,warming only,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,warming only,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+1,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+1,warming only,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+1,warming only,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+1,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+1,warming only,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+1,warming only,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+1,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+2,MPI background,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,tc,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,tc,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,MPI background,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,landfall,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,landfall,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+2,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+2,MPI background,lmi,selected_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+2,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+2,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+2,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+2,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+2,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+2,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,0.0
+2,MPI background,displacement_48h_km,selected_fourier,,,,,,0,km,1536.0,0.0,0.0
+2,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+2,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+2,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+2,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+2,warming only,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,warming only,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,warming only,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,warming only,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+2,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+2,warming only,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+2,warming only,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+2,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+2,warming only,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+2,warming only,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+2,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+3,MPI background,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,tc,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,tc,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,MPI background,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,landfall,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,landfall,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+3,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+3,MPI background,lmi,selected_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+3,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+3,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+3,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+3,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+3,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+3,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,0.0
+3,MPI background,displacement_48h_km,selected_fourier,,,,,,0,km,1536.0,0.0,0.0
+3,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+3,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+3,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+3,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+3,warming only,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,warming only,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,warming only,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,warming only,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+3,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+3,warming only,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+3,warming only,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+3,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+3,warming only,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+3,warming only,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+3,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+4,MPI background,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,tc,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,tc,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,MPI background,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,landfall,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,landfall,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+4,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+4,MPI background,lmi,selected_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+4,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+4,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+4,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+4,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+4,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+4,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,0.0
+4,MPI background,displacement_48h_km,selected_fourier,,,,,,0,km,1536.0,0.0,0.0
+4,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+4,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+4,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+4,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+4,warming only,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,warming only,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,warming only,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,warming only,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+4,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+4,warming only,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+4,warming only,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+4,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+4,warming only,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+4,warming only,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+4,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+5,MPI background,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,tc,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,tc,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,MPI background,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,landfall,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,landfall,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+5,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+5,MPI background,lmi,selected_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+5,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+5,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+5,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+5,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+5,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+5,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,0.0
+5,MPI background,displacement_48h_km,selected_fourier,,,,,,0,km,1536.0,0.0,0.0
+5,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+5,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+5,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+5,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+5,warming only,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,warming only,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,warming only,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,warming only,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+5,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+5,warming only,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+5,warming only,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+5,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+5,warming only,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+5,warming only,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+5,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+6,MPI background,tc,published_v1,0.0,0.06510416666666666,0.06510416666666666,0.0,0.1953125,1500,per 100 attempted seeds,1536.0,1.0,0.0
+6,MPI background,tc,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+6,MPI background,tc,selected_fourier,0.0,0.06510416666666666,0.06510416666666666,0.0,0.1953125,1500,per 100 attempted seeds,1536.0,1.0,0.0
+6,MPI background,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+6,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.06510416666666666,0.0,0.1953125,1500,per 100 attempted seeds,,,
+6,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+6,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.06510416666666666,0.0,0.1953125,1500,per 100 attempted seeds,,,
+6,MPI background,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,1.0,0.0
+6,MPI background,landfall,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+6,MPI background,landfall,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,1.0,0.0
+6,MPI background,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+6,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+6,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+6,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+6,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,1.0,0.0
+6,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+6,MPI background,lmi,selected_fourier,,,,,,0,m/s,1536.0,1.0,0.0
+6,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+6,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+6,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+6,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+6,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,1.0,0.0
+6,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,0.0
+6,MPI background,displacement_48h_km,selected_fourier,,,,,,0,km,1536.0,1.0,0.0
+6,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+6,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+6,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+6,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+6,warming only,tc,published_v1,0.0,0.13020833333333331,0.13020833333333331,0.0,0.26041666666666663,1500,per 100 attempted seeds,1536.0,2.0,0.0
+6,warming only,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+6,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.13020833333333331,0.0,0.26041666666666663,1500,per 100 attempted seeds,,,
+6,warming only,landfall,published_v1,0.0,0.06510416666666666,0.06510416666666666,0.0,0.1953125,1500,per 100 attempted seeds,1536.0,2.0,0.0
+6,warming only,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+6,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.06510416666666666,0.0,0.1953125,1500,per 100 attempted seeds,,,
+6,warming only,lmi,published_v1,,,,,,0,m/s,1536.0,2.0,0.0
+6,warming only,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+6,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+6,warming only,displacement_48h_km,published_v1,,,,,,0,km,1536.0,2.0,0.0
+6,warming only,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+6,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+7,MPI background,tc,published_v1,1.1067708333333333,1.3671875,0.26041666666666674,2.6367796834847547e-17,0.9114583333333335,1500,per 100 attempted seeds,1536.0,21.0,17.0
+7,MPI background,tc,native_fourier,1.1067708333333333,0.8463541666666666,0.26041666666666663,0.0,0.78125,1500,per 100 attempted seeds,1536.0,13.0,17.0
+7,MPI background,tc,selected_fourier,1.1067708333333333,0.8463541666666667,0.2604166666666665,0.0,0.9114583333333331,1500,per 100 attempted seeds,1536.0,13.0,17.0
+7,MPI background,tc,extended_prediction_active_refined,1.1067708333333333,0.7812499999999999,0.32552083333333337,0.0,0.8463541666666665,1500,per 100 attempted seeds,1536.0,12.0,17.0
+7,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,-0.06510416666666663,-0.4557291666666669,0.4557291666666665,1500,per 100 attempted seeds,,,
+7,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,-0.06510416666666674,-0.45572916666666674,0.390625,1500,per 100 attempted seeds,,,
+7,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,-0.06510416666666685,-0.5208333333333334,0.5208333333333334,1500,per 100 attempted seeds,,,
+7,MPI background,landfall,published_v1,0.9114583333333333,1.1067708333333333,0.1953125,0.0,0.5859375000000002,1500,per 100 attempted seeds,1536.0,21.0,17.0
+7,MPI background,landfall,native_fourier,0.9114583333333333,0.5859375,0.32552083333333326,0.0,0.8463541666666667,1500,per 100 attempted seeds,1536.0,13.0,17.0
+7,MPI background,landfall,selected_fourier,0.9114583333333333,0.5859375,0.32552083333333326,0.0,0.9765625,1500,per 100 attempted seeds,1536.0,13.0,17.0
+7,MPI background,landfall,extended_prediction_active_refined,0.9114583333333333,0.5859375,0.32552083333333326,0.0,0.9765625,1500,per 100 attempted seeds,1536.0,12.0,17.0
+7,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.13020833333333326,-0.7161458333333334,0.1953125,1500,per 100 attempted seeds,,,
+7,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,-0.390625,0.3906250000000001,1500,per 100 attempted seeds,,,
+7,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,-0.4899088541666666,0.5859375,1500,per 100 attempted seeds,,,
+7,MPI background,lmi,published_v1,,,3.476803752948612,1.6873285737706758,13.117114418299105,1500,m/s,1536.0,21.0,17.0
+7,MPI background,lmi,native_fourier,,,4.2040031093272345,3.1831619443037633,16.001271828992216,1500,m/s,1536.0,13.0,17.0
+7,MPI background,lmi,selected_fourier,,,5.413225951367728,3.9768519446165804,16.055443426285272,1500,m/s,1536.0,13.0,17.0
+7,MPI background,lmi,extended_prediction_active_refined,,,4.2447743377919185,2.1779056104721204,11.626405767001422,1500,m/s,1536.0,12.0,17.0
+7,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,-0.7679705848433063,-2.4462678441717998,3.7243225358923313,1500,m/s,,,
+7,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,-0.04077122846468395,-6.184671153493748,10.808536697752004,1500,m/s,,,
+7,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,1.1684516135758098,-3.9634220022760704,10.920062679723037,1500,m/s,,,
+7,MPI background,displacement_48h_km,published_v1,,,137.94112409625143,75.1776263631744,629.8988800048828,1500,km,1536.0,21.0,17.0
+7,MPI background,displacement_48h_km,native_fourier,,,443.46204833984376,283.1585580404702,935.4115991496067,1500,km,1536.0,13.0,17.0
+7,MPI background,displacement_48h_km,selected_fourier,,,517.3766215006511,315.9902779715402,1075.3465568245233,1500,km,1536.0,13.0,17.0
+7,MPI background,displacement_48h_km,extended_prediction_active_refined,,,379.38806152343744,220.5102405634793,1156.9013366699219,1500,km,1536.0,12.0,17.0
+7,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,-241.44693742718601,-834.8715613371407,167.3879238960947,1500,km,,,
+7,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,64.07398681640632,-657.0917652502757,483.95697602771577,1500,km,,,
+7,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,137.9885599772137,-667.227665091083,670.2787475585939,1500,km,,,
+7,warming only,tc,published_v1,1.1067708333333333,0.45572916666666663,0.6510416666666666,0.19531249999999992,1.171875,1500,per 100 attempted seeds,1536.0,7.0,17.0
+7,warming only,tc,extended_prediction_active_refined,1.1067708333333333,0.5208333333333334,0.5859374999999999,0.06510416666666663,1.2369791666666667,1500,per 100 attempted seeds,1536.0,8.0,17.0
+7,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.06510416666666674,-0.3906249999999999,0.45572916666666663,1500,per 100 attempted seeds,,,
+7,warming only,landfall,published_v1,0.9114583333333333,0.45572916666666663,0.45572916666666663,0.06510416666666663,1.0416666666666665,1500,per 100 attempted seeds,1536.0,7.0,17.0
+7,warming only,landfall,extended_prediction_active_refined,0.9114583333333333,0.39062499999999994,0.5208333333333333,0.06510416666666657,1.3020833333333335,1500,per 100 attempted seeds,1536.0,8.0,17.0
+7,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.06510416666666663,-0.5859375,0.32552083333333337,1500,per 100 attempted seeds,,,
+7,warming only,lmi,published_v1,,,5.183104776399131,3.8364967389064155,15.235999793311667,1458,m/s,1536.0,7.0,17.0
+7,warming only,lmi,extended_prediction_active_refined,,,3.483332300820759,3.418475963513659,9.213345937747185,1489,m/s,1536.0,8.0,17.0
+7,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,1.699772475578372,-2.3884497835417093,9.139277469933333,1447,m/s,,,
+7,warming only,displacement_48h_km,published_v1,,,216.07024652390257,116.71797314786718,682.3027318000794,1458,km,1536.0,7.0,17.0
+7,warming only,displacement_48h_km,extended_prediction_active_refined,,,179.18448282877603,143.11758896864853,581.1577301025391,1489,km,1536.0,8.0,17.0
+7,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,36.88576369512654,-289.27172992128317,411.36625518798775,1447,km,,,
+8,MPI background,tc,published_v1,3.3203125,3.3854166666666665,0.06510416666666652,0.03092447916666671,1.9531250000000002,1500,per 100 attempted seeds,1536.0,52.0,51.0
+8,MPI background,tc,native_fourier,3.3203125,1.8229166666666667,1.4973958333333333,0.390625,2.6041666666666674,1500,per 100 attempted seeds,1536.0,28.0,51.0
+8,MPI background,tc,selected_fourier,3.3203125,2.213541666666667,1.106770833333333,0.13020833333333304,2.34375,1500,per 100 attempted seeds,1536.0,34.0,51.0
+8,MPI background,tc,extended_prediction_active_refined,3.3203125,2.734375,0.5859375,4.440892098500626e-16,1.822916666666667,1500,per 100 attempted seeds,1536.0,42.0,51.0
+8,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,-0.5208333333333335,-1.302083333333333,1.3020833333333337,1500,per 100 attempted seeds,,,
+8,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.9114583333333333,-0.13020833333333304,1.5625000000000002,1500,per 100 attempted seeds,,,
+8,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.520833333333333,-0.6510416666666665,1.3671875000000004,1500,per 100 attempted seeds,,,
+8,MPI background,landfall,published_v1,2.6041666666666665,3.0598958333333335,0.45572916666666696,4.440892098500626e-16,1.953125,1500,per 100 attempted seeds,1536.0,52.0,51.0
+8,MPI background,landfall,native_fourier,2.6041666666666665,1.4973958333333335,1.106770833333333,0.3906249999999998,1.8880208333333337,1500,per 100 attempted seeds,1536.0,28.0,51.0
+8,MPI background,landfall,selected_fourier,2.6041666666666665,1.7578125,0.8463541666666665,0.06510416666666696,1.8880208333333337,1500,per 100 attempted seeds,1536.0,34.0,51.0
+8,MPI background,landfall,extended_prediction_active_refined,2.6041666666666665,2.4739583333333335,0.13020833333333304,4.440892098500626e-16,1.3020833333333337,1500,per 100 attempted seeds,1536.0,42.0,51.0
+8,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.3255208333333339,-0.911458333333333,1.5625,1500,per 100 attempted seeds,,,
+8,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.9765625,-0.4557291666666674,1.3020833333333333,1500,per 100 attempted seeds,,,
+8,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.7161458333333335,-0.6201171874999998,1.3020833333333333,1500,per 100 attempted seeds,,,
+8,MPI background,lmi,published_v1,,,5.4840239038340615,3.225072793665288,7.904246853058743,1500,m/s,1536.0,52.0,51.0
+8,MPI background,lmi,native_fourier,,,3.8621518691797485,1.6551993761700046,10.959272717507927,1500,m/s,1536.0,28.0,51.0
+8,MPI background,lmi,selected_fourier,,,3.150976660602941,1.885020909534162,6.254352016055994,1500,m/s,1536.0,34.0,51.0
+8,MPI background,lmi,extended_prediction_active_refined,,,1.7224073342238106,1.517364375902834,4.994335721425102,1500,m/s,1536.0,42.0,51.0
+8,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,3.7616165696102506,0.161415162765886,5.14039312183012,1500,m/s,,,
+8,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,2.1397445349559376,-1.6543921349093798,7.540047238382003,1500,m/s,,,
+8,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,1.4285693263791301,-1.9775723927396964,3.612432722755464,1500,m/s,,,
+8,MPI background,displacement_48h_km,published_v1,,,113.17928860618956,99.34541598037437,342.563396683898,1500,km,1536.0,52.0,51.0
+8,MPI background,displacement_48h_km,native_fourier,,,166.14247494652162,109.47864170148105,323.9121058313805,1500,km,1536.0,28.0,51.0
+8,MPI background,displacement_48h_km,selected_fourier,,,110.59918728783019,99.17355807377741,334.7520946244131,1500,km,1536.0,34.0,51.0
+8,MPI background,displacement_48h_km,extended_prediction_active_refined,,,159.5418934897771,106.64085080763871,433.1827082376071,1500,km,1536.0,42.0,51.0
+8,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,-46.36260488358754,-188.30561630097856,120.79926343727429,1500,km,,,
+8,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,6.600581456744521,-196.52037797407675,129.0622671186004,1500,km,,,
+8,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,-48.942706201946905,-244.2244142695146,133.57942915014308,1500,km,,,
+8,warming only,tc,published_v1,3.3203125,3.4505208333333335,0.13020833333333348,0.0,1.822916666666667,1500,per 100 attempted seeds,1536.0,53.0,51.0
+8,warming only,tc,extended_prediction_active_refined,3.3203125,2.34375,0.9765625,0.13020833333333304,1.8880208333333344,1500,per 100 attempted seeds,1536.0,36.0,51.0
+8,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,-0.8463541666666665,-1.5624999999999998,1.106770833333333,1500,per 100 attempted seeds,,,
+8,warming only,landfall,published_v1,2.6041666666666665,3.0598958333333335,0.45572916666666696,4.440892098500626e-16,2.083333333333334,1500,per 100 attempted seeds,1536.0,53.0,51.0
+8,warming only,landfall,extended_prediction_active_refined,2.6041666666666665,2.0182291666666665,0.5859375,0.06510416666666628,1.4322916666666665,1500,per 100 attempted seeds,1536.0,36.0,51.0
+8,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.13020833333333304,-1.1067708333333335,1.7578125000000002,1500,per 100 attempted seeds,,,
+8,warming only,lmi,published_v1,,,3.6347431254880727,2.6179861074088797,6.5229288998717365,1500,m/s,1536.0,53.0,51.0
+8,warming only,lmi,extended_prediction_active_refined,,,2.4879374607841087,1.7278264627818483,6.625217039700285,1500,m/s,1536.0,36.0,51.0
+8,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,1.146805664703964,-3.315163164808727,4.168942894920817,1500,m/s,,,
+8,warming only,displacement_48h_km,published_v1,,,107.87060798028985,100.54889678548408,297.879378427188,1500,km,1536.0,53.0,51.0
+8,warming only,displacement_48h_km,extended_prediction_active_refined,,,136.99428176879886,105.89284588041757,402.7688243280099,1500,km,1536.0,36.0,51.0
+8,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,-29.12367378850901,-195.9997151512484,120.77836861558518,1500,km,,,
+9,MPI background,tc,published_v1,1.7578125,2.34375,0.5859375,4.440892098500626e-16,1.8880208333333335,1500,per 100 attempted seeds,1536.0,36.0,27.0
+9,MPI background,tc,native_fourier,1.7578125,2.213541666666667,0.45572916666666696,4.440892098500626e-16,1.2369791666666667,1500,per 100 attempted seeds,1536.0,34.0,27.0
+9,MPI background,tc,selected_fourier,1.7578125,2.278645833333333,0.520833333333333,4.440892098500626e-16,1.3362630208333244,1500,per 100 attempted seeds,1536.0,35.0,27.0
+9,MPI background,tc,extended_prediction_active_refined,1.7578125,2.2135416666666665,0.4557291666666665,2.220446049250313e-16,1.1067708333333341,1500,per 100 attempted seeds,1536.0,34.0,27.0
+9,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.13020833333333348,-0.5859374999999996,1.2369791666666667,1500,per 100 attempted seeds,,,
+9,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,4.440892098500626e-16,-0.8463541666666661,0.8463541666666669,1500,per 100 attempted seeds,,,
+9,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.06510416666666652,-0.7812500000000004,0.8463541666666666,1500,per 100 attempted seeds,,,
+9,MPI background,landfall,published_v1,1.2369791666666667,1.8229166666666665,0.5859374999999998,2.220446049250313e-16,1.4322916666666665,1500,per 100 attempted seeds,1536.0,36.0,27.0
+9,MPI background,landfall,native_fourier,1.2369791666666667,1.8880208333333335,0.6510416666666667,0.06510416666666674,1.3020833333333335,1500,per 100 attempted seeds,1536.0,34.0,27.0
+9,MPI background,landfall,selected_fourier,1.2369791666666667,1.6927083333333333,0.4557291666666665,0.06510416666666607,0.9765624999999998,1500,per 100 attempted seeds,1536.0,35.0,27.0
+9,MPI background,landfall,extended_prediction_active_refined,1.2369791666666667,1.8229166666666665,0.5859374999999998,0.06510416666666652,1.3671874999999996,1500,per 100 attempted seeds,1536.0,34.0,27.0
+9,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,-0.6510416666666669,0.7161458333333334,1500,per 100 attempted seeds,,,
+9,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.06510416666666696,-0.651041666666667,0.8463541666666667,1500,per 100 attempted seeds,,,
+9,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,-0.13020833333333326,-0.7161458333333335,0.3906250000000002,1500,per 100 attempted seeds,,,
+9,MPI background,lmi,published_v1,,,8.20241175243753,3.9466470926161024,16.909819748556405,1500,m/s,1536.0,36.0,27.0
+9,MPI background,lmi,native_fourier,,,2.2034925828717027,1.861165730197482,8.024067529825487,1500,m/s,1536.0,34.0,27.0
+9,MPI background,lmi,selected_fourier,,,2.9736074727990722,2.219069377083536,12.129316319781015,1500,m/s,1536.0,35.0,27.0
+9,MPI background,lmi,extended_prediction_active_refined,,,3.1222123471658088,2.4960293473538915,6.924918552615331,1500,m/s,1536.0,34.0,27.0
+9,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,5.080199405271722,0.16887817491914037,12.49695077605348,1500,m/s,,,
+9,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,-0.9187197642941061,-3.9027500449475143,4.08230941215921,1500,m/s,,,
+9,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,-0.14860487436673653,-2.9450814824728604,7.6740901256138985,1500,m/s,,,
+9,MPI background,displacement_48h_km,published_v1,,,191.24046462515122,115.42116282840999,424.54870688421244,1500,km,1536.0,36.0,27.0
+9,MPI background,displacement_48h_km,native_fourier,,,362.67747046674896,164.91648537772042,635.5952579634529,1500,km,1536.0,34.0,27.0
+9,MPI background,displacement_48h_km,selected_fourier,,,322.40007538013,149.5976495298658,539.7794997770428,1500,km,1536.0,35.0,27.0
+9,MPI background,displacement_48h_km,extended_prediction_active_refined,,,91.5358172872792,79.57208557128905,429.76635993957507,1500,km,1536.0,34.0,27.0
+9,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,99.70464733787202,-186.68877847762178,197.57947259462796,1500,km,,,
+9,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,271.14165317946976,-215.97907164236005,444.775577299499,1500,km,,,
+9,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,230.86425809285078,-232.2050302930724,385.5279414505662,1500,km,,,
+9,warming only,tc,published_v1,1.7578125,2.0182291666666665,0.2604166666666665,2.220446049250313e-16,1.627604166666667,1500,per 100 attempted seeds,1536.0,31.0,27.0
+9,warming only,tc,extended_prediction_active_refined,1.7578125,2.34375,0.5859375,0.06510416666666652,1.627604166666667,1500,per 100 attempted seeds,1536.0,36.0,27.0
+9,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,-0.3255208333333335,-1.1718750000000004,1.0416666666666663,1500,per 100 attempted seeds,,,
+9,warming only,landfall,published_v1,1.2369791666666667,1.5625,0.32552083333333326,0.0,1.1409505208333244,1500,per 100 attempted seeds,1536.0,31.0,27.0
+9,warming only,landfall,extended_prediction_active_refined,1.2369791666666667,1.7578125,0.5208333333333333,2.220446049250313e-16,1.3020833333333335,1500,per 100 attempted seeds,1536.0,36.0,27.0
+9,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.1953125,-0.9114583333333335,0.716145833333333,1500,per 100 attempted seeds,,,
+9,warming only,lmi,published_v1,,,4.099656588477352,2.319779096564129,10.974801934938467,1500,m/s,1536.0,31.0,27.0
+9,warming only,lmi,extended_prediction_active_refined,,,5.2595268079364335,2.8801306231889345,11.534447113187454,1500,m/s,1536.0,36.0,27.0
+9,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,-1.1598702194590818,-6.062813633956985,3.5776012213546196,1500,m/s,,,
+9,warming only,displacement_48h_km,published_v1,,,234.0816682851092,122.48093514568296,464.39730258421446,1500,km,1536.0,31.0,27.0
+9,warming only,displacement_48h_km,extended_prediction_active_refined,,,143.34979376585585,81.77556347741526,316.805278415539,1500,km,1536.0,36.0,27.0
+9,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,90.73187451925335,-44.57103309416672,236.39739532671402,1500,km,,,
+10,MPI background,tc,published_v1,1.4322916666666667,0.6510416666666666,0.7812500000000001,0.13020833333333326,1.692708333333333,1500,per 100 attempted seeds,1536.0,10.0,22.0
+10,MPI background,tc,native_fourier,1.4322916666666667,0.5859375,0.8463541666666667,0.32552083333333326,1.5625000000000004,1500,per 100 attempted seeds,1536.0,9.0,22.0
+10,MPI background,tc,selected_fourier,1.4322916666666667,0.6510416666666666,0.7812500000000001,0.13020833333333326,1.5625000000000004,1500,per 100 attempted seeds,1536.0,10.0,22.0
+10,MPI background,tc,extended_prediction_active_refined,1.4322916666666667,0.6510416666666666,0.7812500000000001,0.32552083333333326,1.3671875000000004,1500,per 100 attempted seeds,1536.0,10.0,22.0
+10,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,-0.4557291666666668,0.45572916666666674,1500,per 100 attempted seeds,,,
+10,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.06510416666666663,-0.5208333333333335,0.6510416666666667,1500,per 100 attempted seeds,,,
+10,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,-0.5208333333333333,0.5859375,1500,per 100 attempted seeds,,,
+10,MPI background,landfall,published_v1,1.171875,0.390625,0.78125,0.13020833333333326,1.5625,1500,per 100 attempted seeds,1536.0,10.0,22.0
+10,MPI background,landfall,native_fourier,1.171875,0.45572916666666663,0.7161458333333334,0.13020833333333326,1.3671875000000002,1500,per 100 attempted seeds,1536.0,9.0,22.0
+10,MPI background,landfall,selected_fourier,1.171875,0.45572916666666663,0.7161458333333334,0.06510416666666674,1.4973958333333335,1500,per 100 attempted seeds,1536.0,10.0,22.0
+10,MPI background,landfall,extended_prediction_active_refined,1.171875,0.6510416666666666,0.5208333333333334,0.06510416666666674,1.041666666666667,1500,per 100 attempted seeds,1536.0,10.0,22.0
+10,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.26041666666666663,-0.1953125,0.6510416666666666,1500,per 100 attempted seeds,,,
+10,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.1953125,-0.2604166666666667,0.7161458333333334,1500,per 100 attempted seeds,,,
+10,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.1953125,-0.1953125,0.6510416666666667,1500,per 100 attempted seeds,,,
+10,MPI background,lmi,published_v1,,,3.816660771708725,3.054764926843215,11.777153434303159,1497,m/s,1536.0,10.0,22.0
+10,MPI background,lmi,native_fourier,,,4.7959296280744965,3.1959040080902428,15.653607170380248,1496,m/s,1536.0,9.0,22.0
+10,MPI background,lmi,selected_fourier,,,6.958950451902794,3.760580605404637,11.977441385167287,1499,m/s,1536.0,10.0,22.0
+10,MPI background,lmi,extended_prediction_active_refined,,,4.67457227982787,3.1038853962394737,11.770758285469304,1500,m/s,1536.0,10.0,22.0
+10,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,-0.8579115081191446,-5.336915650333158,4.569175885037816,1497,m/s,,,
+10,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,0.1213573482466268,-2.777320444831569,7.988623185020563,1496,m/s,,,
+10,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,2.2843781720749243,-3.4538719122928474,5.326896555644806,1499,m/s,,,
+10,MPI background,displacement_48h_km,published_v1,,,135.63939012799943,115.16118437267485,542.4348822671159,1497,km,1536.0,10.0,22.0
+10,MPI background,displacement_48h_km,native_fourier,,,269.1118676321847,191.1813822659579,461.82362470626833,1496,km,1536.0,9.0,22.0
+10,MPI background,displacement_48h_km,selected_fourier,,,289.7528577532086,200.63957771888147,538.2689957343207,1499,km,1536.0,10.0,22.0
+10,MPI background,displacement_48h_km,extended_prediction_active_refined,,,127.93710632324219,127.35792265961138,479.2792216898099,1500,km,1536.0,10.0,22.0
+10,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,7.7022838047572435,-192.70223480224607,211.12844130572142,1497,km,,,
+10,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,141.17476130894255,-138.37261252122767,204.0704895050419,1496,km,,,
+10,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,161.81575142996644,-180.89854421133953,231.54936728800146,1499,km,,,
+10,warming only,tc,published_v1,1.4322916666666667,0.5208333333333333,0.9114583333333335,0.26041666666666663,1.7578125000000002,1500,per 100 attempted seeds,1536.0,8.0,22.0
+10,warming only,tc,extended_prediction_active_refined,1.4322916666666667,0.26041666666666663,1.171875,0.3255208333333334,2.018229166666667,1500,per 100 attempted seeds,1536.0,4.0,22.0
+10,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,-0.2604166666666665,-0.78125,0.1953125,1500,per 100 attempted seeds,,,
+10,warming only,landfall,published_v1,1.171875,0.1953125,0.9765625,0.32552083333333337,1.6927083333333337,1500,per 100 attempted seeds,1536.0,8.0,22.0
+10,warming only,landfall,extended_prediction_active_refined,1.171875,0.13020833333333331,1.0416666666666667,0.39062499999999994,1.7578125,1500,per 100 attempted seeds,1536.0,4.0,22.0
+10,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.06510416666666674,-0.3906250000000001,0.26041666666666663,1500,per 100 attempted seeds,,,
+10,warming only,lmi,published_v1,,,4.527614906913059,2.3041518167601773,11.65998972959056,1499,m/s,1536.0,8.0,22.0
+10,warming only,lmi,extended_prediction_active_refined,,,5.89828335993398,2.822105118048798,13.548695086712897,1465,m/s,1536.0,4.0,22.0
+10,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,-1.3706684530209206,-6.365845278359639,2.6314200922011306,1465,m/s,,,
+10,warming only,displacement_48h_km,published_v1,,,293.9481618245443,265.21318412449045,743.8267480445626,1467,km,1536.0,8.0,22.0
+10,warming only,displacement_48h_km,extended_prediction_active_refined,,,275.9087204706101,166.23715942382813,640.3357813008625,1465,km,1536.0,4.0,22.0
+10,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,18.039441353934194,-271.3294943281284,473.03942038796157,1435,km,,,
+11,MPI background,tc,published_v1,0.1953125,0.0,0.1953125,0.0,0.5208333333333333,1500,per 100 attempted seeds,1536.0,0.0,3.0
+11,MPI background,tc,native_fourier,0.1953125,0.0,0.1953125,0.0,0.5208333333333333,1500,per 100 attempted seeds,1536.0,0.0,3.0
+11,MPI background,tc,selected_fourier,0.1953125,0.06510416666666666,0.13020833333333334,0.0,0.32552083333333326,1500,per 100 attempted seeds,1536.0,1.0,3.0
+11,MPI background,tc,extended_prediction_active_refined,0.1953125,0.0,0.1953125,0.0,0.5208333333333333,1500,per 100 attempted seeds,1536.0,0.0,3.0
+11,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+11,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+11,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,-0.06510416666666666,-0.1953125,0.0,1500,per 100 attempted seeds,,,
+11,MPI background,landfall,published_v1,0.13020833333333331,0.0,0.13020833333333331,0.0,0.3255208333333333,1500,per 100 attempted seeds,1536.0,0.0,3.0
+11,MPI background,landfall,native_fourier,0.13020833333333331,0.0,0.13020833333333331,0.0,0.3255208333333333,1500,per 100 attempted seeds,1536.0,0.0,3.0
+11,MPI background,landfall,selected_fourier,0.13020833333333331,0.06510416666666666,0.06510416666666666,0.0,0.1953125,1500,per 100 attempted seeds,1536.0,1.0,3.0
+11,MPI background,landfall,extended_prediction_active_refined,0.13020833333333331,0.0,0.13020833333333331,0.0,0.3255208333333333,1500,per 100 attempted seeds,1536.0,0.0,3.0
+11,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+11,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+11,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,-0.06510416666666666,-0.1953125,0.0,1500,per 100 attempted seeds,,,
+11,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,3.0
+11,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,3.0
+11,MPI background,lmi,selected_fourier,,,40.20058747640434,40.08347423135427,40.34697903271691,981,m/s,1536.0,1.0,3.0
+11,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,3.0
+11,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+11,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+11,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+11,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,3.0
+11,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,3.0
+11,MPI background,displacement_48h_km,selected_fourier,,,488.14593505859375,488.14593505859375,488.14593505859375,981,km,1536.0,1.0,3.0
+11,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,3.0
+11,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+11,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+11,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+11,warming only,tc,published_v1,0.1953125,0.13020833333333331,0.06510416666666669,0.0,0.1953125,1500,per 100 attempted seeds,1536.0,2.0,3.0
+11,warming only,tc,extended_prediction_active_refined,0.1953125,0.1953125,0.0,0.0,0.35970052083332443,1500,per 100 attempted seeds,1536.0,3.0,3.0
+11,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.06510416666666669,-0.32552083333333337,0.13020833333333331,1500,per 100 attempted seeds,,,
+11,warming only,landfall,published_v1,0.13020833333333331,0.13020833333333331,0.0,0.0,0.1953125,1500,per 100 attempted seeds,1536.0,2.0,3.0
+11,warming only,landfall,extended_prediction_active_refined,0.13020833333333331,0.1953125,0.06510416666666669,0.0,0.390625,1500,per 100 attempted seeds,1536.0,3.0,3.0
+11,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,-0.06510416666666669,-0.32552083333333337,0.13020833333333331,1500,per 100 attempted seeds,,,
+11,warming only,lmi,published_v1,,,19.82839485167617,19.71128160662611,19.974786407988745,981,m/s,1536.0,2.0,3.0
+11,warming only,lmi,extended_prediction_active_refined,,,6.935004679178723,0.8970533161062733,18.571732736385897,1250,m/s,1536.0,3.0,3.0
+11,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,12.893390172497446,1.4030536716028443,16.176343458467333,981,m/s,,,
+11,warming only,displacement_48h_km,published_v1,,,391.1247863769531,391.1247863769531,391.1247863769531,981,km,1536.0,2.0,3.0
+11,warming only,displacement_48h_km,extended_prediction_active_refined,,,274.552490234375,274.552490234375,274.552490234375,613,km,1536.0,3.0,3.0
+11,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,116.57229614257812,116.57229614257812,116.57229614257812,613,km,,,
+12,MPI background,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,tc,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,tc,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,MPI background,tc,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,MPI background,tc,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,MPI background,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,landfall,native_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,landfall,selected_fourier,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,MPI background,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,MPI background,landfall,extended_prediction_active_refined_gain_vs_native_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,MPI background,landfall,extended_prediction_active_refined_gain_vs_selected_fourier,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,MPI background,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+12,MPI background,lmi,native_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+12,MPI background,lmi,selected_fourier,,,,,,0,m/s,1536.0,0.0,0.0
+12,MPI background,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+12,MPI background,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+12,MPI background,lmi,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,m/s,,,
+12,MPI background,lmi,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,m/s,,,
+12,MPI background,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+12,MPI background,displacement_48h_km,native_fourier,,,,,,0,km,1536.0,0.0,0.0
+12,MPI background,displacement_48h_km,selected_fourier,,,,,,0,km,1536.0,0.0,0.0
+12,MPI background,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+12,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,
+12,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_native_fourier,,,,,,0,km,,,
+12,MPI background,displacement_48h_km,extended_prediction_active_refined_gain_vs_selected_fourier,,,,,,0,km,,,
+12,warming only,tc,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,warming only,tc,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,warming only,tc,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,warming only,landfall,published_v1,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,warming only,landfall,extended_prediction_active_refined,0.0,0.0,0.0,0.0,0.0,1500,per 100 attempted seeds,1536.0,0.0,0.0
+12,warming only,landfall,extended_prediction_active_refined_gain_vs_published_v1,,,0.0,0.0,0.0,1500,per 100 attempted seeds,,,
+12,warming only,lmi,published_v1,,,,,,0,m/s,1536.0,0.0,0.0
+12,warming only,lmi,extended_prediction_active_refined,,,,,,0,m/s,1536.0,0.0,0.0
+12,warming only,lmi,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,m/s,,,
+12,warming only,displacement_48h_km,published_v1,,,,,,0,km,1536.0,0.0,0.0
+12,warming only,displacement_48h_km,extended_prediction_active_refined,,,,,,0,km,1536.0,0.0,0.0
+12,warming only,displacement_48h_km,extended_prediction_active_refined_gain_vs_published_v1,,,,,,0,km,,,

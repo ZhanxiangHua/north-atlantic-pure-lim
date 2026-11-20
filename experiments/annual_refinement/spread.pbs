@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#PBS -N lim_ocean_spread
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=8GB
+#PBS -l walltime=01:15:00
+#PBS -J 1-12%3
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+args=()
+if [[ -n "${SPREAD_EXPORT:-}" ]]; then args+=(--export "$SPREAD_EXPORT"); fi
+exec "$TC_PYTHON" -u experiments/annual_refinement/ocean_spread.py --tag "$MODEL_TAG" --weights "$MODEL_WEIGHTS" --cohort "${COHORT:-original}" --month "$PBS_ARRAY_INDEX" "${args[@]}" > "$rd/logs/spread-$MODEL_TAG-${SPREAD_EXPORT:-screen}-$PBS_ARRAY_INDEX.log" 2>&1

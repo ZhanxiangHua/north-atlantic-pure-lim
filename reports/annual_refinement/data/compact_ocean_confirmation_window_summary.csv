@@ -1,0 +1,17 @@
+group,method,target,abs_log
+all,compact_192,total,0.08698171706145273
+all,compact_192,within,0.09152250657092158
+all,primary_240,total,0.08691992392313452
+all,primary_240,within,0.09139364671552105
+cold,compact_192,total,0.07302618451226692
+cold,compact_192,within,0.09087622835260517
+cold,primary_240,total,0.07296695227118767
+cold,primary_240,within,0.09074504785284278
+inside,compact_192,total,0.10282432583710181
+inside,compact_192,within,0.09244726450510744
+inside,primary_240,total,0.10261987333148646
+inside,primary_240,within,0.09229254696432926
+warm,compact_192,total,0.08509464083498944
+warm,compact_192,within,0.09124402685505208
+warm,primary_240,total,0.08517294616672944
+warm,primary_240,within,0.0911433453293911

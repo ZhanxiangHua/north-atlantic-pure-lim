@@ -1,0 +1,90 @@
+{
+  "base": "north-atlantic-pure-lim v1.0.0",
+  "format": 1,
+  "months": {
+    "01": {
+      "base_id": "e57498cc1a9c554fd5ee09eca26a634db8bea31e3258a9f44e741a3dffc6ee01",
+      "bytes": 3173758,
+      "file": "01.delta.zip",
+      "model_id": "f6dc3c0a42725ea8d4998bfa9fe92d6fffc6dd8103de07139c148cef967d129f",
+      "sha256": "ad2425d6943ed8bf6018a7ad87229f782a819a689d648e2c49014929343c9485"
+    },
+    "02": {
+      "base_id": "ea1ce9ec943e765ced1ec51e72db2b5375f2e6c2bcae9629b56cf84551c40258",
+      "bytes": 3159582,
+      "file": "02.delta.zip",
+      "model_id": "4dd683cf752e20341a23f16184ca38346972661a9875223da54f037055891ddd",
+      "sha256": "724a904b4db9e27786aab21d6d95432de8a460ad21316a930521664cf78c3ef2"
+    },
+    "03": {
+      "base_id": "b58381a3577648889de5f7d337098f18db60bef38af761a77e76dcec1b4dad88",
+      "bytes": 3157943,
+      "file": "03.delta.zip",
+      "model_id": "b1055702cc3b08d489b218d716fa20f0ad550c7ce47634ac9ad6519a96121431",
+      "sha256": "5155184a1c71db9191354184d556b8dd00f1c9d2dc337a6bfa176c41ada7b14e"
+    },
+    "04": {
+      "base_id": "71accce8e05347b4f91cb4e412b44c44e7b6092f5a266ebe93330dd09e36420e",
+      "bytes": 3169914,
+      "file": "04.delta.zip",
+      "model_id": "4dd988a8ff0bffbef090cafdc9fa559a2763cc10947e92e1fd357699c6858137",
+      "sha256": "750bd0a7dbf5d651c7a18bda12919c56966e3b38eccfe1ceac414fabd9b857a3"
+    },
+    "05": {
+      "base_id": "1be4897ef3c0c8d16336db4c088a8714906f13bfb04b4dad9663b8c94f8f545f",
+      "bytes": 3186482,
+      "file": "05.delta.zip",
+      "model_id": "9a0e1c67569c17c8cd66ce27fce4f39d01d4d9a605f48074575071ee9492bfba",
+      "sha256": "39e761f88ae4a3c5dac5b28813151a0ad750b816c3a1824f79b3fbf4abafb048"
+    },
+    "06": {
+      "base_id": "b59aace5889af0ca5b014c8635d8d5de2568d406bf592262c1c02693cb7ca73a",
+      "bytes": 3198606,
+      "file": "06.delta.zip",
+      "model_id": "c01ac905718c57abc0ec667574090fa976ea65bb4ab478c474dd5fac76c29b26",
+      "sha256": "69f08f3da69bc95bc66f447a63f16264b0d5c5887f8e8084f569b9172d04c169"
+    },
+    "07": {
+      "base_id": "eb811bb8ed19edab3d6c2099a3c5cbdcd237b586685eb9503464ffc39d700afc",
+      "bytes": 3198490,
+      "file": "07.delta.zip",
+      "model_id": "3c08a556e377571f9d8740af6c6130b2917f68b785c8925958a1d29cfb8c9fcf",
+      "sha256": "98a84daadb4ca7b2085a0103799b0af25a1df34c0ae99efa78bf9539322fd186"
+    },
+    "08": {
+      "base_id": "fc457d9078fcf9fef41137b7fa7bd6ba36b653550060d34a8c829e8aefe9c250",
+      "bytes": 3195430,
+      "file": "08.delta.zip",
+      "model_id": "66deb04b0ebc4a1d6b91159c4c3913b5a684768f563d33705a384fba98723be5",
+      "sha256": "0324f8e3512a7f56b6be68d5719660438a4f4b5393be0eedb57c2430eaede483"
+    },
+    "09": {
+      "base_id": "8778f30d7ca233b6b52522d1eb2389265c7fef3980ccc03091a4dc27b50c96fe",
+      "bytes": 3194385,
+      "file": "09.delta.zip",
+      "model_id": "df76bd6fdebaa5b3b1c67a68b8a71af94d2134efb219493ce4cbcdf38caf0e7e",
+      "sha256": "5bc098fc73eaaa39b44725a96cd025cc8f90ed9bb6ce6e21129a95d8dc3a4482"
+    },
+    "10": {
+      "base_id": "f62feb91d47e0d14cd7e9d1a732679e303f9ef98addc76bb05e6d2ad5495022f",
+      "bytes": 3190762,
+      "file": "10.delta.zip",
+      "model_id": "f142b17e2f9bdd4686a0665ef278189e4589ce0834226e972d148bf8554908f8",
+      "sha256": "63a94da038950778f9e57313cb1bbfef41ab7dda9559c51f3474dec6543da94c"
+    },
+    "11": {
+      "base_id": "e402670eaf63e7c9a1f6fb09655f418dd0be98964f2d8a5482c8008c457f3f97",
+      "bytes": 3184098,
+      "file": "11.delta.zip",
+      "model_id": "05bc4b6f6bcb623c014c931dde5d54fa6d06a4564ed4cabe99dbf9c911ae6d76",
+      "sha256": "0f45217d85222eb2961ce0f41514149f255ca3cfb5da61e93f99b0bcd1bfa421"
+    },
+    "12": {
+      "base_id": "a3abfd4edaeeff69ade25fd2162fcce6395c560572c5e99d5d42291f0166c5fc",
+      "bytes": 3179092,
+      "file": "12.delta.zip",
+      "model_id": "5cef9d01ad8ec06d49457dafc4dd6d5c21a271b6a5bf1ab0e248d814a53fb43d",
+      "sha256": "ccca17914bebe743f5fa417c42c3c04eb982b56b48b216912c72937257bc075d"
+    }
+  }
+}

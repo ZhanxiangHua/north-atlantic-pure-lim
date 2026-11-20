@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#PBS -N lim_compact_test
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=9GB
+#PBS -l walltime=00:35:00
+#PBS -J 0-10%6
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+months=(1 2 3 4 5 6 7 8 10 11 12)
+m="${months[$PBS_ARRAY_INDEX]}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/compact_ocean_confirmation.py --month "$m" > "$TC_REFINEMENT_WORK/logs/compact-ocean-verification-$m.log" 2>&1

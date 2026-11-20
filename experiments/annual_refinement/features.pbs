@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#PBS -N lim_feature_bases
+#PBS -q casper
+#PBS -l select=1:ncpus=5:mem=19GB
+#PBS -l walltime=01:20:00
+#PBS -J 1-12%3
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=4
+source experiments/annual_refinement/env.sh
+run_dir="$TC_REFINEMENT_WORK"
+cohort="${COHORT:-original}"
+month="${PBS_ARRAY_INDEX:?}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/features.py --cohort "$cohort" --month "$month" > "$run_dir/logs/features-${cohort}-${month}.log" 2>&1

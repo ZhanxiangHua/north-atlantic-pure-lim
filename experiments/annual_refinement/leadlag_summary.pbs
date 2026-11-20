@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N lim_direction_ci
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=5GB
+#PBS -l walltime=00:45:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+role="${EVAL_ROLE:-val}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/leadlag.py --tag "${MODEL_TAG:?}" --weights "${MODEL_WEIGHTS:?}" --cohort "${COHORT:?}" --role "$role" > "$TC_REFINEMENT_WORK/logs/directional-summary-$MODEL_TAG-$role.log" 2>&1

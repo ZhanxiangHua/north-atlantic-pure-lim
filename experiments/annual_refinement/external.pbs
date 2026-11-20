@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#PBS -N lim_frozen_ssp245
+#PBS -q casper
+#PBS -l select=1:ncpus=16:mem=18GB
+#PBS -l walltime=01:15:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+tag="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["stage"])' "$rd/FROZEN.json")"
+weights="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["weights"])' "$rd/FROZEN.json")"
+out="$rd/mpi2050/$tag"
+mkdir -p "$out"
+[[ -e "$out/reference" ]] || ln -s "$PWD/runs/mpi2050/reference" "$out/reference"
+[[ -e "$out/forcing.json" ]] || ln -s "$PWD/runs/mpi2050/forcing.json" "$out/forcing.json"
+exec > "$rd/logs/mpi2050-$tag.log" 2>&1
+"$TC_PYTHON" -u notebooks/benchmark_mpi2050.py --work "$out" --weights "$weights" --workers 15
+"$TC_PYTHON" -u notebooks/score_mpi2050.py --work "$out" --output "$out"
+"$TC_PYTHON" -u experiments/annual_refinement/external_comparison.py

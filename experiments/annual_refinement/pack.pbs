@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#PBS -N lim_lossless_pack
+#PBS -q casper
+#PBS -l select=1:ncpus=2:mem=5GB
+#PBS -l walltime=00:45:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+if [[ -z "${MODEL_TAG:-}" ]]; then
+  MODEL_TAG="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["stage"])' "$rd/FROZEN.json")"
+  MODEL_WEIGHTS="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["weights"])' "$rd/FROZEN.json")"
+fi
+pack="$rd/packages/$MODEL_TAG"
+exec > "$rd/logs/package-$MODEL_TAG.log" 2>&1
+"$TC_PYTHON" experiments/annual_refinement/checkpoint.py build --base runs/annual_lim/weights --source "$MODEL_WEIGHTS" --output "$pack/delta"
+"$TC_PYTHON" experiments/annual_refinement/checkpoint.py restore --base runs/annual_lim/weights --delta "$pack/delta" --output "$pack/restored"
+exec "$TC_PYTHON" -u experiments/annual_refinement/runtime_check.py --weights "$pack/restored" --delta "$pack/delta" --output "$pack/verified.json"

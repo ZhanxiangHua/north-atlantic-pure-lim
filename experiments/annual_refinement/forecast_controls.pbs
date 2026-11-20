@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#PBS -N lim_mpi_forecasts
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=4GB
+#PBS -l walltime=00:35:00
+#PBS -J 1-12%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+role="${EVAL_ROLE:-val}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/forecast_controls.py --tag "${MODEL_TAG:?}" \
+  --weights "${MODEL_WEIGHTS:?}" --cohort "${COHORT:?}" --month "$PBS_ARRAY_INDEX" --role "$role" \
+  > "$TC_REFINEMENT_WORK/logs/forecasts-$MODEL_TAG-$role-$PBS_ARRAY_INDEX.log" 2>&1

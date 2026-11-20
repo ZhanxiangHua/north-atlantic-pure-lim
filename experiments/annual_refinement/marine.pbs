@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N lim_ocean_regions
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=5GB
+#PBS -l walltime=00:45:00
+#PBS -J 1-12%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=2
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/marine_regions.py --tag "$MODEL_TAG" --weights "${MODEL_WEIGHTS:-$PWD/runs/annual_lim/weights}" --month "$PBS_ARRAY_INDEX" --role "${EVAL_ROLE:-val}" > "$TC_REFINEMENT_WORK/logs/marine-$MODEL_TAG-${EVAL_ROLE:-val}-$PBS_ARRAY_INDEX.log" 2>&1

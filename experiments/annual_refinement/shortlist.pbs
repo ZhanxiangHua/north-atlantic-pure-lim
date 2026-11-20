@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#PBS -N lim_select_parents
+#PBS -q casper
+#PBS -l select=1:ncpus=2:mem=5GB
+#PBS -l walltime=00:40:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/shortlist.py --account "${PBS_ACCOUNT:-UWAS0120}" --cohort "${COHORT:?}"

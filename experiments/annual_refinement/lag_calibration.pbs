@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N lim_joint_memory
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=8GB
+#PBS -l walltime=01:00:00
+#PBS -J 1-12%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/lag_calibration.py --tag "${MODEL_TAG:?}" --weights "${MODEL_WEIGHTS:?}" --cohort "${COHORT:?}" --month "$PBS_ARRAY_INDEX" > "$TC_REFINEMENT_WORK/logs/lag-calibration-$MODEL_TAG-$PBS_ARRAY_INDEX.log" 2>&1

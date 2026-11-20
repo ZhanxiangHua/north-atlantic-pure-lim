@@ -1,0 +1,36 @@
+{
+  "cases": 440,
+  "challenger_error": 0.04129974995999401,
+  "ci95": [
+    -0.005906493354414794,
+    0.027203505978363143
+  ],
+  "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+  ],
+  "paired_change": -0.000970899386756971,
+  "passes": {
+    "gain_IID": 0,
+    "gain_LIM": 10,
+    "gain_calibrated_Fourier": 7,
+    "gain_native_Fourier": 0,
+    "primary_IID": 0,
+    "primary_LIM": 10,
+    "primary_calibrated_Fourier": 9,
+    "primary_native_Fourier": 0
+  },
+  "plan_sha256": "8aadee997d46ef4bc3f8941922006e40ccd97821c567755ad3bb6b5b9e14496e",
+  "primary_error": 0.04227064934675098,
+  "registered_improvement_met": false,
+  "training_unchanged": true
+}

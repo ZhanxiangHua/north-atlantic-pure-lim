@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N lim_freeze_model
+#PBS -q casper
+#PBS -l select=1:ncpus=2:mem=14GB
+#PBS -l walltime=00:45:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+args=()
+if [[ "${FREEZE_PRIMARY:-no}" == "yes" ]]; then args+=(--freeze --account "${PBS_ACCOUNT:-UWAS0120}"); fi
+exec "$TC_PYTHON" -u experiments/annual_refinement/decision.py "${args[@]}"

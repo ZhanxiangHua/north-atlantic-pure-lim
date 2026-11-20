@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#PBS -N lim_combine_fits
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=4GB
+#PBS -l walltime=00:30:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=2
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/combine.py --parent "$PARENT_TAG" --family "$WEATHER_FAMILY" --weather "$WEATHER_FIT" --spread "$SPREAD_FIT" --label "$MODEL_TAG"

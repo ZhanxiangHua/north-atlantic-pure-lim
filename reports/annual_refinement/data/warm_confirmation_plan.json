@@ -1,0 +1,83 @@
+{
+  "amplitudes": {
+    "01": 1.06361161604762,
+    "02": 1.0798205721458944,
+    "03": 1.061562988773008,
+    "04": 1.0728718567196538,
+    "05": 1.0582253798861418,
+    "06": 1.0572756529075182,
+    "07": 1.0329501961350198,
+    "08": 1.0413950796748437,
+    "09": 1.066990897995325,
+    "10": 1.0743144863198075,
+    "11": 1.0778898273604292,
+    "12": 1.0728267812558323
+  },
+  "eligible_years_by_warming": [
+    2081,
+    2082,
+    2084,
+    2086,
+    2088,
+    2089,
+    2092,
+    2094,
+    2095,
+    2098,
+    2100
+  ],
+  "experiment": "ssp585",
+  "gain": "Use one constant positive wind-visible variance gain per calendar month. Freeze the fitted 12 gains, primary weights, spectral controls and all weather terms before acquiring the new daily fields.",
+  "members": [
+    "r9i1p1f1",
+    "r11i1p1f1",
+    "r39i1p1f1",
+    "r40i1p1f1",
+    "r37i1p1f1",
+    "r35i1p1f1",
+    "r45i1p1f1",
+    "r32i1p1f1"
+  ],
+  "model": "MPI-ESM1-2-LR",
+  "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12
+  ],
+  "primary_ids": {
+    "01": "f6dc3c0a42725ea8d4998bfa9fe92d6fffc6dd8103de07139c148cef967d129f",
+    "02": "4dd683cf752e20341a23f16184ca38346972661a9875223da54f037055891ddd",
+    "03": "b1055702cc3b08d489b218d716fa20f0ad550c7ce47634ac9ad6519a96121431",
+    "04": "4dd988a8ff0bffbef090cafdc9fa559a2763cc10947e92e1fd357699c6858137",
+    "05": "9a0e1c67569c17c8cd66ce27fce4f39d01d4d9a605f48074575071ee9492bfba",
+    "06": "c01ac905718c57abc0ec667574090fa976ea65bb4ab478c474dd5fac76c29b26",
+    "07": "3c08a556e377571f9d8740af6c6130b2917f68b785c8925958a1d29cfb8c9fcf",
+    "08": "66deb04b0ebc4a1d6b91159c4c3913b5a684768f563d33705a384fba98723be5",
+    "09": "df76bd6fdebaa5b3b1c67a68b8a71af94d2134efb219493ce4cbcdf38caf0e7e",
+    "10": "f142b17e2f9bdd4686a0665ef278189e4589ce0834226e972d148bf8554908f8",
+    "11": "05bc4b6f6bcb623c014c931dde5d54fa6d06a4564ed4cabe99dbf9c911ae6d76",
+    "12": "5cef9d01ad8ec06d49457dafc4dd6d5c21a271b6a5bf1ab0e248d814a53fb43d"
+  },
+  "primary_outcome": "Improvement requires a strictly negative upper paired 95% bound on the gain-minus-primary 15-day total absolute-log variance error and at least as many months passing the unchanged original band and matched independent-day controls.",
+  "protocol": "Single post-development constant-gain confirmation in previously unscored annual MPI years. September is excluded because earlier September projects tested warm climates.",
+  "registered_utc": "2026-11-20T13:13:25+00:00",
+  "resamples": 2000,
+  "secondary": "Within-month 15-day variance, native and training-calibrated matched Fourier, monthly transmitted variance, ocean CRPS and interval coverage. No storm simulations or primary reselection.",
+  "selection_by_forcing": "Five equally spaced order statistics (round-to-even index) of every warm SSP5-8.5 year absent from the annual training, validation and previous test-year lists, picked using global annual warming only.",
+  "source_fit_sha256": "f38894ce0df31975863f01c47229e52addf5d0a24ed865686c006a8a1a062377",
+  "years_K": {
+    "2081": 3.5161400401382075,
+    "2084": 3.654354843043034,
+    "2089": 3.889790550382962,
+    "2095": 4.259477541681104,
+    "2100": 4.486453015596883
+  }
+}

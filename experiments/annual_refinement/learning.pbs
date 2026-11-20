@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#PBS -N lim_data_learning
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=14GB
+#PBS -l walltime=06:10:00
+#PBS -J 0-2
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+exec "$TC_PYTHON" -u experiments/annual_refinement/learning_curve.py --lane "$PBS_ARRAY_INDEX" > "$rd/logs/learning-$PBS_ARRAY_INDEX.log" 2>&1

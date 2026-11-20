@@ -17,17 +17,18 @@ MONTH = 9
 DAYS = 15
 
 
-@lru_cache(maxsize=1)
-def fourier_inputs(weights):
+@lru_cache(maxsize=3)
+def fourier_inputs(weights, month=MONTH):
     """Return the exact grid-point weather covariance at unit temperature amplitude."""
-    model = MonthlyModel(weights, MONTH)
+    model = MonthlyModel(weights, month)
     cal = model.cal
     k = model.base.observed_dim
     # The emitted wind is a weighted sum of states at lags 0 and 5..20.
     # Cov(x_t,x_{t-h}) = (r A)^h Sigma. Both orientations enter at lag h>0.
     taps = np.zeros(cal.last_lag + 1)
     taps[0] = 1
-    taps[cal.delay:] = -cal.feedback / (cal.last_lag - cal.delay + 1)
+    if cal.last_lag:
+        taps[cal.delay:] = -cal.feedback / (cal.last_lag - cal.delay + 1)
     transition = model.weather.dynamics.a
     cross = model.base.sigma[:, :k]
     covariance = (taps @ taps) * cross[:k].copy()

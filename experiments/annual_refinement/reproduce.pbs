@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#PBS -N lim_indep_retrain
+#PBS -q casper
+#PBS -l select=1:ncpus=14:mem=72GB
+#PBS -l walltime=01:55:00
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+campaign="$TC_REFINEMENT_WORK"
+if [[ -z "${MODEL_TAG:-}" ]]; then
+  MODEL_TAG="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["stage"])' "$campaign/FROZEN.json")"
+  MODEL_WEIGHTS="$("$TC_PYTHON" -c 'import json,sys; print(json.load(open(sys.argv[1]))["weights"])' "$campaign/FROZEN.json")"
+fi
+export TC_REFINEMENT_WORK="$campaign/reproduction/$MODEL_TAG"
+mkdir -p "$TC_REFINEMENT_WORK"
+exec "$TC_PYTHON" -u experiments/annual_refinement/reproduce.py --workers 3 --campaign "$campaign" --recipe "${RECIPE_FILE:-$campaign/recipe.json}" --source "$MODEL_WEIGHTS" > "$campaign/logs/reproduce-$MODEL_TAG.log" 2>&1

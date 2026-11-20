@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#PBS -N lim_nearby_ocean
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=12GB
+#PBS -l walltime=01:00:00
+#PBS -J 1-12%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=3
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+month="${PBS_ARRAY_INDEX:?}"
+exec > "$rd/logs/calendar-ocean-$COHORT-$month.log" 2>&1
+"$TC_PYTHON" -u experiments/annual_refinement/calendar_ocean.py --cohort "$COHORT" --month "$month"
+"$TC_PYTHON" -u experiments/annual_refinement/fullfit.py --cohort "$COHORT" --month "$month" --stage calendar

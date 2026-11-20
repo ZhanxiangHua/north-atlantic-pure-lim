@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#PBS -N lim_indep_fields
+#PBS -q casper
+#PBS -l select=1:ncpus=3:mem=13GB
+#PBS -l walltime=02:00:00
+#PBS -J 1-12%4
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+export TC_BLAS_THREADS=2
+source experiments/annual_refinement/env.sh
+rd="$TC_REFINEMENT_WORK"
+label="${MODEL_TAG:-published_v1}"
+weights="${MODEL_WEIGHTS:-$PWD/runs/annual_lim/weights}"
+role="${EVAL_ROLE:-val}"
+month="${PBS_ARRAY_INDEX:?}"
+exec "$TC_PYTHON" -u experiments/annual_refinement/verify_model.py --label "$label" --weights "$weights" --month "$month" --role "$role" --cohort "${COHORT:-original}" --draws "${N_DRAWS:-8}" > "$rd/logs/verify-${label}-${role}-${month}.log" 2>&1

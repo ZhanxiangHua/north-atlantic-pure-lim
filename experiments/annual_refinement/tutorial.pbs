@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#PBS -N lim_replay_tutorial
+#PBS -q casper
+#PBS -l select=1:ncpus=5:mem=10GB
+#PBS -l walltime=00:55:00
+#PBS -J 0-1
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+names=(annual tc)
+files=(Annual_Pure_LIM_Tutorial.ipynb FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb)
+i="${PBS_ARRAY_INDEX:?}"
+export TC_DEMO_WORKERS=3
+exec "$TC_PYTHON" -u experiments/annual_refinement/execute_tutorial.py --root "$PWD" \
+    --tutorial "${names[$i]}" --output "$TC_REFINEMENT_WORK/tutorials/${files[$i]}" \
+    > "$TC_REFINEMENT_WORK/logs/tutorial-${names[$i]}.log" 2>&1

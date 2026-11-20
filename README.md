@@ -7,7 +7,15 @@ Generate Atlantic monthly ocean–atmosphere backgrounds and daily 250/850 hPa w
 | [Annual pure LIM](notebooks/Annual_Pure_LIM_Tutorial.ipynb) | Follow an August map through training, then use the saved weights to draw two weather histories at +2 K. Section 5 reconstructs the first day’s four wind maps from 120 scores and checks the result against the event file. [Training diagram](reports/annual_lim_math_flow.png) · [Sampling diagram](reports/annual_lim_sampling_flow.png) · [English derivation](reports/annual_lim_linear_algebra.md) |
 | [FaIR → EOF → LIM → tropical cyclones](notebooks/FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb) | Run SSP2-4.5 in FaIR, generate September fields and integrate storms for 15 days. Sections 5–6 replay one seed under MPI, LIM and native Fourier winds, map all accepted tracks with a fixed MPI background and rebuild the displacement distributions and paired intervals. [Driver inputs and outputs](reports/annual_lim_tc_flow.png) · [Track maps and statistics](reports/mpi2050/README.md) |
 
-The September 2050 SSP2-4.5 benchmark replays eight held-out MPI members with daily winds in Coupled FAST. With the FaIR input, the 48-hour displacement distribution was 32 km from the MPI replay for LIM and 230 km for native Fourier. Formation rates were 2.44 per 100 proposed seeds for both. The report includes paired uncertainty intervals, the native hourly and daily-averaged controls, and a training-only shear calibration. [MPI daily benchmark and figure](reports/mpi2050/README.md)
+The September 2050 SSP2-4.5 benchmark replays eight held-out MPI members with daily winds in Coupled FAST. With the FaIR input, the 48-hour displacement distribution was 32 km from the MPI replay for the published v1 LIM and 230 km for native Fourier. Formation rates were 2.44 per 100 proposed seeds for both. The report includes paired uncertainty intervals, the native hourly and daily-averaged controls, and a training-only shear calibration. [MPI daily benchmark and figure](reports/mpi2050/README.md)
+
+The annual refinement study compares 15, 30 and 57 years of paired MPI training data. The annual tutorial now follows the covariance of the ocean and atmosphere into monthly steering winds and evaluates a frozen checkpoint on nine additional years. The tropical cyclone tutorial replays daily MPI winds throughout 2050, maps the simulated tracks and rebuilds formation, displacement and intensity statistics from the archived disturbances. [English results](reports/annual_refinement/README.md) · [中文实验报告](reports/annual_refinement/REPORT.zh.md) · [Covariance diagram](reports/annual_refinement/figures/covariance_to_wind.png)
+
+The selected 57-year checkpoint reduces mixed-layer map RMSE on the nine new years from 37.81 to 30.73 m and conditional monthly steering RMSE from 0.915 to 0.804 m/s. With two previous MPI wind maps, its day-one steering RMSE is 2.916 m/s, versus 3.990 m/s for a training-calibrated Fourier spectrum. Both LIM checkpoints pass the pooled 15-day variance test in all twelve months. In the all-month 2050 storm replay, MPI, published LIM and research LIM produce 120, 120 and 98 storms from the same 18,432 disturbances. The report gives warm-range results, paired intervals, intensity and displacement. [Independent results and tracks](reports/annual_refinement/README.md) · [Monthly pass counts](reports/annual_refinement/data/multiday_pass_counts.csv)
+
+A separate, preregistered warm-year check covered 440 member-months at +3.52 to +4.49 K. The research LIM passed the 15-day test in 10 of 11 months, training-calibrated Fourier passed 9, and native Fourier passed 0. A proposed monthly covariance gain also passed 10 and missed its registered improvement criterion. [Five warm years and monthly variance figure](reports/annual_refinement/figures/warm_confirmation_15day.png) · [Result and paired interval](reports/annual_refinement/data/warm_confirmation_result.json)
+
+A follow-up on six additional MPI climates confirmed two deployment options. A 192-state wind model gave up 0.0094 m/s of next-day steering accuracy on 528 member-months. Clipping mixed-layer depth at the MPI model's sea floor reduced subpolar 99th-quantile loss from 2.716 to 2.427 m. The default weights use the full 240-state wind. [Independent scores](reports/annual_refinement/data/compact_ocean_confirmation_paired.csv) · [Conversion and physical depth commands](experiments/annual_refinement/README.md) · [Wind memory and physical ocean depth](reports/annual_refinement/figures/memory_and_ocean_floor.png)
 
 ## Installation
 
@@ -28,7 +36,7 @@ tar -xzf annual_lim_full.tar.gz --strip-components=1 annual_lim/weights
 | Use FaIR and Coupled FAST from Python, including the native Fourier driver | `python -m pip install -r requirements-tc.txt` |
 | Open and rerun either notebook, with figures and benchmarks | `python -m pip install -r requirements-notebook.txt` |
 
-For a CPU-only Linux installation, you can first run `python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu` in the new virtual environment. The notebook requirements include both modeling stacks. The checkout supplies the calibrated FaIR scenario inputs, TC solver, thermodynamic tables, geography, one MPI reference month and the six-hourly ensemble tracks. After dependency and weight installation the demonstrations run offline. Set `ANNUAL_LIM_WEIGHTS` to reuse a different fitted-weight directory in the notebooks. Set `TC_DEMO_WORKERS` to control the number of benchmark processes (default 2). [Input versions and provenance](notebooks/data/README.md)
+For a CPU-only Linux installation, you can first run `python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu` in the new virtual environment. The notebook requirements include both modeling stacks. The checkout supplies the calibrated FaIR scenario inputs, TC solver, thermodynamic tables, geography, one MPI reference month and the six-hourly ensemble tracks. After dependency and weight installation the demonstrations run offline. Set `ANNUAL_LIM_WEIGHTS` to the location of the published weights when rerunning the archived September replay. The research sections of both notebooks read their matched benchmark tables from `reports/annual_refinement/`. Set `TC_DEMO_WORKERS` to control the number of benchmark processes (default 2). [Input versions and provenance](notebooks/data/README.md)
 
 ~~~bash
 python -m pip install -r requirements-notebook.txt -c constraints-benchmark.txt
@@ -38,6 +46,28 @@ python -m jupyterlab notebooks/
 The optional constraints file selects the numerical versions used for the published benchmark. A separate clean run with NumPy 2.5.5 and SciPy 1.18.1 reproduced the TC formation and landfall decisions for all 4,096 seed attempts. Some individual trajectories and termination times shifted across numerical environments.
 
 The training data are MPI-ESM1-2-LR. The catalogue identifies the original CMIP6 files by member, experiment, variable and release. Data citations and the paper behind the warming-conditioned EOF approach are available from the original sources. [Historical experiment](https://doi.org/10.22033/ESGF/CMIP6.6595) · [SSP5-8.5 experiment](https://doi.org/10.22033/ESGF/CMIP6.6705) · [Geogdzhayev et al.](https://doi.org/10.5194/esd-17-235-2026)
+
+## Sample the refined checkpoint
+
+After installing the core dependencies and extracting the v1.0.0 weights into `weights/`, restore the twelve research weights once. Then a monthly sample needs the model, a calendar date, a warming level and a random seed. The command below generates a 15-day North Atlantic event in September 2050 at a prescribed warming of 2 K above 1850–1900.
+
+~~~bash
+python experiments/annual_refinement/checkpoint.py restore --base weights \
+  --delta checkpoints/annual_refinement --output work/refined_weights
+python run.py sample --weights work/refined_weights --month 9 --year 2050 \
+  --g 2 --days 15 --seed 417 --output work/september.nc
+~~~
+
+The 5.57 MB minimal source package contains the preprocessing, training and inference entry points with the dependencies of the selected refit. The tutorial package also includes both executed notebooks, the TC solver and the research results. [Minimal model source](https://raw.githubusercontent.com/ZhanxiangHua/north-atlantic-pure-lim/main/downloads/annual_lim_minimal.tar.gz) · [Source, tutorials and benchmarks](https://raw.githubusercontent.com/ZhanxiangHua/north-atlantic-pure-lim/main/downloads/annual_lim_code.tar.gz) · [Package checksums](https://github.com/ZhanxiangHua/north-atlantic-pure-lim/blob/main/downloads/SHA256SUMS)
+
+A Git checkout and the full research package already contain the twelve checkpoint deltas. If you started from either source archive, run the following command inside its extracted directory before restoring. The archive supplies the checksum manifest, and the restore command verifies all twelve files.
+
+~~~bash
+curl -fL --output 'checkpoints/annual_refinement/#1.delta.zip' \
+  'https://raw.githubusercontent.com/ZhanxiangHua/north-atlantic-pure-lim/main/checkpoints/annual_refinement/[01-12].delta.zip'
+~~~
+
+The study archive records the exact checkpoint identifiers, training years, new evaluation years and model-selection rule. Its independent reconstruction starts from the prepared MPI fields. [Training and reproduction commands](experiments/annual_refinement/README.md) · [Linear algebra of the refined fit](experiments/annual_refinement/METHODS.md) · [How to read the tables](reports/annual_refinement/DATA.md)
 
 ## 运行和复训
 

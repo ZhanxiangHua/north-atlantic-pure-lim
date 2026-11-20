@@ -1,0 +1,18 @@
+{
+  "coordinate_match_tolerance_deg": 1e-05,
+  "field": "deptho",
+  "fixed_experiment": "piControl",
+  "geometry": "Same wet-vertex normalized Delaunay remapping as MPI mlotst.",
+  "grid": "gn",
+  "historical_reference": "mlotst_Omon_MPI-ESM1-2-LR_historical_r1i1p1f1_gn_199001-200912.nc",
+  "institution": "MPI-M",
+  "license": "CMIP6 model data produced by MPI-M is licensed under a Creative Commons Attribution ShareAlike 4.0 International License (https://creativecommons.org/licenses). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6 output, including citation requirements and proper acknowledgment. Further information about this data, including some limitations, can be found via the further_info_url (recorded as a global attribute in this file) and. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+  "mapped_sha256": "5378ae127831ddf26f027dd27eeaddd0eadea8c9b2814c67705ec8bb524fd0ba",
+  "source_filename": "deptho_Ofx_MPI-ESM1-2-LR_piControl_r1i1p1f1_gn.nc",
+  "source_sha256": "14d39ad4cfd66b8fbc0ea2fea98b29543a71361ccf18e80502cac66ac0a58837",
+  "table": "Ofx",
+  "tracking_id": "hdl:21.14100/3394b955-b012-42fc-a19f-150692783a91",
+  "units": "m",
+  "valid_map_points": 1479,
+  "version": "v20190710"
+}
