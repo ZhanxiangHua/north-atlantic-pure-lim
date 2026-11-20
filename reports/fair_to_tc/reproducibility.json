@@ -1,0 +1,38 @@
+{
+  "reference_versions": {
+    "packages": {
+      "fair": "2.2.4",
+      "numpy": "2.4.3",
+      "scipy": "1.17.1",
+      "pandas": "3.0.2",
+      "xarray": "2026.2.0",
+      "torch": "2.8.0+cpu"
+    },
+    "attempts_checked": 4096,
+    "different_tc_or_landfall_decisions": 0,
+    "matched_48h_storms": 125,
+    "max_48h_peak_difference_ms": 0.0,
+    "max_48h_displacement_difference_km": 0.0,
+    "max_track_peak_difference_ms": 6.536993168992922e-13,
+    "max_end_time_difference_minutes": 63.04890246620052,
+    "hourly_positions_present_in_only_one_run": 1
+  },
+  "newer_versions": {
+    "packages": {
+      "fair": "2.2.4",
+      "numpy": "2.5.5",
+      "scipy": "1.18.1",
+      "pandas": "3.1.1",
+      "xarray": "2026.9.0",
+      "torch": "2.8.0+cpu"
+    },
+    "attempts_checked": 4096,
+    "different_tc_or_landfall_decisions": 0,
+    "matched_48h_storms": 125,
+    "max_48h_peak_difference_ms": 0.9214515686035156,
+    "max_48h_displacement_difference_km": 5.936096191406136,
+    "max_track_peak_difference_ms": 0.9737234244394202,
+    "max_end_time_difference_minutes": 180.0,
+    "hourly_positions_present_in_only_one_run": 42
+  }
+}
