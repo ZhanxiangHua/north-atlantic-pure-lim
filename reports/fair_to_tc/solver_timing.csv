@@ -1,0 +1,3 @@
+method,summed_track_call_s,attempts,attempts_per_solver_s
+Native Fourier,31.603682237910107,2048,64.80257536393425
+Pure LIM,21.600181834306568,2048,94.8140166462514

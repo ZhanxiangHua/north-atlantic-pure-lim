@@ -1,13 +1,36 @@
 # North Atlantic Pure LIM
 
-Generate monthly North Atlantic ocean–atmosphere backgrounds and spatially coherent daily 250/850 hPa winds from annual global warming. Each calendar month has its own fitted EOF bases, warming-conditioned background covariance and linear Gaussian weather dynamics. Inference runs offline on a CPU. The full release includes all twelve sets of weights. [Download the model and code for v1.0.0](https://github.com/ZhanxiangHua/north-atlantic-pure-lim/releases/tag/v1.0.0)
+Generate Atlantic monthly ocean–atmosphere backgrounds and daily 250/850 hPa winds at a specified global warming level. The regional emulator has separate EOFs and a linear Gaussian weather model for each calendar month. Coupled FAST can use the resulting environment to generate storm tracks and intensities.
 
-**Start with the August example.** The English derivation follows a field from its weighted EOF projection to a covariance for the 15-day mean wind. The executed tutorial lets you hold the background fixed, vary the weather, generate a leap year and check the analytic variance with 384 realizations. [English mathematical derivation](reports/annual_lim_linear_algebra.md) · [Printable English PDF](reports/annual_lim_linear_algebra.pdf) · [English Jupyter tutorial](notebooks/Annual_Pure_LIM_Tutorial.ipynb)
+| Tutorial | What you can follow |
+| --- | --- |
+| [Annual pure LIM](notebooks/Annual_Pure_LIM_Tutorial.ipynb) | Follow the [mathematical flowchart](reports/annual_lim_math_flow.pdf) through an August example, from weighted EOFs and monthly background covariance to two daily weather draws. Check 15-day wind variance and sample a leap year. [English derivation](reports/annual_lim_linear_algebra.md) |
+| [FaIR → EOF → LIM → tropical cyclones](notebooks/FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb) | Run SSP2-4.5 in FaIR, generate September fields, then integrate storms for 15 days. Compare native Fourier weather on paired seed panels and inspect historical wind intensity and displacement against NOAA best tracks. [Benchmark results, figures and tracks](reports/fair_to_tc/README.md) |
 
-If you cloned this GitHub repository, download `annual_lim_full.tar.gz` from the release page. Run the following command from the repository root to install the weights. If you extracted the full release itself, the weights are already in place.
+## Installation
+
+Use Python 3.11 or later. The two notebooks have been executed with Python 3.12 on CPU. For a new checkout, start in the directory where you want to clone the repository. The v1.0.0 release supplies its fitted weights. In an extracted full package, the `weights/` folder is already populated and you can proceed directly to dependency installation. [v1.0.0 weights and checksums](https://github.com/ZhanxiangHua/north-atlantic-pure-lim/releases/tag/v1.0.0)
 
 ~~~bash
+git clone https://github.com/ZhanxiangHua/north-atlantic-pure-lim.git
+cd north-atlantic-pure-lim
+python -m venv .venv
+source .venv/bin/activate
+curl -fL -o annual_lim_full.tar.gz https://github.com/ZhanxiangHua/north-atlantic-pure-lim/releases/download/v1.0.0/annual_lim_full.tar.gz
 tar -xzf annual_lim_full.tar.gz --strip-components=1 annual_lim/weights
+~~~
+
+| Task | Install command |
+| --- | --- |
+| Train or validate EOF/LIM weights, generate backgrounds and winds from a supplied warming level | `python -m pip install -r requirements.txt` |
+| Use FaIR and Coupled FAST from Python, including the native Fourier driver | `python -m pip install -r requirements-tc.txt` |
+| Open and rerun either notebook, with figures and benchmarks | `python -m pip install -r requirements-notebook.txt` |
+
+For a CPU-only Linux installation, you can first run `python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu` in the new virtual environment. The notebook requirements include both modeling stacks. The checkout supplies the calibrated FaIR scenario inputs, TC solver, thermodynamic tables, geography and historical track subset. After dependency and weight installation the demonstrations run offline. Set `ANNUAL_LIM_WEIGHTS` to reuse a different fitted-weight directory in the notebooks. Set `TC_DEMO_WORKERS` to control the number of benchmark processes (default 2). [Input versions and provenance](notebooks/data/README.md)
+
+~~~bash
+python -m pip install -r requirements-notebook.txt
+python -m jupyterlab notebooks/
 ~~~
 
 The training data are MPI-ESM1-2-LR. The catalogue identifies the original CMIP6 files by member, experiment, variable and release. Data citations and the paper behind the warming-conditioned EOF approach are available from the original sources. [Historical experiment](https://doi.org/10.22033/ESGF/CMIP6.6595) · [SSP5-8.5 experiment](https://doi.org/10.22033/ESGF/CMIP6.6705) · [Geogdzhayev et al.](https://doi.org/10.5194/esd-17-235-2026)
@@ -47,13 +70,4 @@ fit_job=$(qsub -A "$PROJECT_ALLOCATION" -v ANNUAL_PYTHON="$ANNUAL_PYTHON" -W "de
 qsub -A "$PROJECT_ALLOCATION" -v ANNUAL_PYTHON="$ANNUAL_PYTHON" -W "depend=afterok:${fit_job}" cluster/validate.pbs
 ~~~
 
-你可以先读[技术说明](reports/annual_lim_guide.md)中的两格点例子，再对照[各月测试结果](reports/annual_lim_results.md)。可打印的数学公式和验证表在[技术说明 PDF](reports/annual_lim_guide.pdf)。本包中的热力学代码和熵查找表来自提供的 TC 软件，保留了[上游许可证](vendor/tropical_cyclone_risk/LICENSE)。输出的环境场可以交给项目原有的 FAST 轨迹积分入口。
-
-## 英文 Jupyter 教程
-
-在完整包内打开教程，可以直接运行已保存的示例。它从两格点矩阵开始，用真实 8 月参数固定海洋背景、更换天气，再生成一个闰年，并用 384 次独立天气抽样复核多日平均风的解析方差。各图表也保存在 notebook 中。仅使用代码包时，可先复训，或把已有权重目录写入环境变量 `ANNUAL_LIM_WEIGHTS`。[English Jupyter tutorial](notebooks/Annual_Pure_LIM_Tutorial.ipynb)
-
-~~~bash
-python -m pip install -r requirements-notebook.txt
-python -m jupyterlab notebooks/Annual_Pure_LIM_Tutorial.ipynb
-~~~
+中文技术说明从两格点例子开始，介绍背景、天气和风场重建。全年教程里的流程图与第 1–9 节逐一对应。第二本教程用 FaIR 情景驱动北大西洋逐日风和 Coupled FAST，并给出同种子对照、逐小时轨迹和 NOAA 历史观测比较。[中文技术说明](reports/annual_lim_guide.md) · [全年分月验证](reports/annual_lim_results.md) · [数学流程图 PDF](reports/annual_lim_math_flow.pdf) · [气旋实验结果](reports/fair_to_tc/README.md)

@@ -1,0 +1,5 @@
+period,method,events,attempts,integrated,TCs,landfalls,TC_per_100_attempts,landfalls_per_100_attempts,median_peak_wind_ms
+Historical,Pure LIM,8,1024,420,27,18,2.63671875,1.7578125,38.535710237208555
+Historical,Native Fourier,8,1024,414,31,23,3.02734375,2.24609375,35.020924501114976
+Future,Pure LIM,8,1024,409,32,29,3.125,2.83203125,37.53883806703577
+Future,Native Fourier,8,1024,389,22,16,2.1484375,1.5625,35.37923864751707
