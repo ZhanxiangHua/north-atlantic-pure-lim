@@ -65,7 +65,9 @@ def run_pair(case):
         identifiers = dict(case=case_id, period=period, year=year, warming_K=g, method=method)
         records.append(frame.assign(**identifiers))
         timings.append(dict(**identifiers, seconds=seconds))
-    paths = xr.concat([traces[m] for m in METHODS], dim=pd.Index(METHODS, name="method"),
+    # A fixed-width Unicode axis round-trips in both netCDF4 and h5netcdf.
+    method_axis = xr.IndexVariable("method", np.asarray(METHODS, dtype=str))
+    paths = xr.concat([traces[m] for m in METHODS], dim=method_axis,
                       combine_attrs="drop").expand_dims(case=[case_id])
     paths = paths.assign_coords(period=("case", [period]), year=("case", [year]), warming_K=("case", [g]))
     return paths, pd.concat(records, ignore_index=True), timings
