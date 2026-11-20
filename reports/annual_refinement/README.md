@@ -2,6 +2,10 @@
 
 The emulator takes a calendar month, global annual warming above 1850–1900 and a random seed. It generates North Atlantic ocean and atmospheric backgrounds and a history of daily winds. The training archive is MPI-ESM1-2-LR. All twelve calendar months have their own parameters. An annual realization samples each month independently, so the fit describes seasonal changes in distributions and persistence within a month. Storm experiments drive the same Coupled FAST solver with either generated winds or MPI daily winds. [Model and sampling equations](../../experiments/annual_refinement/METHODS.md) · [Annual tutorial](../../notebooks/Annual_Pure_LIM_Tutorial.ipynb) · [Climate panels and score definitions](DATA.md)
 
+## Additional midcentury storms under SSP2-4.5
+
+Across six new complete years and eight held-out members, Research reduces monthly steering RMSE from 0.846 to 0.784 m/s and mixed-layer depth RMSE from 24.27 to 19.20 m. The pooled 48-hour displacement W1 on the MPI monthly background is 29.65 km for v1, 32.98 km for Research and 73.62 km for matched Fourier. Research beats v1 in two individual years. Their pooled paired difference is +3.33 km (95% interval −50.69 to +71.96 km). [Yearly scores, pooled distributions, tracks and replay instructions](midcentury/README.md)
+
 ## Results on independent MPI members
 
 The new annual benchmark contains 864 member-months from eight held-out members, nine climate years and all twelve months. The same MPI maps appear on both sides of each comparison below. Wind variance error is the absolute logarithm of the model-to-MPI variance ratio. Every quantity in this table is an error, so a negative paired difference favors the research fit. A 95% interval resamples whole members and years 2,000 times. [Complete new-year table](data/paired_fresh.csv)

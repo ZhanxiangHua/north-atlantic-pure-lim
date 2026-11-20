@@ -1,0 +1,26 @@
+{
+  "checkpoint_manifest_sha256": "5d35e29e852d528802de8d224de8d190cc76a65679d75b12c6c88c57937ea3d6",
+  "held_out_members": [
+    "r9i1p1f1",
+    "r11i1p1f1",
+    "r39i1p1f1",
+    "r40i1p1f1",
+    "r37i1p1f1",
+    "r35i1p1f1",
+    "r45i1p1f1",
+    "r32i1p1f1"
+  ],
+  "plan_sha256": "01b430e2d7972c58f481d7f7d8a3f607494465e21de8db1455a760eca78b312a",
+  "primary_years": [
+    2041,
+    2044,
+    2047,
+    2053,
+    2056,
+    2059
+  ],
+  "prior_repository_commit": "01f169cfffc0dd5054fc7704c86667974f3065e6",
+  "published_freeze_receipt_sha256": "2b78d5525170eaba34c61a7c855905475bb8fba6de26ae0a0dc81951877f24c1",
+  "reference_year": 2050,
+  "registered_utc": "2026-11-20T16:39:17+00:00"
+}

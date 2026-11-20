@@ -1,0 +1,181 @@
+scope,protocol,model,comparator,metric,change,ci_low,ci_high,valid_draws,unit
+2041,MPI background,extended_prediction_active_refined,published_v1,lmi,-1.6827727883073385,-2.637698704000832,0.7180058383690742,2000,m/s
+2041,MPI background,extended_prediction_active_refined,selected_fourier,lmi,-0.22987329313483928,-1.8173744256121256,0.7975467375716153,2000,m/s
+2041,MPI background,extended_prediction_active_refined,native_fourier,lmi,-0.11747573714883575,-1.5045058113249923,1.0064956204301503,2000,m/s
+2041,MPI background,published_v1,native_fourier,lmi,1.5652970511585027,-0.6792676914382174,2.3006655312388937,2000,m/s
+2041,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,32.06321454215741,-61.06687210961089,131.34437478056242,2000,km
+2041,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,31.61587533517315,-38.89610658598095,173.42114521303253,2000,km
+2041,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,-1.5352339941551492,-74.06770671551608,143.01678504872888,2000,km
+2041,MPI background,published_v1,native_fourier,displacement_48h_km,-33.59844853631256,-92.76077635045506,81.51555114886507,2000,km
+2041,MPI background,extended_prediction_active_refined,published_v1,tc,-0.08138020833333326,-0.2714029947916666,0.16276041666666663,2000,per 100 proposed disturbances
+2041,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.005425347222222099,-0.1519097222222221,0.2170138888888885,2000,per 100 proposed disturbances
+2041,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.02712673611111105,-0.16276041666666663,0.1953124999999999,2000,per 100 proposed disturbances
+2041,MPI background,published_v1,native_fourier,tc,0.05425347222222221,-0.16276041666666685,0.3038194444444443,2000,per 100 proposed disturbances
+2041,MPI background,extended_prediction_active_refined,published_v1,landfall,-0.03255208333333326,-0.20087348090277776,0.10308159722222227,2000,per 100 proposed disturbances
+2041,MPI background,extended_prediction_active_refined,selected_fourier,landfall,0.01627604166666663,-0.13020833333333326,0.16276041666666663,2000,per 100 proposed disturbances
+2041,MPI background,extended_prediction_active_refined,native_fourier,landfall,0.00542534722222221,-0.14105902777777768,0.146484375,2000,per 100 proposed disturbances
+2041,MPI background,published_v1,native_fourier,landfall,0.03797743055555547,-0.13020833333333331,0.23871527777777768,2000,per 100 proposed disturbances
+2041,warming only,extended_prediction_active_refined,published_v1,lmi,1.2132389868504165,-1.6424355839344562,3.445906525319377,2000,m/s
+2041,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,0.47575961477386386,-89.61123960159202,49.35062543591675,2000,km
+2041,warming only,extended_prediction_active_refined,published_v1,tc,0.16818576388888884,-0.09223090277777779,0.2985297309027771,2000,per 100 proposed disturbances
+2041,warming only,extended_prediction_active_refined,published_v1,landfall,0.15733506944444442,-0.14648437499999983,0.2604166666666667,2000,per 100 proposed disturbances
+2044,MPI background,extended_prediction_active_refined,published_v1,lmi,-0.06266906104927017,-0.8058652285922335,1.971050729678683,2000,m/s
+2044,MPI background,extended_prediction_active_refined,selected_fourier,lmi,-0.43350725916189514,-1.3039733227838899,1.9210807911611454,2000,m/s
+2044,MPI background,extended_prediction_active_refined,native_fourier,lmi,-0.3673444336645113,-1.4957853428586496,1.9490697012722884,2000,m/s
+2044,MPI background,published_v1,native_fourier,lmi,-0.30467537261524114,-1.6398224109263313,1.0829465255320687,2000,m/s
+2044,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,38.93187758437731,-49.23452711479049,186.41370316418542,2000,km
+2044,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,22.591593603044856,-50.61336165815544,151.35641558342698,2000,km
+2044,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,30.397674075909464,-44.75548404661016,135.52482212749362,2000,km
+2044,MPI background,published_v1,native_fourier,displacement_48h_km,-8.534203508467847,-93.73729139337303,56.875685516876096,2000,km
+2044,MPI background,extended_prediction_active_refined,published_v1,tc,-0.00542534722222221,-0.09236653645833344,0.10308159722222221,2000,per 100 proposed disturbances
+2044,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.0922309027777779,-0.19531249999999994,0.027126736111111053,2000,per 100 proposed disturbances
+2044,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.10308159722222221,-0.2224392361111111,0.03797743055555558,2000,per 100 proposed disturbances
+2044,MPI background,published_v1,native_fourier,tc,-0.09765625,-0.1736111111111111,-0.010850694444444527,2000,per 100 proposed disturbances
+2044,MPI background,extended_prediction_active_refined,published_v1,landfall,0.027126736111111105,-0.08138020833333326,0.09765625,2000,per 100 proposed disturbances
+2044,MPI background,extended_prediction_active_refined,selected_fourier,landfall,-0.10850694444444442,-0.21158854166666669,0.010850694444444422,2000,per 100 proposed disturbances
+2044,MPI background,extended_prediction_active_refined,native_fourier,landfall,-0.1193576388888889,-0.23871527777777782,0.01627604166666663,2000,per 100 proposed disturbances
+2044,MPI background,published_v1,native_fourier,landfall,-0.146484375,-0.2171495225694445,0.00013563368055513985,2000,per 100 proposed disturbances
+2044,warming only,extended_prediction_active_refined,published_v1,lmi,0.6014739245646761,-0.5341732597497171,2.914174358058751,2000,m/s
+2044,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,2.46469759310105,-61.05819214792688,71.52394036437828,2000,km
+2044,warming only,extended_prediction_active_refined,published_v1,tc,0.14648437500000006,-0.05981445312500002,0.31467013888888884,2000,per 100 proposed disturbances
+2044,warming only,extended_prediction_active_refined,published_v1,landfall,0.16276041666666663,-0.054253472222222154,0.28211805555555547,2000,per 100 proposed disturbances
+2047,MPI background,extended_prediction_active_refined,published_v1,lmi,1.3708010093547698,-1.8232829084786073,3.4413107842954216,2000,m/s
+2047,MPI background,extended_prediction_active_refined,selected_fourier,lmi,1.0658872622658042,-1.189737452529355,3.8858326708042594,2000,m/s
+2047,MPI background,extended_prediction_active_refined,native_fourier,lmi,1.128122892825719,-1.4175734881375808,3.8793641684374727,2000,m/s
+2047,MPI background,published_v1,native_fourier,lmi,-0.2426781165290508,-1.7149562141233599,3.5823752469911225,2000,m/s
+2047,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,-77.45966296830811,-166.61894636861467,12.892795116655416,2000,km
+2047,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,-54.719673312749165,-115.77990635575489,28.665350346854883,2000,km
+2047,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,-72.5526323497788,-141.87709158458605,26.098832767621335,2000,km
+2047,MPI background,published_v1,native_fourier,displacement_48h_km,4.907030618529305,-95.21817505672497,131.88261968631997,2000,km
+2047,MPI background,extended_prediction_active_refined,published_v1,tc,-0.03255208333333337,-0.10308159722222232,0.08680555555555558,2000,per 100 proposed disturbances
+2047,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.04340277777777779,-0.18988715277777768,0.07066514756944386,2000,per 100 proposed disturbances
+2047,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.09223090277777779,-0.22786458333333326,0.06510416666666674,2000,per 100 proposed disturbances
+2047,MPI background,published_v1,native_fourier,tc,-0.05967881944444442,-0.23328993055555547,0.06510416666666663,2000,per 100 proposed disturbances
+2047,MPI background,extended_prediction_active_refined,published_v1,landfall,-0.032552083333333315,-0.09223090277777785,0.07052951388888895,2000,per 100 proposed disturbances
+2047,MPI background,extended_prediction_active_refined,selected_fourier,landfall,-0.02170138888888884,-0.1519097222222222,0.0705295138888889,2000,per 100 proposed disturbances
+2047,MPI background,extended_prediction_active_refined,native_fourier,landfall,-0.07052951388888884,-0.20616319444444442,0.05967881944444442,2000,per 100 proposed disturbances
+2047,MPI background,published_v1,native_fourier,landfall,-0.037977430555555525,-0.18446180555555552,0.059678819444444475,2000,per 100 proposed disturbances
+2047,warming only,extended_prediction_active_refined,published_v1,lmi,1.6255444468024693,-1.1811192777378337,5.117390945120368,2000,m/s
+2047,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,-4.505902176852146,-65.83114712641688,74.8566723585456,2000,km
+2047,warming only,extended_prediction_active_refined,published_v1,tc,0.07595486111111105,-0.09223090277777768,0.20073784722222232,2000,per 100 proposed disturbances
+2047,warming only,extended_prediction_active_refined,published_v1,landfall,0.05967881944444442,-0.05967881944444442,0.17361111111111116,2000,per 100 proposed disturbances
+2050,MPI background,extended_prediction_active_refined,published_v1,lmi,-3.3450602214689416,-5.377528683337906,0.3102875113516122,2000,m/s
+2050,MPI background,extended_prediction_active_refined,selected_fourier,lmi,-0.6919772478813191,-3.443908512589608,1.1217979153254467,2000,m/s
+2050,MPI background,extended_prediction_active_refined,native_fourier,lmi,-0.5005056155686747,-3.565208753853042,1.2088624260436192,2000,m/s
+2050,MPI background,published_v1,native_fourier,lmi,2.844554605900267,-0.4560665412739602,4.854594166631127,2000,m/s
+2050,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,3.37609726028235,-63.401334505850265,95.89733156513891,2000,km
+2050,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,-111.24592194353129,-185.65415221683068,39.777576104569846,2000,km
+2050,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,-126.34077064902392,-220.62555828292201,21.92617710400996,2000,km
+2050,MPI background,published_v1,native_fourier,displacement_48h_km,-129.71686790930627,-249.9397763226737,19.78313462170131,2000,km
+2050,MPI background,extended_prediction_active_refined,published_v1,tc,0.11935763888888884,-0.09765624999999989,0.19002278645833265,2000,per 100 proposed disturbances
+2050,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.02170138888888884,-0.10850694444444448,0.06510416666666669,2000,per 100 proposed disturbances
+2050,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.07595486111111116,-0.16276041666666674,0.02712673611111105,2000,per 100 proposed disturbances
+2050,MPI background,published_v1,native_fourier,tc,-0.1953125,-0.2495659722222221,0.03255208333333348,2000,per 100 proposed disturbances
+2050,MPI background,extended_prediction_active_refined,published_v1,landfall,0.016276041666666463,-0.13020833333333326,0.14105902777777768,2000,per 100 proposed disturbances
+2050,MPI background,extended_prediction_active_refined,selected_fourier,landfall,-0.08138020833333348,-0.15733506944444453,0.0381130642361105,2000,per 100 proposed disturbances
+2050,MPI background,extended_prediction_active_refined,native_fourier,landfall,-0.0922309027777779,-0.16832139756944467,0.04340277777777768,2000,per 100 proposed disturbances
+2050,MPI background,published_v1,native_fourier,landfall,-0.10850694444444436,-0.18459743923611124,0.07595486111111105,2000,per 100 proposed disturbances
+2050,warming only,extended_prediction_active_refined,published_v1,lmi,0.4541374152025752,-2.5678427075681496,3.8108540421269326,2000,m/s
+2050,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,29.633788229084033,-84.51764573540386,138.92658728300094,2000,km
+2050,warming only,extended_prediction_active_refined,published_v1,tc,0.08680555555555558,-0.09236653645833333,0.24956597222222227,2000,per 100 proposed disturbances
+2050,warming only,extended_prediction_active_refined,published_v1,landfall,0.08138020833333331,-0.048828125,0.17903645833333331,2000,per 100 proposed disturbances
+2053,MPI background,extended_prediction_active_refined,published_v1,lmi,1.799513690722549,-1.5456927083362335,3.5827146107893153,2000,m/s
+2053,MPI background,extended_prediction_active_refined,selected_fourier,lmi,0.9677808318348506,-1.4148183784326738,2.432718236196247,2000,m/s
+2053,MPI background,extended_prediction_active_refined,native_fourier,lmi,1.3057361413783588,-1.1921010749292376,2.6210432401329555,2000,m/s
+2053,MPI background,published_v1,native_fourier,lmi,-0.49377754934419027,-1.952845715451531,1.44518504484951,2000,m/s
+2053,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,34.95967892001339,-134.50898655013918,81.23244104823033,2000,km
+2053,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,-78.961905909513,-219.30864563389082,95.1919026867076,2000,km
+2053,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,-73.94243527828965,-235.2297230538958,86.41804090048494,2000,km
+2053,MPI background,published_v1,native_fourier,displacement_48h_km,-108.90211419830304,-196.38718682250473,98.31334672161479,2000,km
+2053,MPI background,extended_prediction_active_refined,published_v1,tc,-0.07595486111111105,-0.244140625,0.09765625,2000,per 100 proposed disturbances
+2053,MPI background,extended_prediction_active_refined,selected_fourier,tc,1.1102230246251565e-16,-0.11935763888888873,0.17361111111111116,2000,per 100 proposed disturbances
+2053,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.02170138888888884,-0.11935763888888884,0.10308159722222221,2000,per 100 proposed disturbances
+2053,MPI background,published_v1,native_fourier,tc,0.05425347222222221,-0.10864257812500012,0.20087348090277712,2000,per 100 proposed disturbances
+2053,MPI background,extended_prediction_active_refined,published_v1,landfall,-0.06510416666666669,-0.1737467447916667,0.05967881944444442,2000,per 100 proposed disturbances
+2053,MPI background,extended_prediction_active_refined,selected_fourier,landfall,-0.00542534722222221,-0.10308159722222221,0.13563368055555558,2000,per 100 proposed disturbances
+2053,MPI background,extended_prediction_active_refined,native_fourier,landfall,-0.010850694444444475,-0.07595486111111122,0.09236653645833276,2000,per 100 proposed disturbances
+2053,MPI background,published_v1,native_fourier,landfall,0.05425347222222221,-0.032552083333333315,0.1410590277777778,2000,per 100 proposed disturbances
+2053,warming only,extended_prediction_active_refined,published_v1,lmi,0.4073386538859858,-5.05379486335168,1.8949682560158734,2000,m/s
+2053,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,85.1413226803741,-37.870474239393715,139.7069033250929,2000,km
+2053,warming only,extended_prediction_active_refined,published_v1,tc,0.00542534722222221,-0.2007378472222222,0.18446180555555536,2000,per 100 proposed disturbances
+2053,warming only,extended_prediction_active_refined,published_v1,landfall,-0.048828125,-0.1898871527777778,0.09765625,2000,per 100 proposed disturbances
+2056,MPI background,extended_prediction_active_refined,published_v1,lmi,0.7623746159921096,-2.829577993281194,3.953928855215672,2000,m/s
+2056,MPI background,extended_prediction_active_refined,selected_fourier,lmi,1.2783708082631584,-1.0144881720627776,3.7556793507745483,2000,m/s
+2056,MPI background,extended_prediction_active_refined,native_fourier,lmi,-0.20799048412190757,-2.6384099699453083,2.8795169449333793,2000,m/s
+2056,MPI background,published_v1,native_fourier,lmi,-0.9703651001140172,-3.3847643021388256,2.6067439074196925,2000,m/s
+2056,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,123.40430780582756,12.040961780676337,183.43495451881373,2000,km
+2056,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,40.848400613414526,-84.1615501081493,117.26322808751367,2000,km
+2056,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,9.377014559791178,-140.81678916271062,109.25093537309824,2000,km
+2056,MPI background,published_v1,native_fourier,displacement_48h_km,-114.02729324603638,-192.57911424355717,5.065259311214788,2000,km
+2056,MPI background,extended_prediction_active_refined,published_v1,tc,-0.03797743055555569,-0.23328993055555564,0.12491861979166603,2000,per 100 proposed disturbances
+2056,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.048828125,-0.1628960503472223,0.07066514756944377,2000,per 100 proposed disturbances
+2056,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.04882812500000011,-0.146484375,0.048828125,2000,per 100 proposed disturbances
+2056,MPI background,published_v1,native_fourier,tc,-0.01085069444444442,-0.16276041666666663,0.16818576388888895,2000,per 100 proposed disturbances
+2056,MPI background,extended_prediction_active_refined,published_v1,landfall,0.00542534722222221,-0.15733506944444448,0.12478298611111113,2000,per 100 proposed disturbances
+2056,MPI background,extended_prediction_active_refined,selected_fourier,landfall,-0.021701388888888895,-0.11393229166666674,0.08138020833333337,2000,per 100 proposed disturbances
+2056,MPI background,extended_prediction_active_refined,native_fourier,landfall,-0.021701388888888895,-0.1193576388888889,0.07609049479166598,2000,per 100 proposed disturbances
+2056,MPI background,published_v1,native_fourier,landfall,-0.027126736111111105,-0.10850694444444442,0.11393229166666669,2000,per 100 proposed disturbances
+2056,warming only,extended_prediction_active_refined,published_v1,lmi,0.18889400856498817,-1.459252170776236,3.377363158383522,2000,m/s
+2056,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,-25.680285907213857,-116.97411225232705,101.40858166270506,2000,km
+2056,warming only,extended_prediction_active_refined,published_v1,tc,-0.11393229166666674,-0.27126736111111116,0.08138020833333337,2000,per 100 proposed disturbances
+2056,warming only,extended_prediction_active_refined,published_v1,landfall,-0.05425347222222221,-0.15190972222222227,0.14648437499999994,2000,per 100 proposed disturbances
+2059,MPI background,extended_prediction_active_refined,published_v1,lmi,-3.6587445099538054,-5.645631218291159,1.6080024260720058,2000,m/s
+2059,MPI background,extended_prediction_active_refined,selected_fourier,lmi,0.25884769998112933,-1.7163694463720822,1.2558951282053872,2000,m/s
+2059,MPI background,extended_prediction_active_refined,native_fourier,lmi,-0.11693557722932346,-2.1493860300690404,1.2729919368752307,2000,m/s
+2059,MPI background,published_v1,native_fourier,lmi,3.541808932724482,-0.7497173426318983,5.146940687669286,2000,m/s
+2059,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,-26.97275976390786,-70.66128802885645,31.8259447683802,2000,km
+2059,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,-104.3897140087921,-150.61400046318414,-12.546749930097404,2000,km
+2059,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,-120.4384664745282,-172.57842699145047,-29.593191533004923,2000,km
+2059,MPI background,published_v1,native_fourier,displacement_48h_km,-93.46570671062034,-159.9143102594407,3.9863634717891143,2000,km
+2059,MPI background,extended_prediction_active_refined,published_v1,tc,0.03255208333333326,-0.14105902777777812,0.244140625,2000,per 100 proposed disturbances
+2059,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.02712673611111116,-0.13563368055555558,0.15204535590277712,2000,per 100 proposed disturbances
+2059,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.03797743055555558,-0.19531249999999994,0.17361111111111105,2000,per 100 proposed disturbances
+2059,MPI background,published_v1,native_fourier,tc,-0.07052951388888884,-0.1953125,0.11393229166666674,2000,per 100 proposed disturbances
+2059,MPI background,extended_prediction_active_refined,published_v1,landfall,-0.005425347222222099,-0.09223090277777785,0.19544813368055491,2000,per 100 proposed disturbances
+2059,MPI background,extended_prediction_active_refined,selected_fourier,landfall,0.02712673611111116,-0.0759548611111111,0.13020833333333331,2000,per 100 proposed disturbances
+2059,MPI background,extended_prediction_active_refined,native_fourier,landfall,0.02170138888888884,-0.0706651475694446,0.1410590277777778,2000,per 100 proposed disturbances
+2059,MPI background,published_v1,native_fourier,landfall,0.02712673611111094,-0.13020833333333337,0.0923665364583327,2000,per 100 proposed disturbances
+2059,warming only,extended_prediction_active_refined,published_v1,lmi,-1.2900369604057003,-2.5377203026338133,4.495134998615864,2000,m/s
+2059,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,66.16262991073911,-51.63728877929049,149.1200227380641,2000,km
+2059,warming only,extended_prediction_active_refined,published_v1,tc,0.01085069444444453,-0.18988715277777773,0.23328993055555558,2000,per 100 proposed disturbances
+2059,warming only,extended_prediction_active_refined,published_v1,landfall,0.04340277777777779,-0.11935763888888884,0.1681857638888889,2000,per 100 proposed disturbances
+new_six,MPI background,extended_prediction_active_refined,published_v1,lmi,-0.7628932840454379,-2.5853116997627255,1.5483395340381794,2000,m/s
+new_six,MPI background,extended_prediction_active_refined,selected_fourier,lmi,0.22149337698692317,-1.055328654901275,1.546854614991296,2000,m/s
+new_six,MPI background,extended_prediction_active_refined,native_fourier,lmi,0.044092660754778024,-1.3459738428391728,1.4859499572667043,2000,m/s
+new_six,MPI background,published_v1,native_fourier,lmi,0.8069859448002159,-1.1174133177922585,2.4415475514262006,2000,m/s
+new_six,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,3.3315115113271645,-50.691877550777434,71.96496148973083,2000,km
+new_six,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,-40.638889590767505,-106.1713002824966,63.65736620174509,2000,km
+new_six,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,-58.58325351443949,-122.60869842963663,52.78185833308015,2000,km
+new_six,MPI background,published_v1,native_fourier,displacement_48h_km,-61.914765025766656,-117.68055300144941,43.13135450648779,2000,km
+new_six,MPI background,extended_prediction_active_refined,published_v1,tc,0.006329571759259189,-0.11847601996527789,0.08770978009259256,2000,per 100 proposed disturbances
+new_six,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.03797743055555558,-0.10579427083333326,0.06600839120370361,2000,per 100 proposed disturbances
+new_six,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.05696614583333337,-0.13294361255787046,0.06510416666666663,2000,per 100 proposed disturbances
+new_six,MPI background,published_v1,native_fourier,tc,-0.06329571759259256,-0.1392505787037034,0.12121129918981458,2000,per 100 proposed disturbances
+new_six,MPI background,extended_prediction_active_refined,published_v1,landfall,0.002712673611111105,-0.08318865740740733,0.07055211950231481,2000,per 100 proposed disturbances
+new_six,MPI background,extended_prediction_active_refined,selected_fourier,landfall,-0.02983940972222221,-0.08951822916666663,0.05244502314814814,2000,per 100 proposed disturbances
+new_six,MPI background,extended_prediction_active_refined,native_fourier,landfall,-0.043402777777777735,-0.10850694444444453,0.05154079861111105,2000,per 100 proposed disturbances
+new_six,MPI background,published_v1,native_fourier,landfall,-0.04611545138888884,-0.10941116898148145,0.08501971209490726,2000,per 100 proposed disturbances
+new_six,warming only,extended_prediction_active_refined,published_v1,lmi,0.3766242121831411,-1.1795596445138787,2.1530395057211544,2000,m/s
+new_six,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,1.2744703359325698,-42.97991602389671,63.02256249028492,2000,km
+new_six,warming only,extended_prediction_active_refined,published_v1,tc,0.08680555555555536,-0.05427607783564813,0.1790590639467591,2000,per 100 proposed disturbances
+new_six,warming only,extended_prediction_active_refined,published_v1,landfall,0.08951822916666674,-0.03890426070601848,0.1772280092592593,2000,per 100 proposed disturbances
+all_seven,MPI background,extended_prediction_active_refined,published_v1,lmi,-0.0012015855047987634,-1.8497182287605933,1.6420934377698182,2000,m/s
+all_seven,MPI background,extended_prediction_active_refined,selected_fourier,lmi,0.19645866226272357,-1.0206808508235805,1.4247551224422519,2000,m/s
+all_seven,MPI background,extended_prediction_active_refined,native_fourier,lmi,0.18124962312521553,-1.0797040292977453,1.38470821848125,2000,m/s
+all_seven,MPI background,published_v1,native_fourier,lmi,0.1824512086300143,-1.155201164097151,1.8944060356195445,2000,m/s
+all_seven,MPI background,extended_prediction_active_refined,published_v1,displacement_48h_km,-0.7587223048973861,-46.5515222256361,60.44638759847616,2000,km
+all_seven,MPI background,extended_prediction_active_refined,selected_fourier,displacement_48h_km,-63.187371696204124,-118.29872669881065,49.91474262908304,2000,km
+all_seven,MPI background,extended_prediction_active_refined,native_fourier,displacement_48h_km,-77.68650838521157,-134.83783735230395,38.96305544787746,2000,km
+all_seven,MPI background,published_v1,native_fourier,displacement_48h_km,-76.92778608031418,-126.51963712186004,28.998963205826648,2000,km
+all_seven,MPI background,extended_prediction_active_refined,published_v1,tc,0.0224764384920636,-0.10230654761904767,0.08839440724206339,2000,per 100 proposed disturbances
+all_seven,MPI background,extended_prediction_active_refined,selected_fourier,tc,-0.03565228174603163,-0.09610615079365081,0.05270337301587302,2000,per 100 proposed disturbances
+all_seven,MPI background,extended_prediction_active_refined,native_fourier,tc,-0.05967881944444431,-0.12710813492063477,0.05037822420634919,2000,per 100 proposed disturbances
+all_seven,MPI background,published_v1,native_fourier,tc,-0.08215525793650791,-0.1550099206349207,0.09767562624007937,2000,per 100 proposed disturbances
+all_seven,MPI background,extended_prediction_active_refined,published_v1,landfall,0.012400793650793718,-0.06514291914682557,0.07285466269841268,2000,per 100 proposed disturbances
+all_seven,MPI background,extended_prediction_active_refined,selected_fourier,landfall,-0.037202380952380876,-0.08758060515873023,0.04962255084325396,2000,per 100 proposed disturbances
+all_seven,MPI background,extended_prediction_active_refined,native_fourier,landfall,-0.05037822420634919,-0.1054261222718254,0.049603174603174593,2000,per 100 proposed disturbances
+all_seven,MPI background,published_v1,native_fourier,landfall,-0.0627790178571429,-0.11862134176587298,0.07362971230158721,2000,per 100 proposed disturbances
+all_seven,warming only,extended_prediction_active_refined,published_v1,lmi,0.21236067647475632,-1.1280608540157453,1.8589112225187905,2000,m/s
+all_seven,warming only,extended_prediction_active_refined,published_v1,displacement_48h_km,-1.5495522475243995,-36.63049323492269,53.112305927089736,2000,km
+all_seven,warming only,extended_prediction_active_refined,published_v1,tc,0.08680555555555547,-0.02867683531746013,0.1736304873511902,2000,per 100 proposed disturbances
+all_seven,warming only,extended_prediction_active_refined,published_v1,landfall,0.08835565476190471,-0.020170665922619124,0.16276041666666663,2000,per 100 proposed disturbances

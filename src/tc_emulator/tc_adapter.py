@@ -2,6 +2,7 @@
 from functools import lru_cache
 import json
 from pathlib import Path
+import warnings
 
 import numpy as np
 import pandas as pd
@@ -12,6 +13,10 @@ from .common import COMPONENTS, ROOT, atomic, fingerprint_rng
 from .physical import nearest_valid, upstream
 
 DAY=86400.
+
+
+class WindGridBoundary(ValueError):
+    """A finite trial position is outside the daily wind field's spatial support."""
 
 
 class EventWind:
@@ -29,16 +34,17 @@ class EventWind:
             raise ValueError("Event axes must increase")
 
     @staticmethod
-    def bracket(axis,v):
+    def bracket(axis,v,*,spatial=False):
         if not np.isfinite(v) or v<axis[0]-1e-7 or v>axis[-1]+1e-7:
-            raise ValueError(f"Event coordinate {v} outside [{axis[0]}, {axis[-1]}]")
+            error = WindGridBoundary if spatial and np.isfinite(v) else ValueError
+            raise error(f"Event coordinate {v} outside [{axis[0]}, {axis[-1]}]")
         i=int(np.clip(np.searchsorted(axis,v,side="right")-1,0,len(axis)-2))
         return i,(v-axis[i])/(axis[i+1]-axis[i])
 
     def __call__(self,lon,lat,seconds):
         xx=lon+360*np.rint(((self.x[0]+self.x[-1])/2-lon)/360)
-        i,a=self.bracket(self.x,xx)
-        j,b=self.bracket(self.y,lat)
+        i,a=self.bracket(self.x,xx,spatial=True)
+        j,b=self.bracket(self.y,lat,spatial=True)
         k,c=self.bracket(self.t,seconds+self.origin_s)
         cube=self.wind[k:k+2,j:j+2,i:i+2]
         by_lon=(1-a)*cube[:,:,0]+a*cube[:,:,1]
@@ -109,6 +115,30 @@ def along_track_wind(fast,lon,lat,seconds,intensity):
     return np.r_[wind,steering,motion,fast._calc_S(wind),weights]
 
 
+def integrate_track(fast, lon, lat, intensity, moisture, seed_id, event_id):
+    # RK trial stages can cross the wind halo before solve_ivp checks for a basin exit.
+    # Retry the identical initial condition with a smaller step, using the same wind field.
+    initial_step = fast.max_step_seconds
+    try:
+        for subdivision in (1, 2, 4, 8):
+            fast.max_step_seconds = initial_step / subdivision
+            try:
+                result = fast.gen_track(lon, lat, intensity, moisture)
+            except WindGridBoundary:
+                if subdivision == 8:
+                    raise
+            else:
+                if subdivision > 1:
+                    warnings.warn(
+                        f"Resolved FAST wind-grid boundary for {event_id}, seed {seed_id}: "
+                        f"step cap {initial_step:g} -> {fast.max_step_seconds:g} seconds",
+                        RuntimeWarning, stacklevel=2,
+                    )
+                return result
+    finally:
+        fast.max_step_seconds = initial_step
+
+
 def tracks(event,seeds,days,*,wind_provider=None):
     upstream()
     import namelist
@@ -120,6 +150,7 @@ def tracks(event,seeds,days,*,wind_provider=None):
     units=["degrees_east","degrees_north","m s-1","1","m s-1"]+["m s-1"]*9+["1","1"]
     trace=np.full((n,nstep,len(names)),np.nan,dtype="float32")
     fast,region=model(event,days,float(seeds.offset_s.min()),wind_provider)
+    event_id = f"{event.attrs.get('background_id','unknown')}/{event.attrs.get('weather_id','unknown')}"
     outcomes=[]
     for idx,s in enumerate(seeds.itertuples(index=False)):
         rec={"seed_id":int(s.seed_id),"lon":float(s.lon),"lat":float(s.lat),"offset_s":float(s.offset_s),
@@ -149,7 +180,7 @@ def tracks(event,seeds,days,*,wind_provider=None):
         m=float(namelist.f_mInit(fast.f_rh.ev(lon,lat).item()))
         if wind_provider is not None:
             wind_provider.begin_seed(s.seed_id)
-        result=fast.gen_track(lon,lat,float(s.v_init),m)
+        result=integrate_track(fast,lon,lat,float(s.v_init),m,s.seed_id,event_id)
         if result is None:
             rec["reason"]="ventilation"
             continue

@@ -1,0 +1,15 @@
+{
+  "accepted_storms": 4561,
+  "eligible_48h": 4045,
+  "max_rebuilt_distance_difference_km": 0.0,
+  "new_archives_sha256": {
+    "attempts.parquet": "e383ad948e7f07ed243038d9ebd6065eeed916af6ab4282883ddfbca97227276",
+    "tracks_6h.parquet": "ed7cc5b31b64fe6a13e0ee245d9552c20b87679848b1681d99e35560d52f0cb4"
+  },
+  "new_attempt_rows": 774144,
+  "previous_attempt_rows": 129024,
+  "registered_plan_sha256": "01b430e2d7972c58f481d7f7d8a3f607494465e21de8db1455a760eca78b312a",
+  "shared_proposals": 110592,
+  "six_hourly_fixes": 166348,
+  "source_files_sha256": "0c1ca570a48fdfee8210de08bccff04daff8ed3e06a10767e2dfd8e7ba815583"
+}

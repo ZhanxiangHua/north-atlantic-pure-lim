@@ -51,3 +51,34 @@ def test_wind_and_replay_share_calendar_centres():
     assert out.value.sel(t_seconds=0).item() == 14 and out.value.isel(t_seconds=-1).item() == 30
     with pytest.raises(ValueError, match="cover"):
         replay_event(ds, 15, "id", origin_day=15)
+
+
+def test_spatial_trial_overshoot_retries_the_same_track_and_restores_step():
+    from tc_emulator.tc_adapter import EventWind, WindGridBoundary, integrate_track
+
+    calls = []
+    axis = np.array([0., 1.])
+
+    def trial(*state):
+        calls.append((fast.max_step_seconds, state))
+        if fast.max_step_seconds > 5400:
+            EventWind.bracket(axis, 2., spatial=True)
+        return state
+
+    fast = SimpleNamespace(max_step_seconds=10800, gen_track=trial)
+    with pytest.warns(RuntimeWarning, match="seed 17"):
+        assert integrate_track(fast, 300., 17., 8., .6, 17, "test") == (300., 17., 8., .6)
+    assert [step for step, _ in calls] == [10800, 5400]
+    assert calls[0][1] == calls[1][1] and fast.max_step_seconds == 10800
+    for value, spatial in ((2., False), (np.nan, True)):
+        with pytest.raises(ValueError) as exc:
+            EventWind.bracket(axis, value, spatial=spatial)
+        assert not isinstance(exc.value, WindGridBoundary)
+
+    def always_outside(*state):
+        raise WindGridBoundary("still outside")
+
+    fast.gen_track = always_outside
+    with pytest.raises(WindGridBoundary, match="still outside"):
+        integrate_track(fast, 300., 17., 8., .6, 17, "test")
+    assert fast.max_step_seconds == 10800

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+#PBS -N tc_mid_tracks
+#PBS -q casper
+#PBS -l select=1:ncpus=4:mem=9GB
+#PBS -l walltime=03:00:00
+#PBS -J 0-79%24
+#PBS -j oe
+set -euo pipefail
+cd "${PBS_O_WORKDIR:?}"
+source experiments/annual_refinement/env.sh
+exec "$TC_PYTHON" -u experiments/annual_refinement/midcentury_storms.py --index "${PBS_ARRAY_INDEX:?}" \
+    --base "${TC_BASE_WEIGHTS:-$PWD/weights}" --research "${TC_RESEARCH_WEIGHTS:-$PWD/work/refined_weights}"

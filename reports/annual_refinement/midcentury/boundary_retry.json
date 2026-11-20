@@ -1,0 +1,20 @@
+{
+  "draw": 1,
+  "landfall_2700": false,
+  "landfall_5400": false,
+  "lmi_2700_ms": 9.414139633856045,
+  "lmi_5400_ms": 9.414139633856045,
+  "member": "r37i1p1f1",
+  "month": 12,
+  "origin": 12,
+  "protocol": "warming only",
+  "recovered_step_s": 5400,
+  "reference_step_s": 2700,
+  "seed_id": 53,
+  "tc_2700": false,
+  "tc_5400": false,
+  "termination_2700": "basin_exit",
+  "termination_5400": "basin_exit",
+  "warning": "Resolved FAST wind-grid boundary for 2044/12/r37i1p1f1/1/1, seed 53: step cap 10800 -> 5400 seconds",
+  "year": 2044
+}

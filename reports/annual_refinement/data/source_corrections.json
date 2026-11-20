@@ -4,5 +4,11 @@
     "frozen_sha256": "042ccca564bba6c7f549c4fa253b820861e0016529199d76a38bd2521c09f6ef",
     "published_sha256": "283cde88da67af24a499dd841ff3ef8dbe2b6f399e38828dc59464e693472863",
     "utc": "2026-11-20T12:18:01+00:00"
+  },
+  "src/tc_emulator/tc_adapter.py": {
+    "change": "A finite spatial wind-grid overshoot during a FAST trial step triggers a retry of the identical disturbance with a smaller integration step cap. The successful original integration path keeps its original cap. In the six new SSP2-4.5 years only the warming-only Research case documented in midcentury/boundary_retry.json used the fallback. The 90- and 45-minute caps give identical TC and landfall classification. The pre-follow-up runtime is preserved in parent commit 01f169cfffc0dd5054fc7704c86667974f3065e6.",
+    "frozen_sha256": "85f38b6a25329d64ea7e0447146879e2541bbdb1a17d25039be7a188c3eeca41",
+    "published_sha256": "63a1296bd5709c9fa014d6b9ac300979542359750a0b670ae9921c66197a17f7",
+    "utc": "2026-11-20T16:58:29+00:00"
   }
 }
