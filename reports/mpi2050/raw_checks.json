@@ -1,0 +1,30 @@
+[
+  {
+    "max_abs_error_ms": 0.0,
+    "member": "r9i1p1f1",
+    "n": 18,
+    "source": "https://esgf-world.s3.us-east-2.amazonaws.com/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r9i1p1f1/day/ua/gn/v20190710/ua_day_MPI-ESM1-2-LR_ssp245_r9i1p1f1_gn_20350101-20541231.nc",
+    "variable": "ua"
+  },
+  {
+    "max_abs_error_ms": 0.0,
+    "member": "r9i1p1f1",
+    "n": 18,
+    "source": "https://esgf-world.s3.us-east-2.amazonaws.com/CMIP6/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r9i1p1f1/day/va/gn/v20190710/va_day_MPI-ESM1-2-LR_ssp245_r9i1p1f1_gn_20350101-20541231.nc",
+    "variable": "va"
+  },
+  {
+    "max_abs_error_ms": 0.0,
+    "member": "r39i1p1f1",
+    "n": 18,
+    "source": "https://esgf3.dkrz.de/thredds/fileServer/cmip6_mh1007/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r39i1p1f1/day/ua/gn/v20190815/ua_day_MPI-ESM1-2-LR_ssp245_r39i1p1f1_gn_20350101-20541231.nc",
+    "variable": "ua"
+  },
+  {
+    "max_abs_error_ms": 0.0,
+    "member": "r39i1p1f1",
+    "n": 18,
+    "source": "https://esgf3.dkrz.de/thredds/fileServer/cmip6_mh1007/ScenarioMIP/MPI-M/MPI-ESM1-2-LR/ssp245/r39i1p1f1/day/va/gn/v20190815/va_day_MPI-ESM1-2-LR_ssp245_r39i1p1f1_gn_20350101-20541231.nc",
+    "variable": "va"
+  }
+]

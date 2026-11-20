@@ -89,16 +89,16 @@ def panel(seed,n):
                          "offset_s":np.zeros(n)})
 
 
-def replay_event(ds,days,member_month=None):
-    start=4  # September 5 at the daily mean centre
-    if days<1 or start+days+2>ds.sizes["day"]:
+def replay_event(ds,days,member_month=None,*,origin_day=5):
+    start=origin_day-1  # The origin is the centre of its UTC day.
+    if days<1 or start<1 or start+days+2>ds.sizes["day"]:
         raise ValueError("Observed September cannot cover the requested event and its two boundary nodes")
-    if int(ds.day.values[start])!=5 or np.any(np.diff(ds.day)!=1):
+    if int(ds.day.values[start])!=origin_day or np.any(np.diff(ds.day)!=1):
         raise ValueError("Incomplete observed event")
     out=ds.drop_vars(["day","time"]).isel(day=slice(start-1,start+days+2)).rename_dims({"day":"t_seconds"})
     out=out.assign_coords(t_seconds=("t_seconds",np.arange(-1,days+2,dtype=float)*DAY,{"units":"s"}))
     ident=member_month or f"{ds.attrs['member']}-{ds.attrs['experiment']}-{ds.attrs['year']}"
-    out.attrs.update(background_id=ident,weather_id=ident+"-replay",duration_days=days,origin_day=5)
+    out.attrs.update(background_id=ident,weather_id=ident+"-replay",duration_days=days,origin_day=origin_day)
     return out
 
 

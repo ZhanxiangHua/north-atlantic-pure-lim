@@ -1,0 +1,58 @@
+{
+  "daily_reference_fields_per_member": 30,
+  "external_raw_wind_checks": 72,
+  "model_id": "8778f30d7ca233b6b52522d1eb2389265c7fef3980ccc03091a4dc27b50c96fe",
+  "packages": {
+    "netCDF4": "1.7.4",
+    "numpy": "2.4.3",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "torch": "2.8.0",
+    "xarray": "2026.2.0"
+  },
+  "per_file": {
+    "attempts.parquet": {
+      "columns": 16,
+      "equal_including_all_values": true,
+      "rerun_sha256": "267830f6b5853a214e9eadbfe59165748e308fcf04ec7e22bdd343109faba573",
+      "rows": 131072,
+      "sha256": "267830f6b5853a214e9eadbfe59165748e308fcf04ec7e22bdd343109faba573"
+    },
+    "attempts_moments.parquet": {
+      "columns": 16,
+      "equal_including_all_values": true,
+      "rerun_sha256": "cd3dd5753a6d19153929e99a25c9cf8506c2cfb48a7e31880d39b3854ede18cd",
+      "rows": 32768,
+      "sha256": "cd3dd5753a6d19153929e99a25c9cf8506c2cfb48a7e31880d39b3854ede18cd"
+    },
+    "weather.csv": {
+      "columns": 11,
+      "equal_including_all_values": true,
+      "rerun_sha256": "810c9b2c51a3a8e72373fc417e98db9fe6cef441eba13f913e545a01f62366fb",
+      "rows": 1544,
+      "sha256": "810c9b2c51a3a8e72373fc417e98db9fe6cef441eba13f913e545a01f62366fb"
+    },
+    "weather_moments.csv": {
+      "columns": 11,
+      "equal_including_all_values": true,
+      "rerun_sha256": "33159af870ea9994cb1a9fa79c5d8ad54f5887386abcf0dbe4114e18e4286aa0",
+      "rows": 512,
+      "sha256": "33159af870ea9994cb1a9fa79c5d8ad54f5887386abcf0dbe4114e18e4286aa0"
+    }
+  },
+  "python": "3.12.13",
+  "raw_max_abs_error_ms": 0.0,
+  "reference_inputs": {
+    "r11i1p1f1": "fdd171b2654233bc2a28210a52bb963eea973ff3a0e6d09fc234245ade848c0a",
+    "r32i1p1f1": "ff2d3f0a72d0efd3fce5f0a524dee01c87778d39cafed6ec4bd704fef5c73be7",
+    "r35i1p1f1": "00b85723eff77d10f81d5504e6cb6cab66a73634485b60cc1bd77c4d325e3194",
+    "r37i1p1f1": "a6090d545c8cad1435527b4bb28b70998bda30fac85b9f846d5f76c91c7bb2c0",
+    "r39i1p1f1": "3fba3bbcdc03256b3246c863d2abdb4281ce6afcc42b157c26249f3dffa960fb",
+    "r40i1p1f1": "2b074fb1c66c5c6b93dec9850dead01a1e262018ab2f73b9c773fcc5b1022020",
+    "r45i1p1f1": "3f9a308a1d65f5319cba1545bd2ac32e2bf9598481593c3b48dbe6b8c454b848",
+    "r9i1p1f1": "9b9f120f01e624fb559d2d6b5b75422d07d521127ecf4453b5a01e830f2487f1"
+  },
+  "reference_members": 8,
+  "replay": "Second full run from the public checkout using the same verified CMIP6 reference months and numerical environment.",
+  "simulation_workers": 16
+}

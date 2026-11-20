@@ -1,0 +1,13 @@
+{
+  "daily_change_lim": 26.88527675135515,
+  "daily_change_reference": 31.79033038076132,
+  "gain": 1.0943625639055374,
+  "lag_weight": 0.009933850615739585,
+  "lagged_gain": 1.087155044039353,
+  "max_steering_change_ms": 7.62939453125e-06,
+  "september_training_months": 525,
+  "training_lim": 39.94317706086952,
+  "training_reference": 47.83712402740992,
+  "validation_draws_per_month": 16,
+  "validation_months": 42
+}

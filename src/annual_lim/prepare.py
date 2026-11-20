@@ -66,7 +66,7 @@ def clock(h, row, year):
     return left, edges, ndays, cal
 
 
-def regional(h, row, year, settings, remote):
+def regional(h, row, year, settings, remote, month=None):
     for k, v in {
         "source_id": MODEL,
         "experiment_id": row.experiment,
@@ -82,9 +82,17 @@ def regional(h, row, year, settings, remote):
     if "time: mean" not in attr(ds, "cell_methods", ""):
         raise ValueError(f"Expected CF time mean for {name}")
     left, edges, ndays, cal = clock(h, row, year)
+    if month is not None:
+        if not 1 <= month <= 12:
+            raise ValueError("Month must be between 1 and 12")
+        start = int(ndays[: month - 1].sum()) if row.table == "day" else month - 1
+        length = int(ndays[month - 1]) if row.table == "day" else 1
+        left += start
+        edges = edges[start : start + length + 1]
+        ndays = ndays[month - 1 : month]
     t = h["time"]
     bounds = h[attr(t, "bounds")]
-    out = dict(calendar=cal, ndays=ndays, units=attr(ds, "units"))
+    out = dict(calendar=cal, first_month=month or 1, ndays=ndays, units=attr(ds, "units"))
     if name in ("thetao", "tos", "mlotst"):
         out["latitude"], out["longitude"] = array(h["latitude"]), array(h["longitude"])
         if name == "thetao":
@@ -139,7 +147,7 @@ def regional(h, row, year, settings, remote):
     return out
 
 
-def fetch(row, year, settings):
+def fetch(row, year, settings, month=None):
     errors = []
     for location in dict.fromkeys((row.local, row.aws, row.esgf)):
         if not location or (not location.startswith("http") and not Path(location).is_file()):
@@ -149,7 +157,7 @@ def fetch(row, year, settings):
             if location.startswith("http"):
                 remote = RangeFile(location, row.bytes)
             with h5py.File(remote if remote else location, "r") as h:
-                result = regional(h, row, year, settings, remote)
+                result = regional(h, row, year, settings, remote, month)
             return result, dict(
                 url=location,
                 source_checksum=row.checksum,
@@ -165,15 +173,17 @@ def fetch(row, year, settings):
 
 
 def assemble(raw, settings, month):
-    m = month - 1
     ta = raw["ta"]
+    m = month - ta.get("first_month", 1)
+    if not 0 <= m < len(ta["ndays"]):
+        raise ValueError("Requested month is missing from the prepared fields")
     for v in ("psl", "hus", "tas", "ua", "va"):
         for coord in ("lat", "lon"):
             np.testing.assert_allclose(raw[v][coord], ta[coord], rtol=0, atol=1e-5)
     for v in raw:
         np.testing.assert_array_equal(raw[v]["ndays"], ta["ndays"])
-        if raw[v]["calendar"] != ta["calendar"]:
-            raise ValueError("Mixed calendars")
+        if raw[v]["calendar"] != ta["calendar"] or raw[v].get("first_month", 1) != ta.get("first_month", 1):
+            raise ValueError("Inconsistent calendar or starting month")
     np.testing.assert_array_equal(ta["plev"], raw["hus"]["plev"])
     for v in ("tos", "mlotst"):
         for coord in ("latitude", "longitude"):

@@ -1,0 +1,20 @@
+{
+  "scenario": "ssp245",
+  "year": 2050,
+  "month": 9,
+  "seed": 20500917,
+  "origins": [5, 14],
+  "event_days": 15,
+  "weather_draws": 32,
+  "track_draws": 4,
+  "seeds_per_panel": 256,
+  "member_resamples": 5000,
+  "primary_storm_metric": "TC formations per 100 proposed seeds",
+  "primary_wind_metric": "15-day within-month steering anomaly variance, core basin, m2/s2",
+  "secondary": ["1/5/10-day steering variance", "zonal steering anomaly correlation at 7.5 degrees",
+                "90th percentile of deep shear", "three-day weak-shear fraction (<8 m/s each day)",
+                "TC landfalls per 100 proposed seeds", "TC lifetime maximum wind distribution",
+                "48-hour displacement distribution"],
+  "corridor": {"south": 10, "north": 30, "west_degrees_east": 280, "east_degrees_east": 340},
+  "inference": "Mean-level absolute error against MPI or 1D Wasserstein distance. Native Fourier error minus LIM error. Paired percentile intervals resample eight entire MPI members, keeping origins, seed panels and model draws together."
+}

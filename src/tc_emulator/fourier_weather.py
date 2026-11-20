@@ -44,6 +44,11 @@ def hourly_fourier(seed, days=30):
     return time, factors
 
 
+def daily_factors(hourly):
+    """Integrate piecewise-linear hourly factors over each complete UTC day."""
+    return ((hourly[:, :-1] + hourly[:, 1:]) / 2).reshape(hourly.shape[0], -1, 24).mean(axis=2)
+
+
 def grid_covariance(rep, dim, sigma):
     basis = rep.blocks["wind"]
     # Convert physical EOF loadings to [lat, lon, component, mode].
@@ -77,7 +82,7 @@ class WindStatistics:
     def daily(self, seed):
         _, hourly = hourly_fourier(seed)
         # Exact daily means of the hourly linearly interpolated upstream forcing.
-        daily = ((hourly[:, :-1]+hourly[:, 1:])/2).reshape(4, 30, 24).mean(axis=2)
+        daily = daily_factors(hourly)
         fluctuation = np.einsum("yxij,jt->tiyx", self.lower, daily, optimize=True)
         # The native point sampler returns zero winds when Cholesky fails.
         return np.where(self.valid, self.mean + fluctuation, 0.).astype("float32")
@@ -85,7 +90,7 @@ class WindStatistics:
 
 class NativeFourierWind:
     """Use native spatial interpolation, pointwise Cholesky and hourly time interpolation."""
-    def __init__(self, stats, lon, lat, seed, key, draw, independent_storms):
+    def __init__(self, stats, lon, lat, seed, key, draw, independent_storms, *, origin_day=5, daily_mean=False):
         upstream()
         from track.bam_track import BetaAdvectionTrack
 
@@ -101,14 +106,21 @@ class NativeFourierWind:
         self.native = native
         self.seed, self.key, self.draw = seed, key, draw
         self.independent_storms = independent_storms
-        self.start = 4.5*DAY  # September 5 at noon on the monthly grid.
-        self.t = np.array([-self.start, 30*DAY-self.start])
+        if not 1 <= origin_day <= 30:
+            raise ValueError("September origin day is out of range")
+        self.daily_mean = daily_mean
+        self.start = (origin_day - 0.5) * DAY
+        bounds = [0.5, 29.5] if daily_mean else [0, 30]
+        self.t = np.asarray(bounds) * DAY - self.start
         self.origin_s = 0.
         if not independent_storms:
             self.set_phases(None)
 
     def set_phases(self, storm):
         time, factors = hourly_fourier(phase_seed(self.seed, self.key, self.draw, storm))
+        if self.daily_mean:
+            factors = daily_factors(factors)
+            time = (np.arange(factors.shape[1]) + 0.5) * DAY
         self.native.Fs_i = interp1d(time, factors, axis=1)
 
     def begin_seed(self, seed_id):

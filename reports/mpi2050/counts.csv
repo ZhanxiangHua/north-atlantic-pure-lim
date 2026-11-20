@@ -1,0 +1,11 @@
+protocol,method,attempts,tc,landfalls,complete_48h
+FaIR warming only,Native Fourier,16384,400,303,346
+FaIR warming only,Pure LIM,16384,399,283,359
+MPI background,Daily Fourier,16384,424,329,364
+MPI background,Native Fourier,16384,404,313,346
+MPI background,Pure LIM,16384,389,281,345
+MPI monthly wind moments,Native Fourier,16384,330,247,285
+MPI monthly wind moments,Pure LIM,16384,365,278,316
+MPI warming only,Native Fourier,16384,393,297,342
+MPI warming only,Pure LIM,16384,401,285,361
+Reference,MPI daily,16384,432,337,370
