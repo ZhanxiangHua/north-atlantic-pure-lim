@@ -54,5 +54,14 @@
   },
   "reference_members": 8,
   "replay": "Second full run from the public checkout using the same verified CMIP6 reference months and numerical environment.",
-  "simulation_workers": 16
+  "simulation_workers": 16,
+  "six_hourly_tracks": {
+    "accepted_tracks": 3242,
+    "driver_input_combinations": 8,
+    "experiment": "Main September 2050 runs. The same rerun with track export reproduced the published attempts.parquet and weather.csv byte for byte.",
+    "file": "tc_tracks_6h.parquet",
+    "fixes": 118471,
+    "protocols_including_reference": 4,
+    "sha256": "f7c0bf690885acd68c785d949a0ae54ca414b97cffb91546b0e3c3f80ce40468"
+  }
 }

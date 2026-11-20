@@ -4,8 +4,8 @@ Generate Atlantic monthly ocean–atmosphere backgrounds and daily 250/850 hPa w
 
 | Tutorial | What you can follow |
 | --- | --- |
-| [Annual pure LIM](notebooks/Annual_Pure_LIM_Tutorial.ipynb) | Follow the [mathematical flowchart](reports/annual_lim_math_flow.pdf) through an August example, from weighted EOFs and monthly background covariance to two daily weather draws. Check 15-day wind variance and sample a leap year. [English derivation](reports/annual_lim_linear_algebra.md) |
-| [FaIR → EOF → LIM → tropical cyclones](notebooks/FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb) | Run SSP2-4.5 in FaIR, generate September fields, then integrate storms for 15 days. Compare native Fourier weather on paired seed panels and inspect historical wind intensity and displacement against NOAA best tracks. [Benchmark results, figures and tracks](reports/fair_to_tc/README.md) |
+| [Annual pure LIM](notebooks/Annual_Pure_LIM_Tutorial.ipynb) | Follow an August map through training, then use the saved weights to draw two weather histories at +2 K. Section 5 reconstructs the first day’s four wind maps from 120 scores and checks the result against the event file. [Training diagram](reports/annual_lim_math_flow.png) · [Sampling diagram](reports/annual_lim_sampling_flow.png) · [English derivation](reports/annual_lim_linear_algebra.md) |
+| [FaIR → EOF → LIM → tropical cyclones](notebooks/FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb) | Run SSP2-4.5 in FaIR, generate September fields and integrate storms for 15 days. Sections 5–6 replay one seed under MPI, LIM and native Fourier winds, map all accepted tracks with a fixed MPI background and rebuild the displacement distributions and paired intervals. [Driver inputs and outputs](reports/annual_lim_tc_flow.png) · [Track maps and statistics](reports/mpi2050/README.md) |
 
 The September 2050 SSP2-4.5 benchmark replays eight held-out MPI members with daily winds in Coupled FAST. With the FaIR input, the 48-hour displacement distribution was 32 km from the MPI replay for LIM and 230 km for native Fourier. Formation rates were 2.44 per 100 proposed seeds for both. The report includes paired uncertainty intervals, the native hourly and daily-averaged controls, and a training-only shear calibration. [MPI daily benchmark and figure](reports/mpi2050/README.md)
 
@@ -28,7 +28,7 @@ tar -xzf annual_lim_full.tar.gz --strip-components=1 annual_lim/weights
 | Use FaIR and Coupled FAST from Python, including the native Fourier driver | `python -m pip install -r requirements-tc.txt` |
 | Open and rerun either notebook, with figures and benchmarks | `python -m pip install -r requirements-notebook.txt` |
 
-For a CPU-only Linux installation, you can first run `python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu` in the new virtual environment. The notebook requirements include both modeling stacks. The checkout supplies the calibrated FaIR scenario inputs, TC solver, thermodynamic tables, geography and historical track subset. After dependency and weight installation the demonstrations run offline. Set `ANNUAL_LIM_WEIGHTS` to reuse a different fitted-weight directory in the notebooks. Set `TC_DEMO_WORKERS` to control the number of benchmark processes (default 2). [Input versions and provenance](notebooks/data/README.md)
+For a CPU-only Linux installation, you can first run `python -m pip install torch==2.8.0 --index-url https://download.pytorch.org/whl/cpu` in the new virtual environment. The notebook requirements include both modeling stacks. The checkout supplies the calibrated FaIR scenario inputs, TC solver, thermodynamic tables, geography, one MPI reference month and the six-hourly ensemble tracks. After dependency and weight installation the demonstrations run offline. Set `ANNUAL_LIM_WEIGHTS` to reuse a different fitted-weight directory in the notebooks. Set `TC_DEMO_WORKERS` to control the number of benchmark processes (default 2). [Input versions and provenance](notebooks/data/README.md)
 
 ~~~bash
 python -m pip install -r requirements-notebook.txt -c constraints-benchmark.txt
@@ -74,4 +74,4 @@ fit_job=$(qsub -A "$PROJECT_ALLOCATION" -v ANNUAL_PYTHON="$ANNUAL_PYTHON" -W "de
 qsub -A "$PROJECT_ALLOCATION" -v ANNUAL_PYTHON="$ANNUAL_PYTHON" -W "depend=afterok:${fit_job}" cluster/validate.pbs
 ~~~
 
-中文技术说明从两格点例子开始，介绍背景、天气和风场重建。全年教程里的流程图与第 1–9 节逐一对应。第二本教程用 FaIR 情景驱动北大西洋逐日风和 Coupled FAST，并给出同种子对照、逐小时轨迹和 NOAA 历史观测比较。[中文技术说明](reports/annual_lim_guide.md) · [全年分月验证](reports/annual_lim_results.md) · [数学流程图 PDF](reports/annual_lim_math_flow.pdf) · [气旋实验结果](reports/fair_to_tc/README.md)
+中文技术说明从两格点例子开始，介绍背景、天气和风场重建。三页流程图依次讲训练、采样和气旋实验，每一步都写出输入、输出、公式含义及对应章节。全年教程第 5 节用 8 月权重把第 1 天的 120 个风系数还原为四张风图，并与输出文件逐格核对。第二本教程用 FaIR 情景驱动北大西洋逐日风和 Coupled FAST，并给出同种子对照和逐小时轨迹。第 5–6 节现场用 MPI、LIM 和傅里叶三种风回放同一颗种子，再从 8 个留出成员的轨迹重算 48 小时位移分布和配对区间。[中文技术说明](reports/annual_lim_guide.md) · [全年分月验证](reports/annual_lim_results.md) · [数学流程图 PDF](reports/annual_lim_math_flow.pdf) · [气旋实验结果](reports/fair_to_tc/README.md)

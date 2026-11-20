@@ -2,8 +2,7 @@
   "sha256": {
     "fair_2451.csv": "7161bd21057ac5da3adcf19b60c33ebd05f401d3535bf6eed3717db40ec3004f",
     "fair_species.csv": "42d04aa1a8f385cc53eae22beab26f857c535c5aa7dfdb98176d712bfc0c95a0",
-    "rcmip_ssp245.npz": "6035d29370105cbc69db853c77003b3efb6f2de635ef34b6e8c094cd9f50c954",
-    "hurdat2_synoptic.csv.gz": "e90b9d2c81a856c1592e56ff98684b1cfe6574720292c446025609e72e536c52"
+    "rcmip_ssp245.npz": "6035d29370105cbc69db853c77003b3efb6f2de635ef34b6e8c094cd9f50c954"
   },
   "fair": {
     "version": "2.2.4",
@@ -18,10 +17,5 @@
     "scenario": "ssp245",
     "reference": "https://doi.org/10.5281/zenodo.4589756",
     "processing": "FaIR.fill_from_rcmip on annual steps from 1750 to 2101. Unused species inputs retain NaNs."
-  },
-  "hurdat2": {
-    "source": "https://www.nhc.noaa.gov/data/hurdat/hurdat2-1851-2024-040425.txt",
-    "source_sha256": "d595ada8aaa64e402c26eeb80efb344b52ef420b1627d8c0ee6ee65f0729923b",
-    "processing": "Six-hourly fixes from Atlantic storm IDs in 1980–2021, including all statuses. Wind is in knots."
   }
 }

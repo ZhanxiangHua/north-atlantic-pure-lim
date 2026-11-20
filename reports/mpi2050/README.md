@@ -1,6 +1,6 @@
 # How well does the emulator reproduce MPI weather and tropical cyclones in September 2050?
 
-For the North Atlantic under SSP2-4.5, the frozen pure LIM reproduces multiday steering and the distribution of 48-hour storm displacement more closely than the TC package's native Fourier weather. Formation and landfall rates give a less decisive result. With the FaIR warming input, MPI daily winds produced 432 tropical cyclones in 16,384 proposed seeds, compared with 399 from LIM and 400 from Fourier. The target here is MPI weather passed through the same Coupled FAST solver. Historical observations supply a separate check on the coupled system. [MPI SSP2-4.5 data](https://doi.org/10.22033/ESGF/CMIP6.6693) · [Historical comparison with NOAA best tracks](../fair_to_tc/README.md)
+For the North Atlantic under SSP2-4.5, the frozen pure LIM reproduces multiday steering and the distribution of 48-hour storm displacement more closely than the TC package's native Fourier weather. Formation and landfall rates give a less decisive result. With the FaIR warming input, MPI daily winds produced 432 tropical cyclones in 16,384 proposed seeds, compared with 399 from LIM and 400 from Fourier. The target here is MPI weather passed through the same Coupled FAST solver. [MPI SSP2-4.5 data](https://doi.org/10.22033/ESGF/CMIP6.6693)
 
 ![Steering variance, TC formation and paired error differences across the three input conditions](mpi2050.png)
 
@@ -17,6 +17,16 @@ For the reference, FAST sees each member's actual 30 daily mean eastward and nor
 | FaIR annual warming only | Run the same sampling procedure with **+1.8132 K** from FaIR SSP2-4.5 configuration 2451. All random streams are shared with the MPI-warming experiment. This is the tutorial's deployment setting. |
 
 The MPI annual mean uses grid-cell areas and month lengths. The eight evaluation members do not enter that forcing average. Each member has 32 generated months per weather driver for wind diagnostics. Four of those months carry tracks at both start dates, with 256 proposed seeds per panel. All rates are per 100 proposed seeds. An annual cyclone count requires a separate calibration of how often to release seeds. [MPI warming calculation](forcing.json) · [FaIR calculation](../fair_to_tc/run.json) · [Attempts and denominators](counts.csv)
+
+## Explore the trajectories in the notebook
+
+Sections 5–6 run one seed under three drivers and display the 432 MPI, 389 LIM and 404 Fourier tracks from the shared-background experiment. The zoom follows the first seed with a complete 48-hour window under all three drivers, in the first member of the published test split. The example was selected by availability. [Executed English notebook](../../notebooks/FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb) · [Inputs to each FAST run](../annual_lim_tc_flow.png) · [Regional MPI input and provenance](../../notebooks/data/README.md)
+
+![Three basin-wide trajectory maps and an enlarged view of a common disturbance](mpi_track_maps.png)
+
+Each row of the track archive is one six-hourly position from release to the last available fix of an accepted TC. Join to the all-seed outcomes on `protocol`, `method`, `member`, `draw`, `origin` and `seed_id`. Position columns are `lon_e` in degrees east and `lat_n` in degrees north. `elapsed_h` counts hours from release and `vmax_ms` gives maximum surface wind in m/s. The archive contains **118,471 fixes on 3,242 accepted tracks** across the reference and seven main driver/input combinations. The native target-month wind-moments sensitivity has its own outcomes table. [Six-hourly tracks](tc_tracks_6h.parquet) · [All proposed seeds](attempts.parquet)
+
+The tutorial recalculates the 48-hour displacement from those coordinates, checks it against the archived per-storm outcome, and recomputes the 5,000 paired whole-member bootstrap replicates. The figures show how the ranking changes with the metric and the climate inputs. [Displacement distributions](mpi_displacement_cdf.png) · [Steering and paired intervals](mpi_skill_intervals.png)
 
 ## Which quantities are closer?
 

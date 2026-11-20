@@ -15,7 +15,6 @@ from tc_emulator.tc_adapter import geography, panel, tracks
 METHODS = ("Pure LIM", "Native Fourier")
 MONTH = 9
 DAYS = 15
-KNOT_MS = 1852 / 3600
 
 
 @lru_cache(maxsize=1)
@@ -91,38 +90,6 @@ def aligned_window(lon, lat, speed, hours, tropical):
         return None
     from util.sphere import haversine
     return int(i), float(speed[sl].max()), float(haversine(x[0], y[0], x[-1], y[-1]))
-
-
-def window_samples(paths, attempts, observations, years):
-    geography()  # Makes the original FAST spherical-distance routine importable.
-    rows = []
-    hourly = paths.isel(elapsed_s=slice(None, None, 6))
-    hours = hourly.elapsed_s.values / 3600
-    for row in attempts[attempts.tc].itertuples(index=False):
-        tr = hourly.sel({"case": row.case, "method": row.method, "seed_id": row.seed_id})
-        speed = tr.vmax.values
-        values = aligned_window(tr.storm_lon.values, tr.storm_lat.values, speed, hours, np.isfinite(speed))
-        if values is not None:
-            rows.append((row.period, row.method, row.year, row.case, str(row.seed_id), *values[1:]))
-    obs = pd.read_csv(observations)
-    obs["stamp"] = pd.to_datetime(obs.ymdhm, format="%Y%m%d%H%M")
-    for storm, group in obs.groupby("storm", sort=False):
-        group = group.sort_values("stamp")
-        dt = group.stamp.to_numpy("datetime64[h]").astype("int64")
-        speed = group.wind_kt.to_numpy(dtype=float) * KNOT_MS
-        speed[speed < 0] = np.nan
-        # TS, HU and TD retain tropical character; post-tropical/subtropical
-        # observations do not count toward a continuous tropical 48-hour window.
-        values = aligned_window(group.lon.values, group.lat.values, speed, dt,
-                                group.status.isin(["TD", "TS", "HU"]).values)
-        if values is None:
-            continue
-        i, peak, distance = values
-        stamp = group.stamp.iloc[i]
-        if stamp.month == MONTH and stamp.year in years:
-            rows.append(("Historical", "HURDAT2", stamp.year, str(stamp.year), storm, peak, distance))
-    return pd.DataFrame(rows, columns=["period", "method", "year", "case", "storm",
-                                       "peak_48h_ms", "displacement_48h_km"])
 
 
 def paired_rates(attempts, seed, resamples=5000):

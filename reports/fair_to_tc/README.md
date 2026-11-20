@@ -1,6 +1,6 @@
 # North Atlantic storm-generation benchmark
 
-A deterministic FaIR SSP2-4.5 run gives **+1.813 K in 2050**, relative to 1850–1900, for constrained configuration 2451. For each historical or future September event, the two FAST runs use the same monthly ocean and atmosphere, candidate locations and seed intensities. Only the weather driver changes. The LIM provides one daily wind history shared across the event. The TC package samples its native hourly Fourier phases separately for each seed using the same conditional mean and local wind covariance. [Executed experiment](../../notebooks/FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb) · [Inputs and sources](../../notebooks/data/README.md)
+A deterministic FaIR SSP2-4.5 run gives **+1.813 K in 2050**, relative to 1850–1900, for constrained configuration 2451. For each historical or future September event, the two FAST runs use the same monthly ocean and atmosphere, candidate locations and seed intensities. Only the weather driver changes. The LIM provides one daily wind history shared across the event. The TC package samples its native hourly Fourier phases separately for each seed using the same conditional mean and local wind covariance. [Executed experiment](../../notebooks/FaIR_EOF_LIM_to_Tropical_Cyclones.ipynb) · [FaIR and FAST workflow](../annual_lim_tc_flow.png) · [Inputs and sources](../../notebooks/data/README.md)
 
 | September panels | Weather | Seed attempts | Integrated | TCs | TCs with landfall | Median peak wind of accepted TCs (m/s) |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
@@ -11,19 +11,7 @@ A deterministic FaIR SSP2-4.5 run gives **+1.813 K in 2050**, relative to 1850�
 
 Each group has eight independent event panels with 128 candidate disturbances per panel. The historical years are 1985 through 2020 in five-year steps. Each event starts on September 1 at noon and lasts up to 15 days. In 2050 the LIM produced 0.98 additional TCs per 100 attempted seeds. The 95% interval from resampling the eight whole event pairs was −0.29 to +2.25 per 100. A frequency projection would also require a calibrated number of seeds released each season. [Counts and denominators](tc_counts.csv) · [Paired event intervals](paired_differences.csv)
 
-An independent September 2050 benchmark uses MPI-ESM1-2-LR SSP2-4.5 daily winds to drive FAST for the same proposed disturbances. It compares formation, landfall, intensity and displacement distributions against that model-world reference. [MPI daily replay and paired scores](../mpi2050/README.md)
-
-## Historical storm intensity and movement
-
-We align modeled and observed tracks at their first six-hourly tropical fix with maximum surface wind of at least 18 m/s. The next 48 hours must be complete and inside the evaluation domain. The historical observations use the same eight Septembers and include storms reaching the threshold throughout the month. A storm that lacks this complete window can still contribute to the TC count above. The peak is the largest six-hourly wind within the window. Displacement is the great-circle distance between its endpoints. [NOAA HURDAT2 data description](https://www.nhc.noaa.gov/data/#hurdat) · [Per-storm measurements](storm_windows.csv)
-
-| Source | Complete windows | Median 48 h peak wind (m/s) | Median 48 h displacement (km) | Wind distribution distance to NOAA (m/s) | Displacement distribution distance to NOAA (km) |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Pure LIM | 19 | 36.5 | 1,051 | 7.05 | 336 |
-| Native Fourier | 24 | 33.6 | 1,141 | 2.34 | 434 |
-| NOAA HURDAT2 | 37 | 33.4 | 971 | 0 | 0 |
-
-The last two columns give the one-dimensional Wasserstein distance, which integrates the absolute gap in quantiles between two distributions. In these historical windows Fourier is closer on wind intensity and LIM is closer on displacement. Both have higher median displacement than the observed storms. [Historical distribution plot](tc_observations.png) · [Quartiles and distribution distances](historical_shapes.csv)
+Sections 5–6 of the tutorial rerun one September 2050 seed with MPI daily, LIM and Fourier winds. The notebook then maps all accepted tracks with the monthly MPI background fixed and rebuilds the 48-hour displacement distributions from six-hourly positions. [Track maps](../mpi2050/mpi_track_maps.png) · [Displacement distributions](../mpi2050/mpi_displacement_cdf.png) · [MPI replay and paired scores](../mpi2050/README.md)
 
 ## Figures and machine-readable output
 
@@ -36,4 +24,4 @@ On four CPU workers with one BLAS thread each, the paired experiment took **17.4
 
 A second run in a clean CPU environment (NumPy 2.5.5, SciPy 1.18.1) reproduced all TC classifications and landfall indicators. The largest difference in an individual integrated disturbance’s peak wind was 0.97 m/s, and some last integration times shifted by up to 3 hours. Use the reference numerical versions for comparisons of individual hourly trajectories. [Reference constraints](../../constraints-benchmark.txt)
 
-With the reference constraints installed in a separate Python 3.12 CPU environment, all 4,096 screening, TC and landfall outcomes and all 125 eligible 48-hour storm measurements reproduced. One trajectory had one additional or missing hourly endpoint across builds. [Reproduction checks for both environments](reproducibility.json)
+With the reference constraints installed in a separate Python 3.12 CPU environment, all 4,096 screening, TC and landfall outcomes reproduced. One trajectory had one additional or missing hourly endpoint across builds. [Reproduction checks for both environments](reproducibility.json)

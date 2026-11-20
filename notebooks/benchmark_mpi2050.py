@@ -79,6 +79,12 @@ def sampled_window(ds, origin, days):
     return ds.assign_coords(t_seconds=("t_seconds", seconds, {"units": "s"}))
 
 
+def seed_panel(member, draw, origin):
+    ident = f"{member}/{draw}"
+    seed = int(rng_for(SEED, "seeds", ident, origin).integers(2**32))
+    return panel(seed, DESIGN["seeds_per_panel"])
+
+
 def storm_records(env, seeds, provider, protocol, method, member, draw, origin):
     trace, outcomes = tracks(env, seeds, DESIGN["event_days"], wind_provider=provider)
     sampled = trace.isel(elapsed_s=slice(None, None, 6))
@@ -89,9 +95,16 @@ def storm_records(env, seeds, provider, protocol, method, member, draw, origin):
         segment = aligned_window(sampled.storm_lon.values[i], sampled.storm_lat.values[i], speed, hours, np.isfinite(speed))
         if segment is not None:
             _, peaks[i], distances[i] = segment
-    return outcomes[["seed_id", "lon", "lat", "filter_draw", "v_init", "tc", "landfall", "lmi", "reason"]].assign(
-        member=member, draw=draw, origin=origin, protocol=protocol, method=method,
-        peak_48h_ms=peaks, displacement_48h_km=distances)
+    ids = dict(member=member, draw=draw, origin=origin, protocol=protocol, method=method)
+    attempts = outcomes[["seed_id", "lon", "lat", "filter_draw", "v_init", "tc", "landfall", "lmi", "reason"]].assign(
+        **ids, peak_48h_ms=peaks, displacement_48h_km=distances)
+    # Store the whole life of every accepted TC, including its developing phase.
+    # The storm-rate denominator stays in the separate table of all attempted seeds.
+    storm, step = np.nonzero(outcomes.tc.to_numpy()[:, None] & np.isfinite(sampled.vmax.values))
+    fixes = pd.DataFrame(dict(seed_id=sampled.seed_id.values[storm], elapsed_h=hours[step].astype("int16"),
+                              lon_e=sampled.storm_lon.values[storm, step], lat_n=sampled.storm_lat.values[storm, step],
+                              vmax_ms=sampled.vmax.values[storm, step])).assign(**ids)
+    return attempts, fixes
 
 
 def local_moments(wind, source, target):
@@ -110,7 +123,7 @@ def simulate(task):
     area, corridor = region_area(lat, lon), corridor_weights(lat, lon)
     ident = f"{member}/{draw}"
     origins = DESIGN["origins"] if draw < DESIGN["track_draws"] else []
-    panels = {o: panel(int(rng_for(SEED, "seeds", ident, o).integers(2**32)), DESIGN["seeds_per_panel"]) for o in origins}
+    panels = {o: seed_panel(member, draw, o) for o in origins}
     met, records = [], []
     if draw == 0 and not target_moments:
         met.append(dict(protocol="Reference", method=MPI, member=member, draw=draw,
@@ -175,16 +188,20 @@ def main():
         raise ValueError("FaIR benchmark year mismatch")
     tasks = [(args.work, args.weights, m, i, mpi_g, fair["future_g_K"], args.mpi_wind_moments)
              for i in range(DESIGN["weather_draws"]) for m in read(CONFIG / "members.json")["test"]]
-    weather, attempts = [], []
+    weather, attempts, fixes = [], [], []
     with ProcessPoolExecutor(args.workers) as pool:
         for met, records in pool.map(simulate, tasks):
             weather.extend(met)
-            attempts.extend(records)
+            for panel_outcomes, panel_fixes in records:
+                attempts.append(panel_outcomes)
+                fixes.append(panel_fixes)
     suffix = "_moments" if args.mpi_wind_moments else ""
     with atomic(args.work / f"weather{suffix}.csv") as dest:
         pd.DataFrame(weather).to_csv(dest, index=False)
     with atomic(args.work / f"attempts{suffix}.parquet") as dest:
         pd.concat(attempts, ignore_index=True).to_parquet(dest, index=False)
+    with atomic(args.work / f"tc_tracks_6h{suffix}.parquet") as dest:
+        pd.concat(fixes, ignore_index=True).to_parquet(dest, index=False, compression="zstd")
 
 
 if __name__ == "__main__":
